@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-11-10T13:41:28.981208+00:00",
+  "requested": "Colab T4",
+  "response": {
+    "id": "59ab701f-b4cd-4bac-ad09-23756058de77",
+    "ok": true,
+    "result": {
+      "origin": "https://colab.research.google.com/drive/1kAH2vYAEclTSsZFDaealbnfV-15R6zoH",
+      "refs": {
+        "e395": {
+          "name": "Failed to assign a backend",
+          "role": "heading"
+        },
+        "e396": {
+          "name": "More info",
+          "role": "link"
+        },
+        "e397": {
+          "name": "",
+          "role": "generic"
+        },
+        "e398": {
+          "name": "",
+          "role": "generic"
+        },
+        "e399": {
+          "name": "Cancel",
+          "role": "button"
+        },
+        "e400": {
+          "name": "Connect",
+          "role": "button"
+        }
+      },
+      "removedRefs": [],
+      "snapshot": "- generic\n  - alertdialog \"Failed to assign a backend\"\n    - generic\n      - heading \"Failed to assign a backend\" [level=2, ref=e395]\n        - StaticText \"Failed to assign a backend\"\n      - generic\n        - StaticText \"No backend with GPU available. Would you like to use a runtime with no accelerator?\"\n        - link \"More info\" [ref=e396]\n      - contentinfo\n        - generic [ref=e397] clickable [cursor:pointer]\n          - button \"Cancel\" [ref=e399]\n            - StaticText \"Cancel\"\n        - generic [ref=e398] clickable [cursor:pointer]\n          - button \"Connect\" [ref=e400]\n            - StaticText \"Connect\"",
+      "browserPageId": "8b6485cf-c61f-43b8-9164-140c4872792d",
+      "url": "https://colab.research.google.com/drive/1kAH2vYAEclTSsZFDaealbnfV-15R6zoH",
+      "title": "Soup_Submission.ipynb - Colab"
+    },
+    "_meta": {
+      "runtimeId": "5bb4d50c-14ec-484f-811f-1690601e0266"
+    }
+  }
+}

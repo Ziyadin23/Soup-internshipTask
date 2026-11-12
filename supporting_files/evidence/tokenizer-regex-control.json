@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-10T14:42:48.519+00:00",
+  "prompts_checked": 1240,
+  "original_backends": {
+    "base": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb",
+    "merged": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb",
+    "quantized": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb"
+  },
+  "original_token_ids_identical": true,
+  "deliberate_control": "Apply Mistral-specific regex fix to Qwen in memory only; no saved artifact changed.",
+  "fixed_backend_differs": true,
+  "fixed_prompts_changed": 48,
+  "first_changed_ids": [
+    "16716",
+    "53061",
+    "59542",
+    "25693",
+    "32970",
+    "1019",
+    "28214",
+    "19957",
+    "11827",
+    "41159"
+  ],
+  "limit": "Equivalence and drift detection do not prove universal tokenizer correctness."
+}

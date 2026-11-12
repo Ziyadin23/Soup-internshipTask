@@ -1,0 +1,86 @@
+{
+  "commands": [
+    {
+      "name": "doctor",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "doctor"
+      ],
+      "returncode": 0,
+      "started_at": "2026-11-10T14:03:17.186+00:00",
+      "finished_at": "2026-11-10T14:03:25.728+00:00",
+      "log": "evidence/soup/doctor.raw.log"
+    },
+    {
+      "name": "data-doctor",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "data",
+        "doctor",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/data/train_chat.jsonl",
+        "--model",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/base",
+        "--format",
+        "chatml",
+        "--max-length",
+        "1024",
+        "--sample",
+        "1000",
+        "--show-mask",
+        "1",
+        "--output",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/data-doctor.json"
+      ],
+      "returncode": 0,
+      "started_at": "2026-11-10T14:03:25.728+00:00",
+      "finished_at": "2026-11-10T14:03:37.178+00:00",
+      "log": "evidence/soup/data-doctor.raw.log"
+    },
+    {
+      "name": "profile",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "profile",
+        "--model",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/base",
+        "--seq",
+        "1024",
+        "--batch",
+        "1",
+        "--method",
+        "lora",
+        "--lora-r",
+        "8",
+        "--gradient-checkpointing",
+        "full",
+        "--json"
+      ],
+      "returncode": 0,
+      "started_at": "2026-11-10T14:03:37.178+00:00",
+      "finished_at": "2026-11-10T14:03:40.002+00:00",
+      "log": "evidence/soup/profile.raw.log"
+    },
+    {
+      "name": "doctor-config",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "doctor",
+        "--config",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/soup.yaml"
+      ],
+      "returncode": 0,
+      "started_at": "2026-11-10T14:03:40.004+00:00",
+      "finished_at": "2026-11-10T14:03:47.446+00:00",
+      "log": "evidence/soup/doctor-config.raw.log"
+    }
+  ],
+  "note": "Nonzero Soup diagnostics are preserved and investigated; they do not silently change our collator or imply equivalent mask semantics."
+}

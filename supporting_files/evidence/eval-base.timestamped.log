@@ -1,0 +1,10 @@
+2026-11-10T14:11:47.853+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-u", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/code/experiment.py", "_stage", "eval-base", "--run-dir", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01"]
+2026-11-10T14:11:52.678+00:00 {"timestamp": "2026-11-10T14:11:52.678+00:00", "event": "phase_started", "phase": "eval-base"}
+2026-11-10T14:11:52.735+00:00 `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-10T14:11:52.789+00:00 
+2026-11-10T14:11:53.999+00:00 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+2026-11-10T14:11:54.193+00:00 Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.21s/it]
+2026-11-10T14:11:54.193+00:00 Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.63it/s]
+2026-11-10T14:11:54.193+00:00 Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.42it/s]
+2026-11-10T14:32:01.080+00:00 {"timestamp": "2026-11-10T14:32:01.080+00:00", "event": "phase_finished", "started_at": "2026-11-10T14:11:52.678+00:00", "finished_at": "2026-11-10T14:32:01.079+00:00", "phase": "eval-base", "success": true, "wall_seconds": 1208.368556811, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 4039110656, "process_lifetime_rss_highwater_bytes": 4164546560, "gpu_allocated_peak_bytes": 4686872576, "gpu_reserved_peak_bytes": 4779409408, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T14:32:03.230+00:00 EXIT 0

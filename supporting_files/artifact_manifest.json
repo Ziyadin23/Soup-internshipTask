@@ -1,0 +1,297 @@
+{
+  "created_at": "2026-11-10T15:30:06.293+00:00",
+  "artifacts": {
+    "base": {
+      "LICENSE": {
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+        "bytes": 11343
+      },
+      "README.md": {
+        "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091",
+        "bytes": 13963
+      },
+      "config.json": {
+        "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+        "bytes": 726
+      },
+      "generation_config.json": {
+        "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "bytes": 239
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "model-00001-of-00002.safetensors": {
+        "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+        "bytes": 3441185608
+      },
+      "model-00002-of-00002.safetensors": {
+        "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+        "bytes": 622329984
+      },
+      "model.safetensors.index.json": {
+        "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+        "bytes": 25605
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "bytes": 9732
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "untrained_adapter": {
+      "README.md": {
+        "sha256": "b1e26ec0493a9ce69f2f44654950a170e1b4d82f61c527941b363e12a2514460",
+        "bytes": 5294
+      },
+      "adapter_config.json": {
+        "sha256": "d4e0d39d116e56efc67b45bae511f612dd8bec6a196554001c427cc6f3e81da1",
+        "bytes": 1005
+      },
+      "adapter_model.safetensors": {
+        "sha256": "47f26766272fec005cfcb79f57b0f3d5fb5d2dd5338c2d7f6192665b5e12a99a",
+        "bytes": 6437272
+      },
+      "added_tokens.json": {
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "bytes": 707
+      },
+      "chat_template.jinja": {
+        "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "bytes": 4168
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "special_tokens_map.json": {
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "bytes": 613
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "bytes": 5404
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "zero_lr_adapter": {
+      "README.md": {
+        "sha256": "b1e26ec0493a9ce69f2f44654950a170e1b4d82f61c527941b363e12a2514460",
+        "bytes": 5294
+      },
+      "adapter_config.json": {
+        "sha256": "d4e0d39d116e56efc67b45bae511f612dd8bec6a196554001c427cc6f3e81da1",
+        "bytes": 1005
+      },
+      "adapter_model.safetensors": {
+        "sha256": "47f26766272fec005cfcb79f57b0f3d5fb5d2dd5338c2d7f6192665b5e12a99a",
+        "bytes": 6437272
+      },
+      "added_tokens.json": {
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "bytes": 707
+      },
+      "chat_template.jinja": {
+        "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "bytes": 4168
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "special_tokens_map.json": {
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "bytes": 613
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "bytes": 5404
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "adapter": {
+      "README.md": {
+        "sha256": "b1e26ec0493a9ce69f2f44654950a170e1b4d82f61c527941b363e12a2514460",
+        "bytes": 5294
+      },
+      "adapter_config.json": {
+        "sha256": "d4e0d39d116e56efc67b45bae511f612dd8bec6a196554001c427cc6f3e81da1",
+        "bytes": 1005
+      },
+      "adapter_model.safetensors": {
+        "sha256": "b64177a9dcfd19dfe118e551b8dade446b6514a0f4b2c9bddf3dd4d74ad1f6e3",
+        "bytes": 6437272
+      },
+      "added_tokens.json": {
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "bytes": 707
+      },
+      "chat_template.jinja": {
+        "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "bytes": 4168
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "special_tokens_map.json": {
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "bytes": 613
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "bytes": 5404
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "merged": {
+      "added_tokens.json": {
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "bytes": 707
+      },
+      "chat_template.jinja": {
+        "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "bytes": 4168
+      },
+      "config.json": {
+        "sha256": "c04bdac4ab11b279bd64df0f0f963266d94ae05d5aab5044d6da13d254d06c5f",
+        "bytes": 1359
+      },
+      "generation_config.json": {
+        "sha256": "64d86df2173901c58389974bde21f7d2ab9eb7d79f35a337753329d39cf265c0",
+        "bytes": 214
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "model-00001-of-00007.safetensors": {
+        "sha256": "fb66c6b249a4b3e489b6dd5d16c40ff93dc856eb2d0d18ecdd0ab6a01a17f4ab",
+        "bytes": 1244659848
+      },
+      "model-00002-of-00007.safetensors": {
+        "sha256": "6bea6ab9929be05b2e0bdeaddb48f9ec833a9f1a34b262949e4d249a0cee62d6",
+        "bytes": 956377792
+      },
+      "model-00003-of-00007.safetensors": {
+        "sha256": "cc3f062f7a69f1ff366608d708b774a75e62d49e9507b99c093f97a5fb373f00",
+        "bytes": 956394400
+      },
+      "model-00004-of-00007.safetensors": {
+        "sha256": "b366955dc72d89cf1c54e7cbd3bd2e205555fe81b696ed9cf04ce87fe66ddc5a",
+        "bytes": 956394456
+      },
+      "model-00005-of-00007.safetensors": {
+        "sha256": "52f0bf60a5e42fd2d23efb2c6139bff4365a5463d69e138cc184e5396844245c",
+        "bytes": 989947648
+      },
+      "model-00006-of-00007.safetensors": {
+        "sha256": "e3d0a3457ebbc85dd39bef88bd09de805c5991978bc94ece5bd8842fe97783fa",
+        "bytes": 998337496
+      },
+      "model-00007-of-00007.safetensors": {
+        "sha256": "770afa69fa33ee068ad0619d95a0f8730cda29bd54b2872f0f4fdf7a3346f6b3",
+        "bytes": 780223208
+      },
+      "model.safetensors.index.json": {
+        "sha256": "f5324e77bb8a2bee8c838eac3ccee1b469c0e1e89417c788c6ae9daf812fa5ba",
+        "bytes": 25583
+      },
+      "special_tokens_map.json": {
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "bytes": 613
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "bytes": 5404
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "quantized": {
+      "added_tokens.json": {
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "bytes": 707
+      },
+      "chat_template.jinja": {
+        "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "bytes": 4168
+      },
+      "config.json": {
+        "sha256": "2f1961248f47e95fe2c86efae7bc68ff3b24ebcd2a8cb93b3dbf38eb68026e98",
+        "bytes": 1839
+      },
+      "generation_config.json": {
+        "sha256": "64d86df2173901c58389974bde21f7d2ab9eb7d79f35a337753329d39cf265c0",
+        "bytes": 214
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "model-00001-of-00002.safetensors": {
+        "sha256": "f8211943c2afeefec508170fe4d1db47ebf40f2af4d610cfde81f96098cff1d8",
+        "bytes": 999146735
+      },
+      "model-00002-of-00002.safetensors": {
+        "sha256": "3b61c6ca2b9d83447e14a46186e37c3178c1ff0b23832d6f761f0433e05b8e7d",
+        "bytes": 350835220
+      },
+      "model.safetensors.index.json": {
+        "sha256": "c6abe14b3dad67982c49d5785ce90fe343805a2054bed2d83d15a853d1a84915",
+        "bytes": 120321
+      },
+      "special_tokens_map.json": {
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "bytes": 613
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "bytes": 5404
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+2026-11-10T14:51:23.779+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-u", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/code/experiment.py", "_stage", "eval-quantized", "--run-dir", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01"]
+2026-11-10T14:51:28.732+00:00 {"timestamp": "2026-11-10T14:51:28.731+00:00", "event": "phase_started", "phase": "eval-quantized"}
+2026-11-10T14:51:28.798+00:00 `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-10T14:51:30.317+00:00 
+2026-11-10T14:51:30.844+00:00 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+2026-11-10T14:51:31.129+00:00 Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.90it/s]
+2026-11-10T14:51:31.129+00:00 Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.60it/s]
+2026-11-10T14:51:31.129+00:00 Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.46it/s]
+2026-11-10T14:51:31.676+00:00 The tokenizer you are loading from '/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/quantized' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+2026-11-10T15:29:08.687+00:00 {"timestamp": "2026-11-10T15:29:08.687+00:00", "event": "phase_finished", "started_at": "2026-11-10T14:51:28.731+00:00", "finished_at": "2026-11-10T15:29:08.679+00:00", "phase": "eval-quantized", "success": true, "wall_seconds": 2259.131340699, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 1746800640, "process_lifetime_rss_highwater_bytes": 1749614592, "gpu_allocated_peak_bytes": 2082908672, "gpu_reserved_peak_bytes": 2357198848, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T15:29:10.213+00:00 EXIT 0

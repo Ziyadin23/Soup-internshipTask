@@ -1,0 +1,23 @@
+debug1: OpenSSH_10.2p1, OpenSSL 3.5.8 25 Aug 2026
+debug1: Reading configuration data /home/ziyadin/.ssh/config
+debug1: Reading configuration data /home/ziyadin/.brev/ssh_config
+debug1: /home/ziyadin/.brev/ssh_config line 2: Applying options for soup-internship-t4
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: Reading configuration data /etc/ssh/ssh_config.d/50-redhat.conf
+debug2: checking match for 'final all' host global.prd.ga.run.brev.nvidia.com originally soup-internship-t4
+debug2: match not found
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /home/ziyadin/.ssh/config
+debug1: Reading configuration data /home/ziyadin/.brev/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: Reading configuration data /etc/ssh/ssh_config.d/50-redhat.conf
+debug2: checking match for 'final all' host global.prd.ga.run.brev.nvidia.com originally soup-internship-t4
+debug2: match found
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: auto-mux: Trying existing master at '/home/ziyadin/.ssh/brev-control-ae030f1d145f072c316617ef38ae56d31581a3b1'
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4

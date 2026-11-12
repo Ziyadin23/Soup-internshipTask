@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-10T17:42:57.206+00:00",
+  "pages": 2,
+  "sha256": "baac4d40293648b99db7af6c5de5a47cdb56e37ad740bbbd9dbc0dade3d75170",
+  "synthetic_layout_test": false,
+  "verification_file": "runs/brev-20261110-main-01/results/verification-replay-2026-11-10T15-31-31.125+00-00.json",
+  "verification_sha256": "73c0ecfc34a1f50024f3708b8a1595cc65da0b4164c67287d2cea0845d28060c",
+  "renderer_sha256": "150fb60bcf99e074d5d2fe642d714e05c92406d79c7c5440005dcf694b1f0666",
+  "editorial_revision": "decision-evidence-interpretation",
+  "memory_arithmetic_bytes": {
+    "train": [
+      3441149952,
+      25690112,
+      268435456,
+      1555824640,
+      1073741824
+    ],
+    "merge": [
+      6882299904,
+      1244659712,
+      50331648,
+      1073741824
+    ],
+    "quantize": [
+      3441149952,
+      1349584896,
+      1244659712,
+      1073741824
+    ]
+  },
+  "example_id": "probe-missing-00"
+}

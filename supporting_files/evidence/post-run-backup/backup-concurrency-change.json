@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-10T15:14:16.438762+00:00",
+  "from_workers": 4,
+  "to_workers": 2,
+  "reason": "Slow relay and new SSH connection timeouts; retain partial data and prioritize reliable control access."
+}

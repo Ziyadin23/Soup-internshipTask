@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-10T14:32:07.906+00:00",
+  "finished_at": "2026-11-10T14:51:21.759+00:00",
+  "phase": "eval-merged",
+  "success": true,
+  "wall_seconds": 1153.6382667080002,
+  "rss_sample_interval_seconds": 0.05,
+  "sampled_rss_peak_bytes": 1887928320,
+  "process_lifetime_rss_highwater_bytes": 1965199360,
+  "gpu_allocated_peak_bytes": 4174800896,
+  "gpu_reserved_peak_bytes": 5419040768,
+  "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."
+}

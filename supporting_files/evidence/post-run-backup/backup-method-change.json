@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-10T16:40:14.947621+00:00",
+  "reason": "Relay throughput too low; preserve partial copies, use original pinned base as rsync basis for unchanged FP32 tensors, retain full cloud SHA256 checks.",
+  "old_log": "tmp/artifact_backup_v3.raw.log",
+  "old_partial_bytes_preserved": true,
+  "header_fetch": "Default multiplexed session hung while opening a channel; independent ssh -S none -o ControlMaster=no succeeded.",
+  "actual_headers_bytes": 46885,
+  "at_updated": "2026-11-10T16:42:45.369736+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "source_ids": [
+    "17135",
+    "43443"
+  ],
+  "source_token_sha256": "6b70010961f24eea44c155f490e3bbccfdc02c0a3cb050ef39de7e54b2d599d7",
+  "replacement": "[REDACTED_SOURCE_SCHEMA_CREDENTIAL]",
+  "files": {
+    "data/train.json": {
+      "original_sha256": "79cc7555ee1fd2f64c038888fae655bd4d898723da5c4d170c2b173c6f27b05c",
+      "packaged_sha256": "252acfec92ad25af47df03b2de365723ccb5e52b4d4b6500192e885512bbe379",
+      "occurrences": 2
+    },
+    "data/train_chat.jsonl": {
+      "original_sha256": "045f39d7884f0b21ab6522a8a341fb6ef5ec69f9805c23234fc1773df560dfaf",
+      "packaged_sha256": "ffa38b12ec94259e2c70c027cb9cc74cf205d4353a25f1005f86066f006a58aa",
+      "occurrences": 2
+    }
+  },
+  "notice": "Publication copies only. Original measured inputs are unchanged and retained privately. Restore original training files before frozen-input verification. Credential validity was not tested; it was never used for authentication."
+}

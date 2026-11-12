@@ -1,0 +1,12 @@
+2026-11-10T13:29:48.310+00:00 COMMAND ["/home/ziyadin/orca/projects/Soup-internshipTask/.venv/bin/python", "-u", "/home/ziyadin/orca/projects/Soup-internshipTask/runs/local-audit-20261110T1330Z/code/experiment.py", "_stage", "prepare", "--run-dir", "/home/ziyadin/orca/projects/Soup-internshipTask/runs/local-audit-20261110T1330Z"]
+2026-11-10T13:29:50.895+00:00 {"timestamp": "2026-11-10T13:29:50.895+00:00", "event": "phase_started", "phase": "prepare"}
+2026-11-10T13:29:50.896+00:00 {"timestamp": "2026-11-10T13:29:50.895+00:00", "event": "pinned_download_started", "model": "Qwen/Qwen3-1.7B", "dataset": "Salesforce/xlam-function-calling-60k"}
+2026-11-10T13:29:58.518+00:00 
+2026-11-10T13:29:59.354+00:00 Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+2026-11-10T13:29:59.660+00:00 Fetching 8 files:  12%|█▎        | 1/8 [00:00<00:05,  1.20it/s]
+2026-11-10T13:29:59.822+00:00 Fetching 8 files:  75%|███████▌  | 6/8 [00:01<00:00,  5.25it/s]
+2026-11-10T13:29:59.822+00:00 Fetching 8 files: 100%|██████████| 8/8 [00:01<00:00,  6.13it/s]
+2026-11-10T13:30:01.001+00:00 {"timestamp": "2026-11-10T13:30:01.001+00:00", "event": "selection_progress", "examined": 3001, "selected": {"train": 274, "validation": 17, "test": 18}}
+2026-11-10T13:30:02.002+00:00 {"timestamp": "2026-11-10T13:30:02.002+00:00", "event": "selection_progress", "examined": 10001, "selected": {"train": 884, "validation": 61, "test": 62}}
+2026-11-10T13:30:02.974+00:00 {"timestamp": "2026-11-10T13:30:02.974+00:00", "event": "phase_finished", "started_at": "2026-11-10T13:29:50.895+00:00", "finished_at": "2026-11-10T13:30:02.974+00:00", "phase": "prepare", "success": true, "wall_seconds": 12.07822208899961, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 629633024, "process_lifetime_rss_highwater_bytes": 698093568, "gpu_allocated_peak_bytes": null, "gpu_reserved_peak_bytes": null, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T13:30:03.515+00:00 EXIT 0

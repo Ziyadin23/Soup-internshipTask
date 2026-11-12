@@ -1,0 +1,15 @@
+2026-11-10T14:11:32.964+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-u", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/code/experiment.py", "_stage", "probes-merged", "--run-dir", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01"]
+2026-11-10T14:11:38.054+00:00 {"timestamp": "2026-11-10T14:11:38.054+00:00", "event": "phase_started", "phase": "probes-merged"}
+2026-11-10T14:11:38.513+00:00 `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-10T14:11:38.572+00:00 
+2026-11-10T14:11:38.952+00:00 Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-11-10T14:11:39.267+00:00 Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:02,  2.64it/s]
+2026-11-10T14:11:39.591+00:00 Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:01,  2.93it/s]
+2026-11-10T14:11:39.913+00:00 Loading checkpoint shards:  43%|████▎     | 3/7 [00:01<00:01,  3.00it/s]
+2026-11-10T14:11:40.269+00:00 Loading checkpoint shards:  57%|█████▋    | 4/7 [00:01<00:00,  3.04it/s]
+2026-11-10T14:11:40.626+00:00 Loading checkpoint shards:  71%|███████▏  | 5/7 [00:01<00:00,  2.95it/s]
+2026-11-10T14:11:40.903+00:00 Loading checkpoint shards:  86%|████████▌ | 6/7 [00:02<00:00,  2.90it/s]
+2026-11-10T14:11:40.903+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:02<00:00,  3.10it/s]
+2026-11-10T14:11:40.903+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:02<00:00,  3.00it/s]
+2026-11-10T14:11:46.991+00:00 {"timestamp": "2026-11-10T14:11:46.991+00:00", "event": "phase_finished", "started_at": "2026-11-10T14:11:38.054+00:00", "finished_at": "2026-11-10T14:11:46.986+00:00", "phase": "probes-merged", "success": true, "wall_seconds": 8.417431098999941, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 2032697344, "process_lifetime_rss_highwater_bytes": 2035646464, "gpu_allocated_peak_bytes": 7332897280, "gpu_reserved_peak_bytes": 7491026944, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T14:11:47.851+00:00 EXIT 0

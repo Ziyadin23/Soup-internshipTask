@@ -1,0 +1,2040 @@
+[
+  {
+    "id": "56466",
+    "query": "Find cities in the United States and Canada with the name New York, excluding the first 2 results.",
+    "tools": [
+      {
+        "name": "search_places",
+        "description": "Fetches a list of places (either countries, cities, or administrative divisions) that match a query and can be filtered by various properties.",
+        "parameters": {
+          "type": {
+            "description": "Filters places by `type`. Specifiable values are 'CITY', 'ADMIN_DIVISION_1', 'ADMIN_DIVISION_2', and 'COUNTRY'. Default is 'CITY'.",
+            "type": "str",
+            "default": "CITY"
+          },
+          "language": {
+            "description": "Specifies the language (ISO 639-1) to get the localized name of the place. If translation is unavailable, the \"localizedName\" property will be null.",
+            "type": "str",
+            "default": ""
+          },
+          "skip": {
+            "description": "Number of places to ignore before beginning to return results. Used with `limit` to paginate results. Defaults to 0.",
+            "type": "int",
+            "default": "0"
+          },
+          "country": {
+            "description": "Filters places by their country `id`. Multiple values can be specified, separated by commas (e.g., 'US,CA'). Default is 'US,CA'.",
+            "type": "str",
+            "default": "US,CA"
+          },
+          "limit": {
+            "description": "Maximum number of places to return. Used with `skip` to paginate results. Default is 10, maximum is 100.",
+            "type": "int",
+            "default": "10"
+          },
+          "admindivision1": {
+            "description": "Filters places by their adminDivision1 `id`. Multiple values can be specified, separated by commas (e.g., 'US.CA,US.DE').",
+            "type": "str",
+            "default": ""
+          },
+          "admindivision2": {
+            "description": "Filters places by their adminDivision2 `id`. Multiple values can be specified, separated by commas.",
+            "type": "str",
+            "default": ""
+          },
+          "accuracyradiuskm": {
+            "description": "Maximum radius (in kilometers) from the point specified by `latitude` and `longitude` to filter places located within the area. Default is 100 km.",
+            "type": "int",
+            "default": ""
+          },
+          "latitude": {
+            "description": "Latitude coordinate to filter places by location. Ignored if `longitude` is not specified.",
+            "type": "int",
+            "default": ""
+          },
+          "q": {
+            "description": "Query string to find places with a similar name. Default is 'New York'.",
+            "type": "str",
+            "default": "New York"
+          },
+          "longitude": {
+            "description": "Longitude coordinate to filter places by location. Ignored if `latitude` is not specified.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "search_places",
+        "arguments": {
+          "type": "CITY",
+          "country": "US,CA",
+          "q": "New York",
+          "skip": 2
+        }
+      }
+    ],
+    "family": "search_places",
+    "rendered_tokens": 716,
+    "supervised_tokens": 31
+  },
+  {
+    "id": "11515",
+    "query": "Fetch the top 10 discounted games in the US region starting from the 20th game.",
+    "tools": [
+      {
+        "name": "gameslist",
+        "description": "Retrieves a list of games on special discount offers from the specified region.",
+        "parameters": {
+          "region": {
+            "description": "The region code to fetch the game offers from.",
+            "type": "str",
+            "default": "US"
+          },
+          "start": {
+            "description": "The starting index for the list of games.",
+            "type": "int",
+            "default": "0"
+          },
+          "count": {
+            "description": "The number of games to retrieve starting from the `start` index.",
+            "type": "int",
+            "default": "10"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "gameslist",
+        "arguments": {
+          "region": "US",
+          "start": 20,
+          "count": 10
+        }
+      }
+    ],
+    "family": "gameslist",
+    "rendered_tokens": 274,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "30554",
+    "query": "Convert an HSL color with hue 60, saturation 80, and lightness 60 to other formats.",
+    "tools": [
+      {
+        "name": "list_specific_qr_code",
+        "description": "Fetches information about a specific registered QR code using the provided reference and RapidAPI key.",
+        "parameters": {
+          "ref": {
+            "description": "The reference identifier for the specific QR code.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "convert_hsl",
+        "description": "Converts an HSL color code to other color codes such as Hex, RGB, and CMYK using the Convexity API.",
+        "parameters": {
+          "s": {
+            "description": "The saturation component of the HSL color code.",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "The hue component of the HSL color code.",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "The lightness component of the HSL color code.",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "convert_hsl",
+        "arguments": {
+          "s": 80,
+          "h": 60,
+          "l": 60
+        }
+      }
+    ],
+    "family": "convert_hsl",
+    "rendered_tokens": 357,
+    "supervised_tokens": 27
+  },
+  {
+    "id": "8678",
+    "query": "What are the conversions for an HSL color with hue 180, saturation 50, and lightness 75?",
+    "tools": [
+      {
+        "name": "list_specific_qr_code",
+        "description": "Fetches information about a specific registered QR code using the provided reference and RapidAPI key.",
+        "parameters": {
+          "ref": {
+            "description": "The reference identifier for the specific QR code.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "convert_hsl",
+        "description": "Converts an HSL color code to other color codes such as Hex, RGB, and CMYK using the Convexity API.",
+        "parameters": {
+          "s": {
+            "description": "The saturation component of the HSL color code.",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "The hue component of the HSL color code.",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "The lightness component of the HSL color code.",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "convert_hsl",
+        "arguments": {
+          "s": 50,
+          "h": 180,
+          "l": 75
+        }
+      }
+    ],
+    "family": "convert_hsl",
+    "rendered_tokens": 360,
+    "supervised_tokens": 28
+  },
+  {
+    "id": "39030",
+    "query": "I need to fetch users from page 30. I'm not sure how to do it. Can you guide me?",
+    "tools": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "description": "Fetches a list of users from a specified page, with each page containing up to one hundred users, using the provided RapidAPI key.",
+        "parameters": {
+          "page": {
+            "description": "The page number to retrieve the users from.",
+            "type": "int",
+            "default": "0"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "arguments": {
+          "page": 30
+        }
+      }
+    ],
+    "family": "get_all_users_paged_by_hundreds",
+    "rendered_tokens": 230,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "36419",
+    "query": "Fetch the detailed information for the school with the encrypted ID '1234567890ABCDEF1234'.",
+    "tools": [
+      {
+        "name": "school_detail",
+        "description": "Fetch detailed information about a school using the encrypted school ID (sekolah_id_enkrip).",
+        "parameters": {
+          "sekolah_id_enkrip": {
+            "description": "The encrypted ID of the school for which details are to be fetched. Default is '5DB43D89E6BFB0F76FBC'.",
+            "type": "str",
+            "default": "5DB43D89E6BFB0F76FBC"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "school_detail",
+        "arguments": {
+          "sekolah_id_enkrip": "1234567890ABCDEF1234"
+        }
+      }
+    ],
+    "family": "school_detail",
+    "rendered_tokens": 284,
+    "supervised_tokens": 36
+  },
+  {
+    "id": "14515",
+    "query": "Can you provide the details of the proxy test for request '67890'?",
+    "tools": [
+      {
+        "name": "retrieve_proxy_information",
+        "description": "Retrieves proxy test result information for a given user request ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The user request ID received from the response of sending a proxy for checking.",
+            "type": "str",
+            "default": "6416ab3d3c01efbe45e97675"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "retrieve_proxy_information",
+        "arguments": {
+          "is_id": "67890"
+        }
+      }
+    ],
+    "family": "retrieve_proxy_information",
+    "rendered_tokens": 230,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "33354",
+    "query": "Fetch me some random user data, let's say 7 profiles, and see if there's any pattern in their emails or names.",
+    "tools": [
+      {
+        "name": "getrandomuser",
+        "description": "Fetches random user data such as name, e-mail, etc., from the specified API.",
+        "parameters": {
+          "count": {
+            "description": "The number of user records to retrieve. Defaults to -2 if not specified.",
+            "type": "int",
+            "default": "-2"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getrandomuser",
+        "arguments": {
+          "count": 7
+        }
+      }
+    ],
+    "family": "getrandomuser",
+    "rendered_tokens": 219,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "37143",
+    "query": "Calculate the electric field produced by a charge of 15 coulombs at a distance of 1 meter in a medium with permitivity of 5.5e-12.",
+    "tools": [
+      {
+        "name": "calculate_electric_field",
+        "description": "Calculate the electric field produced by a charge at a certain distance.",
+        "parameters": {
+          "charge": {
+            "description": "Charge in coulombs producing the electric field.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "distance": {
+            "description": "Distance from the charge in meters where the field is being measured.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "permitivity": {
+            "description": "Permitivity of the space where field is being calculated, default is 8.854e-12.",
+            "type": "float"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "calculate_electric_field",
+        "arguments": {
+          "charge": 15,
+          "distance": 1,
+          "permitivity": 5.5e-12
+        }
+      }
+    ],
+    "family": "calculate_electric_field",
+    "rendered_tokens": 323,
+    "supervised_tokens": 33
+  },
+  {
+    "id": "45807",
+    "query": "What is the registrant contact information for the domain linkedin.com?",
+    "tools": [
+      {
+        "name": "whois",
+        "description": "Fetches WHOIS data for a given domain.",
+        "parameters": {
+          "q": {
+            "description": "The domain name to query for WHOIS information.",
+            "type": "str",
+            "default": "google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "whois",
+        "arguments": {
+          "q": "linkedin.com"
+        }
+      }
+    ],
+    "family": "whois",
+    "rendered_tokens": 191,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "58586",
+    "query": "I'm curious if 'mycompanyname.io' is taken. Can you check it for me?",
+    "tools": [
+      {
+        "name": "io",
+        "description": "Check if an .io domain with the given name is registered using the RapidAPI toolbench API.",
+        "parameters": {
+          "name": {
+            "description": "The domain name to check.",
+            "type": "str",
+            "default": "testdomain"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "io",
+        "arguments": {
+          "name": "mycompanyname"
+        }
+      }
+    ],
+    "family": "io",
+    "rendered_tokens": 202,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "49567",
+    "query": "Fetch 50 random user records from the specified API and return the raw response text.",
+    "tools": [
+      {
+        "name": "getrandomuser",
+        "description": "Fetches random user data such as name, e-mail, etc., from the specified API.",
+        "parameters": {
+          "count": {
+            "description": "The number of user records to retrieve. Defaults to -2 if not specified.",
+            "type": "int",
+            "default": "-2"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getrandomuser",
+        "arguments": {
+          "count": 50
+        }
+      }
+    ],
+    "family": "getrandomuser",
+    "rendered_tokens": 211,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "7955",
+    "query": "Could you fetch the LinkedIn profile data for the username 'john_doe_engineer'?",
+    "tools": [
+      {
+        "name": "get_profile_data",
+        "description": "Retrieves profile data from the LinkedIn Profile Data API using a given username.",
+        "parameters": {
+          "username": {
+            "description": "The LinkedIn username for which to retrieve profile data.",
+            "type": "str",
+            "default": "username"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_profile_data",
+        "arguments": {
+          "username": "john_doe_engineer"
+        }
+      }
+    ],
+    "family": "get_profile_data",
+    "rendered_tokens": 204,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "16967",
+    "query": "Fetch 10 records of weather data for the region of New York.",
+    "tools": [
+      {
+        "name": "fetch_by_type_and_region",
+        "description": "Fetch records from the API based on the given type, limit, and region.",
+        "parameters": {
+          "type": {
+            "description": "The type of records to fetch. Refer to the README for accepted types.",
+            "type": "str",
+            "default": "Hill"
+          },
+          "limit": {
+            "description": "The maximum number of records to fetch.",
+            "type": "int",
+            "default": "5"
+          },
+          "region": {
+            "description": "The region from which to fetch records.",
+            "type": "str",
+            "default": "Eastern"
+          }
+        }
+      },
+      {
+        "name": "get_hillshading_tile",
+        "description": "Fetches a hillshading raster tile as a PNG.",
+        "parameters": {
+          "x": {
+            "description": "The x coordinate of the tile.",
+            "type": "int",
+            "default": "756"
+          },
+          "version": {
+            "description": "The version of the hillshading tile, either 'v1' or 'v2'.",
+            "type": "str",
+            "default": "v2"
+          },
+          "z": {
+            "description": "The zoom level of the tile.",
+            "type": "int",
+            "default": "11"
+          },
+          "y": {
+            "description": "The y coordinate of the tile.",
+            "type": "int",
+            "default": "805"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "fetch_by_type_and_region",
+        "arguments": {
+          "type": "weather",
+          "limit": 10,
+          "region": "New York"
+        }
+      }
+    ],
+    "family": "fetch_by_type_and_region",
+    "rendered_tokens": 426,
+    "supervised_tokens": 28
+  },
+  {
+    "id": "46543",
+    "query": "Can you help me convert the following text into fancy text format using the Ajith Fancy Text API: 'Python is a versatile language used for web development, data analysis, AI, and more'.",
+    "tools": [
+      {
+        "name": "text",
+        "description": "Converts the input text into a fancy text format using the Ajith Fancy Text API.",
+        "parameters": {
+          "text": {
+            "description": "The text to be converted into fancy text.",
+            "type": "str",
+            "default": "This is funny."
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "text",
+        "arguments": {
+          "text": "Python is a versatile language used for web development, data analysis, AI, and more"
+        }
+      }
+    ],
+    "family": "text",
+    "rendered_tokens": 237,
+    "supervised_tokens": 30
+  },
+  {
+    "id": "52231",
+    "query": "Fetch 5 random user records from the specified API.",
+    "tools": [
+      {
+        "name": "getrandomuser",
+        "description": "Fetches random user data such as name, e-mail, etc., from the specified API.",
+        "parameters": {
+          "count": {
+            "description": "The number of user records to retrieve. Defaults to -2 if not specified.",
+            "type": "int",
+            "default": "-2"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getrandomuser",
+        "arguments": {
+          "count": 5
+        }
+      }
+    ],
+    "family": "getrandomuser",
+    "rendered_tokens": 203,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "6643",
+    "query": "Which image is linked to the unique stage that has an ID of 404?",
+    "tools": [
+      {
+        "name": "uniquestageimage",
+        "description": "Retrieves the image for a specific Motorsport unique stage using the provided stage ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The unique stage ID for which to retrieve the image.",
+            "type": "int",
+            "default": 40
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "uniquestageimage",
+        "arguments": {
+          "is_id": 404
+        }
+      }
+    ],
+    "family": "uniquestageimage",
+    "rendered_tokens": 211,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "44401",
+    "query": "What are the albums of the artist whose Spotify URL is 'https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of'?",
+    "tools": [
+      {
+        "name": "get_artist_s_albums",
+        "description": "Fetches and returns basic details about the albums of an artist from a given Spotify URL.",
+        "parameters": {
+          "spotify_url": {
+            "description": "The URL of the artist's Spotify page.",
+            "type": "str",
+            "default": "https://open.spotify.com/artist/1nIUhcKHnK6iyumRyoV68C"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_artist_s_albums",
+        "arguments": {
+          "spotify_url": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+        }
+      }
+    ],
+    "family": "get_artist_s_albums",
+    "rendered_tokens": 273,
+    "supervised_tokens": 42
+  },
+  {
+    "id": "42794",
+    "query": "I am a researcher studying the Axie Infinity contract, but I only have the contract symbol. Can you help me find the contract details? (Hint: The contract address is 0x853d955acef822db058eb8505911ed77f175b99e.)",
+    "tools": [
+      {
+        "name": "retrieving_a_contract",
+        "description": "Fetches detailed information about an asset contract from the OpenSea API.",
+        "parameters": {
+          "asset_contract_address": {
+            "description": "The address of the asset contract to retrieve information for.",
+            "type": "str",
+            "default": "0x4372f4d950d30c6f12c7228ade77d6cc019404c9"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "retrieving_a_contract",
+        "arguments": {
+          "asset_contract_address": "0x853d955acef822db058eb8505911ed77f175b99e"
+        }
+      }
+    ],
+    "family": "retrieving_a_contract",
+    "rendered_tokens": 338,
+    "supervised_tokens": 56
+  },
+  {
+    "id": "43703",
+    "query": "What are the details of the event with identifier '12345'?",
+    "tools": [
+      {
+        "name": "get_specific_event_information",
+        "description": "Fetch and return information for a specific event using the event identifier.",
+        "parameters": {
+          "eventidentifier": {
+            "description": "Unique identifier for the event to retrieve booking information.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_specific_event_information",
+        "arguments": {
+          "eventidentifier": "12345"
+        }
+      }
+    ],
+    "family": "get_specific_event_information",
+    "rendered_tokens": 202,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "48623",
+    "query": "What is the country information for the IP address 8.8.8.8?",
+    "tools": [
+      {
+        "name": "getcountrybyip",
+        "description": "Retrieves the country information for a given IP address using the Country by IP API. Both IPv4 and IPv6 are supported.",
+        "parameters": {
+          "ip": {
+            "description": "The IP address for which to retrieve the country information.",
+            "type": "str",
+            "default": "4.98.25.25"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getcountrybyip",
+        "arguments": {
+          "ip": "8.8.8.8"
+        }
+      }
+    ],
+    "family": "getcountrybyip",
+    "rendered_tokens": 230,
+    "supervised_tokens": 23
+  },
+  {
+    "id": "36241",
+    "query": "Fetch the YouTube playlist information with ID 'PL9QRS0TUV1WXY2Z'.",
+    "tools": [
+      {
+        "name": "playlist",
+        "description": "Fetch the details of a YouTube playlist using the provided API key.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the YouTube playlist.",
+            "type": "str",
+            "default": "PLV3BLrRejJR_8XjiMrbev1_7RjIZTg1qb"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "playlist",
+        "arguments": {
+          "is_id": "PL9QRS0TUV1WXY2Z"
+        }
+      }
+    ],
+    "family": "playlist",
+    "rendered_tokens": 229,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "30482",
+    "query": "Retrieve information for the tide station in Houston with ID '3333330'.",
+    "tools": [
+      {
+        "name": "get_station_information",
+        "description": "Get information about a NOAA tide station using its ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The station ID to retrieve information for.",
+            "type": "str",
+            "default": "8570283"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_station_information",
+        "arguments": {
+          "is_id": "3333330"
+        }
+      }
+    ],
+    "family": "get_station_information",
+    "rendered_tokens": 209,
+    "supervised_tokens": 23
+  },
+  {
+    "id": "39025",
+    "query": "Could you please fetch the product information for product ID 171819? Also, I'm interested in knowing the price of the product. Is it possible to extract this information from the product details?",
+    "tools": [
+      {
+        "name": "get_product",
+        "description": "Fetches a product's information from the API using the given product ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the product to retrieve information for.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_product",
+        "arguments": {
+          "is_id": 171819
+        }
+      }
+    ],
+    "family": "get_product",
+    "rendered_tokens": 228,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "19362",
+    "query": "Fetch details for product 24680, known for its durability.",
+    "tools": [
+      {
+        "name": "get_product",
+        "description": "Fetches a product's information from the API using the given product ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the product to retrieve information for.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_product",
+        "arguments": {
+          "is_id": 24680
+        }
+      }
+    ],
+    "family": "get_product",
+    "rendered_tokens": 200,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "3967",
+    "query": "Retrieve information about the school with encrypted ID 'A1B2C3D4E5F6G7H8I9J0K'",
+    "tools": [
+      {
+        "name": "school_detail",
+        "description": "Fetch detailed information about a school using the encrypted school ID (sekolah_id_enkrip).",
+        "parameters": {
+          "sekolah_id_enkrip": {
+            "description": "The encrypted ID of the school for which details are to be fetched. Default is '5DB43D89E6BFB0F76FBC'.",
+            "type": "str",
+            "default": "5DB43D89E6BFB0F76FBC"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "school_detail",
+        "arguments": {
+          "sekolah_id_enkrip": "A1B2C3D4E5F6G7H8I9J0K"
+        }
+      }
+    ],
+    "family": "school_detail",
+    "rendered_tokens": 291,
+    "supervised_tokens": 41
+  },
+  {
+    "id": "55611",
+    "query": "I'm trying to log in to the system but I keep getting an error. My username is 'janedoe' and my password is 'securepass'. Can you help me figure out what's wrong?",
+    "tools": [
+      {
+        "name": "loginuser",
+        "description": "Logs a user into the system using the provided username and password.",
+        "parameters": {
+          "password": {
+            "description": "The password for login in clear text.",
+            "type": "str",
+            "default": "string"
+          },
+          "username": {
+            "description": "The username for login.",
+            "type": "str",
+            "default": "string"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "loginuser",
+        "arguments": {
+          "password": "securepass",
+          "username": "janedoe"
+        }
+      }
+    ],
+    "family": "loginuser",
+    "rendered_tokens": 249,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "23119",
+    "query": "Retrieve 10 user details for a marketing analysis.",
+    "tools": [
+      {
+        "name": "getrandomuser",
+        "description": "Fetches random user data such as name, e-mail, etc., from the specified API.",
+        "parameters": {
+          "count": {
+            "description": "The number of user records to retrieve. Defaults to -2 if not specified.",
+            "type": "int",
+            "default": "-2"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getrandomuser",
+        "arguments": {
+          "count": 10
+        }
+      }
+    ],
+    "family": "getrandomuser",
+    "rendered_tokens": 204,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "30547",
+    "query": "What is the weight category for a BMI of 27?",
+    "tools": [
+      {
+        "name": "weight_category",
+        "description": "Retrieve the weight category of an individual based on their BMI.",
+        "parameters": {
+          "bmi": {
+            "description": "Body Mass Index value for which to determine the weight category.",
+            "type": "int",
+            "default": "19.2"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "weight_category",
+        "arguments": {
+          "bmi": 27
+        }
+      }
+    ],
+    "family": "weight_category",
+    "rendered_tokens": 198,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "10581",
+    "query": "Convert HSL color with hue 240, saturation 100, and lightness 50 to other formats.",
+    "tools": [
+      {
+        "name": "list_specific_qr_code",
+        "description": "Fetches information about a specific registered QR code using the provided reference and RapidAPI key.",
+        "parameters": {
+          "ref": {
+            "description": "The reference identifier for the specific QR code.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "convert_hsl",
+        "description": "Converts an HSL color code to other color codes such as Hex, RGB, and CMYK using the Convexity API.",
+        "parameters": {
+          "s": {
+            "description": "The saturation component of the HSL color code.",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "The hue component of the HSL color code.",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "The lightness component of the HSL color code.",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "convert_hsl",
+        "arguments": {
+          "s": 100,
+          "h": 240,
+          "l": 50
+        }
+      }
+    ],
+    "family": "convert_hsl",
+    "rendered_tokens": 360,
+    "supervised_tokens": 29
+  },
+  {
+    "id": "46761",
+    "query": "Fetch information about the competitions for the Premier League, specifying its full name.",
+    "tools": [
+      {
+        "name": "competitions",
+        "description": "Fetches information about football competitions using the Premier League Upcoming Matches API.",
+        "parameters": {
+          "abbr": {
+            "description": "Abbreviation of the league (default is 'EN_PR').",
+            "type": "str",
+            "default": "EN_PR"
+          },
+          "name": {
+            "description": "Name of the league (default is 'Premier League').",
+            "type": "str",
+            "default": "Premier League"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "competitions",
+        "arguments": {
+          "name": "Premier League"
+        }
+      }
+    ],
+    "family": "competitions",
+    "rendered_tokens": 236,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "51199",
+    "query": "Check if the username 'john_doe' is available on 9gag.",
+    "tools": [
+      {
+        "name": "get_9gag",
+        "description": "Checks if a given username is available on 9gag using the RapidAPI service.",
+        "parameters": {
+          "username": {
+            "description": "The username to check for availability on 9gag.",
+            "type": "str",
+            "default": "username"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_9gag",
+        "arguments": {
+          "username": "john_doe"
+        }
+      }
+    ],
+    "family": "get_9gag",
+    "rendered_tokens": 210,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "49968",
+    "query": "I'm looking for the product information for the product with ID 111213, but I'm not sure if this ID exists. Please verify if the product exists and if so, return the product details.",
+    "tools": [
+      {
+        "name": "get_product",
+        "description": "Fetches a product's information from the API using the given product ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the product to retrieve information for.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_product",
+        "arguments": {
+          "is_id": 111213
+        }
+      }
+    ],
+    "family": "get_product",
+    "rendered_tokens": 230,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "42286",
+    "query": "What is the electric field intensity produced by a charge of 30 coulombs at a distance of 150 meters in air, assuming the permitivity of air is 8.854e-12?",
+    "tools": [
+      {
+        "name": "calculate_electric_field",
+        "description": "Calculate the electric field produced by a charge at a certain distance.",
+        "parameters": {
+          "charge": {
+            "description": "Charge in coulombs producing the electric field.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "distance": {
+            "description": "Distance from the charge in meters where the field is being measured.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "permitivity": {
+            "description": "Permitivity of the space where field is being calculated, default is 8.854e-12.",
+            "type": "float"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "calculate_electric_field",
+        "arguments": {
+          "charge": 30,
+          "distance": 150,
+          "permitivity": 8.854e-12
+        }
+      }
+    ],
+    "family": "calculate_electric_field",
+    "rendered_tokens": 336,
+    "supervised_tokens": 37
+  },
+  {
+    "id": "46084",
+    "query": "Get the last events for the team with ID 789 on page 2.",
+    "tools": [
+      {
+        "name": "teamlastevents",
+        "description": "Fetches the last events for a specific team using the MMA RapidAPI.",
+        "parameters": {
+          "page": {
+            "description": "Zero-based page number to paginate through the events.",
+            "type": "int",
+            "default": ""
+          },
+          "is_id": {
+            "description": "The ID of the team for which the last events are to be retrieved.",
+            "type": "int",
+            "default": 465171
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "teamlastevents",
+        "arguments": {
+          "page": 2,
+          "is_id": 789
+        }
+      }
+    ],
+    "family": "teamlastevents",
+    "rendered_tokens": 245,
+    "supervised_tokens": 23
+  },
+  {
+    "id": "5574",
+    "query": "Retrieve the racing statistics for the horse that is currently leading in the jockey's championship. Assume the ID is '87654'.",
+    "tools": [
+      {
+        "name": "horse_stats",
+        "description": "Fetches the racing statistics for a specified horse using the RapidAPI Horse Racing API.",
+        "parameters": {
+          "id_horse": {
+            "description": "The unique identifier of the horse.",
+            "type": "str",
+            "default": "230380"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "horse_stats",
+        "arguments": {
+          "id_horse": "87654"
+        }
+      }
+    ],
+    "family": "horse_stats",
+    "rendered_tokens": 221,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "10742",
+    "query": "Fetch details of YouTube community post with ID 'UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ'.",
+    "tools": [
+      {
+        "name": "community_post_details",
+        "description": "Fetches details of a community post from YouTube using RapidAPI.",
+        "parameters": {
+          "is_id": {
+            "description": "Community post ID. Default is 'UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ'.",
+            "type": "str",
+            "default": "UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "community_post_details",
+        "arguments": {
+          "is_id": "UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ"
+        }
+      }
+    ],
+    "family": "community_post_details",
+    "rendered_tokens": 289,
+    "supervised_tokens": 41
+  },
+  {
+    "id": "45863",
+    "query": "Get the detailed information for the school with the encrypted ID 'ABCD1234EFGH5678'.",
+    "tools": [
+      {
+        "name": "school_detail",
+        "description": "Fetch detailed information about a school using the encrypted school ID (sekolah_id_enkrip).",
+        "parameters": {
+          "sekolah_id_enkrip": {
+            "description": "The encrypted ID of the school for which details are to be fetched. Default is '5DB43D89E6BFB0F76FBC'.",
+            "type": "str",
+            "default": "5DB43D89E6BFB0F76FBC"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "school_detail",
+        "arguments": {
+          "sekolah_id_enkrip": "ABCD1234EFGH5678"
+        }
+      }
+    ],
+    "family": "school_detail",
+    "rendered_tokens": 278,
+    "supervised_tokens": 33
+  },
+  {
+    "id": "45817",
+    "query": "What is the test result information for user request ID 'abc123'?",
+    "tools": [
+      {
+        "name": "retrieve_proxy_information",
+        "description": "Retrieves proxy test result information for a given user request ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The user request ID received from the response of sending a proxy for checking.",
+            "type": "str",
+            "default": "6416ab3d3c01efbe45e97675"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "retrieve_proxy_information",
+        "arguments": {
+          "is_id": "abc123"
+        }
+      }
+    ],
+    "family": "retrieve_proxy_information",
+    "rendered_tokens": 227,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "40681",
+    "query": "What is the WHOIS data for the domain 'google.com'?",
+    "tools": [
+      {
+        "name": "whois",
+        "description": "Fetches WHOIS data for a given domain.",
+        "parameters": {
+          "q": {
+            "description": "The domain name to query for WHOIS information.",
+            "type": "str",
+            "default": "google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "whois",
+        "arguments": {
+          "q": "google.com"
+        }
+      }
+    ],
+    "family": "whois",
+    "rendered_tokens": 190,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "34990",
+    "query": "I need the product information for product ID 232425. However, I'm not sure if this product is still available for sale. Can you check if the product is still in stock?",
+    "tools": [
+      {
+        "name": "get_product",
+        "description": "Fetches a product's information from the API using the given product ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the product to retrieve information for.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_product",
+        "arguments": {
+          "is_id": 232425
+        }
+      }
+    ],
+    "family": "get_product",
+    "rendered_tokens": 227,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "44826",
+    "query": "Retrieve data for the business unit behind 'newbusiness.xyz'.",
+    "tools": [
+      {
+        "name": "business_units_search_by_domain",
+        "description": "Searches for a business unit by its domain name using the Unofficial Trust Pilot API.",
+        "parameters": {
+          "name": {
+            "description": "The domain name to search for.",
+            "type": "str",
+            "default": "google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "business_units_search_by_domain",
+        "arguments": {
+          "name": "newbusiness.xyz"
+        }
+      }
+    ],
+    "family": "business_units_search_by_domain",
+    "rendered_tokens": 201,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "40496",
+    "query": "I'm looking for info about the TV show 'tt0944947'. I'm not sure if that's the right IMDb ID, though. Could you check and get the details if it's correct?",
+    "tools": [
+      {
+        "name": "get_by_imdb_id",
+        "description": "Fetch movie or TV show information by IMDb ID using the specified RapidAPI key.",
+        "parameters": {
+          "i": {
+            "description": "A valid IMDb ID for the movie or TV show.",
+            "type": "str",
+            "default": "tt0073195"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_by_imdb_id",
+        "arguments": {
+          "i": "tt0944947"
+        }
+      }
+    ],
+    "family": "get_by_imdb_id",
+    "rendered_tokens": 247,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "28100",
+    "query": "Planning a trip to 94102, what's the local tax rate?",
+    "tools": [
+      {
+        "name": "tax_rate",
+        "description": "Retrieve the tax rate for a given zip code using the Toolbench RapidAPI service.",
+        "parameters": {
+          "zipcode": {
+            "description": "The zip code for which to retrieve the tax rate.",
+            "type": "str",
+            "default": "90210"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "tax_rate",
+        "arguments": {
+          "zipcode": "94102"
+        }
+      }
+    ],
+    "family": "tax_rate",
+    "rendered_tokens": 209,
+    "supervised_tokens": 19
+  },
+  {
+    "id": "1705",
+    "query": "What is the WHOIS information for google.com?",
+    "tools": [
+      {
+        "name": "whois",
+        "description": "Fetches WHOIS data for a given domain.",
+        "parameters": {
+          "q": {
+            "description": "The domain name to query for WHOIS information.",
+            "type": "str",
+            "default": "google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "whois",
+        "arguments": {
+          "q": "google.com"
+        }
+      }
+    ],
+    "family": "whois",
+    "rendered_tokens": 187,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "51564",
+    "query": "I need the last events for the team with ID 192021 on page 6.",
+    "tools": [
+      {
+        "name": "teamlastevents",
+        "description": "Fetches the last events for a specific team using the MMA RapidAPI.",
+        "parameters": {
+          "page": {
+            "description": "Zero-based page number to paginate through the events.",
+            "type": "int",
+            "default": ""
+          },
+          "is_id": {
+            "description": "The ID of the team for which the last events are to be retrieved.",
+            "type": "int",
+            "default": 465171
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "teamlastevents",
+        "arguments": {
+          "page": 6,
+          "is_id": 192021
+        }
+      }
+    ],
+    "family": "teamlastevents",
+    "rendered_tokens": 252,
+    "supervised_tokens": 26
+  },
+  {
+    "id": "53543",
+    "query": "Check if the Minecraft username 'Player123' is available.",
+    "tools": [
+      {
+        "name": "minecraft",
+        "description": "Check if a given Minecraft username is available using the Toolbench RapidAPI service.",
+        "parameters": {
+          "username": {
+            "description": "The Minecraft username to be checked for availability.",
+            "type": "str",
+            "default": "username"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "minecraft",
+        "arguments": {
+          "username": "Player123"
+        }
+      }
+    ],
+    "family": "minecraft",
+    "rendered_tokens": 195,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "23099",
+    "query": "Fetch SEO summary for the website https://www.example.com.",
+    "tools": [
+      {
+        "name": "summary",
+        "description": "Fetches a summary of SEO metrics for a given URL using the Toolbench RapidAPI service.",
+        "parameters": {
+          "url": {
+            "description": "The URL of the website for which the SEO summary is to be fetched.",
+            "type": "str",
+            "default": "https://google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "summary",
+        "arguments": {
+          "url": "https://www.example.com"
+        }
+      }
+    ],
+    "family": "summary",
+    "rendered_tokens": 206,
+    "supervised_tokens": 18
+  },
+  {
+    "id": "55322",
+    "query": "Find me a random appetizer recipe that includes spinach as the main ingredient.",
+    "tools": [
+      {
+        "name": "appetizer_ingredient",
+        "description": "Fetches a random appetizer recipe containing the specified ingredient using the Recipe Finder API.",
+        "parameters": {
+          "ingredient": {
+            "description": "The main ingredient to include in the appetizer recipe.",
+            "type": "str",
+            "default": "flour"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "appetizer_ingredient",
+        "arguments": {
+          "ingredient": "spinach"
+        }
+      }
+    ],
+    "family": "appetizer_ingredient",
+    "rendered_tokens": 206,
+    "supervised_tokens": 19
+  },
+  {
+    "id": "2852",
+    "query": "Provide the WHOIS record for facebook.com.",
+    "tools": [
+      {
+        "name": "whois",
+        "description": "Fetches WHOIS data for a given domain.",
+        "parameters": {
+          "q": {
+            "description": "The domain name to query for WHOIS information.",
+            "type": "str",
+            "default": "google.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "whois",
+        "arguments": {
+          "q": "facebook.com"
+        }
+      }
+    ],
+    "family": "whois",
+    "rendered_tokens": 186,
+    "supervised_tokens": 16
+  },
+  {
+    "id": "42168",
+    "query": "Can you help me find the details of the movie with IMDb ID 'tt0111161'? I also need to know the IMDb rating. Can you do that?",
+    "tools": [
+      {
+        "name": "get_by_imdb_id",
+        "description": "Fetch movie or TV show information by IMDb ID using the specified RapidAPI key.",
+        "parameters": {
+          "i": {
+            "description": "A valid IMDb ID for the movie or TV show.",
+            "type": "str",
+            "default": "tt0073195"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_by_imdb_id",
+        "arguments": {
+          "i": "tt0111161"
+        }
+      }
+    ],
+    "family": "get_by_imdb_id",
+    "rendered_tokens": 239,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "39951",
+    "query": "I need to fetch the users from page 10. Could you provide the function call for that?",
+    "tools": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "description": "Fetches a list of users from a specified page, with each page containing up to one hundred users, using the provided RapidAPI key.",
+        "parameters": {
+          "page": {
+            "description": "The page number to retrieve the users from.",
+            "type": "int",
+            "default": "0"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "arguments": {
+          "page": 10
+        }
+      }
+    ],
+    "family": "get_all_users_paged_by_hundreds",
+    "rendered_tokens": 226,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "38665",
+    "query": "Retrieve the detailed information for the school with the encrypted ID '9876543210FEDCBA9876'.",
+    "tools": [
+      {
+        "name": "school_detail",
+        "description": "Fetch detailed information about a school using the encrypted school ID (sekolah_id_enkrip).",
+        "parameters": {
+          "sekolah_id_enkrip": {
+            "description": "The encrypted ID of the school for which details are to be fetched. Default is '5DB43D89E6BFB0F76FBC'.",
+            "type": "str",
+            "default": "5DB43D89E6BFB0F76FBC"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "school_detail",
+        "arguments": {
+          "sekolah_id_enkrip": "9876543210FEDCBA9876"
+        }
+      }
+    ],
+    "family": "school_detail",
+    "rendered_tokens": 288,
+    "supervised_tokens": 38
+  },
+  {
+    "id": "59233",
+    "query": "If the permittivity of a medium is 4e-10 farads per meter, what is the electric field produced by a charge of 6 coulombs at a distance of 5 meters?",
+    "tools": [
+      {
+        "name": "calculate_electric_field",
+        "description": "Calculate the electric field produced by a charge at a certain distance.",
+        "parameters": {
+          "charge": {
+            "description": "Charge in coulombs producing the electric field.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "distance": {
+            "description": "Distance from the charge in meters where the field is being measured.",
+            "type": "int",
+            "default": 8.854e-12
+          },
+          "permitivity": {
+            "description": "Permitivity of the space where field is being calculated, default is 8.854e-12.",
+            "type": "float"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "calculate_electric_field",
+        "arguments": {
+          "charge": 6,
+          "distance": 5,
+          "permitivity": 4e-10
+        }
+      }
+    ],
+    "family": "calculate_electric_field",
+    "rendered_tokens": 325,
+    "supervised_tokens": 30
+  },
+  {
+    "id": "24969",
+    "query": "Could you retrieve information on the asset contract 0x345vwx for an educational content NFT?",
+    "tools": [
+      {
+        "name": "retrieving_a_contract",
+        "description": "Fetches detailed information about an asset contract from the OpenSea API.",
+        "parameters": {
+          "asset_contract_address": {
+            "description": "The address of the asset contract to retrieve information for.",
+            "type": "str",
+            "default": "0x4372f4d950d30c6f12c7228ade77d6cc019404c9"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "retrieving_a_contract",
+        "arguments": {
+          "asset_contract_address": "0x345vwx"
+        }
+      }
+    ],
+    "family": "retrieving_a_contract",
+    "rendered_tokens": 257,
+    "supervised_tokens": 26
+  },
+  {
+    "id": "30502",
+    "query": "Create 5 profiles for a demographic study involving different age groups and professions.",
+    "tools": [
+      {
+        "name": "random_profiles",
+        "description": "Generates a list of fake user profiles given a specified size using the Toolbench RapidAPI service.",
+        "parameters": {
+          "size": {
+            "description": "A string indicating the number of fake user profiles to generate. Defaults to '1'.",
+            "type": "str",
+            "default": "5"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "random_profiles",
+        "arguments": {
+          "size": "5"
+        }
+      }
+    ],
+    "family": "random_profiles",
+    "rendered_tokens": 208,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "51013",
+    "query": "I'm trying to find information about the movie with IMDb ID 'tt0111161'. Can you help me with that?",
+    "tools": [
+      {
+        "name": "get_by_imdb_id",
+        "description": "Fetch movie or TV show information by IMDb ID using the specified RapidAPI key.",
+        "parameters": {
+          "i": {
+            "description": "A valid IMDb ID for the movie or TV show.",
+            "type": "str",
+            "default": "tt0073195"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_by_imdb_id",
+        "arguments": {
+          "i": "tt0111161"
+        }
+      }
+    ],
+    "family": "get_by_imdb_id",
+    "rendered_tokens": 231,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "53036",
+    "query": "Could you provide me with the racing statistics for the horse with the ID '78901' over the past year?",
+    "tools": [
+      {
+        "name": "horse_stats",
+        "description": "Fetches the racing statistics for a specified horse using the RapidAPI Horse Racing API.",
+        "parameters": {
+          "id_horse": {
+            "description": "The unique identifier of the horse.",
+            "type": "str",
+            "default": "230380"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "horse_stats",
+        "arguments": {
+          "id_horse": "78901"
+        }
+      }
+    ],
+    "family": "horse_stats",
+    "rendered_tokens": 218,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "55976",
+    "query": "Is the business email, info@examplebusiness.com, a valid email address?",
+    "tools": [
+      {
+        "name": "check_email",
+        "description": "Validates an email address using the RapidAPI Email Checker and Validator service.",
+        "parameters": {
+          "email": {
+            "description": "The email address to validate.",
+            "type": "str",
+            "default": "marod29733@lubde.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "check_email",
+        "arguments": {
+          "email": "info@examplebusiness.com"
+        }
+      }
+    ],
+    "family": "check_email",
+    "rendered_tokens": 205,
+    "supervised_tokens": 18
+  },
+  {
+    "id": "53085",
+    "query": "I want to log in to the system with my username 'guest' and password 'guestpass'. However, I'm not sure if I need to include the API key. Can you help me with that?",
+    "tools": [
+      {
+        "name": "loginuser",
+        "description": "Logs a user into the system using the provided username and password.",
+        "parameters": {
+          "password": {
+            "description": "The password for login in clear text.",
+            "type": "str",
+            "default": "string"
+          },
+          "username": {
+            "description": "The username for login.",
+            "type": "str",
+            "default": "string"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "loginuser",
+        "arguments": {
+          "password": "guestpass",
+          "username": "guest"
+        }
+      }
+    ],
+    "family": "loginuser",
+    "rendered_tokens": 247,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "11882",
+    "query": "Retrieve information about the community post with ID 'Ugz_YZqLmIwZG9_6a0MPHWCmYgbhifgwIZ'.",
+    "tools": [
+      {
+        "name": "community_post_details",
+        "description": "Fetches details of a community post from YouTube using RapidAPI.",
+        "parameters": {
+          "is_id": {
+            "description": "Community post ID. Default is 'UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ'.",
+            "type": "str",
+            "default": "UgkxCWeKPiIOLsnh_5a0MPHWCmYgbhifgwIZ"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "community_post_details",
+        "arguments": {
+          "is_id": "Ugz_YZqLmIwZG9_6a0MPHWCmYgbhifgwIZ"
+        }
+      }
+    ],
+    "family": "community_post_details",
+    "rendered_tokens": 291,
+    "supervised_tokens": 42
+  },
+  {
+    "id": "52518",
+    "query": "I need to log in to the system with my username 'johndoe' and password 'password123'. Could you help me with that?",
+    "tools": [
+      {
+        "name": "loginuser",
+        "description": "Logs a user into the system using the provided username and password.",
+        "parameters": {
+          "password": {
+            "description": "The password for login in clear text.",
+            "type": "str",
+            "default": "string"
+          },
+          "username": {
+            "description": "The username for login.",
+            "type": "str",
+            "default": "string"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "loginuser",
+        "arguments": {
+          "password": "password123",
+          "username": "johndoe"
+        }
+      }
+    ],
+    "family": "loginuser",
+    "rendered_tokens": 242,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "4201",
+    "query": "What are the racing statistics for the oldest horse in the stable? Assume the ID is '97531'.",
+    "tools": [
+      {
+        "name": "horse_stats",
+        "description": "Fetches the racing statistics for a specified horse using the RapidAPI Horse Racing API.",
+        "parameters": {
+          "id_horse": {
+            "description": "The unique identifier of the horse.",
+            "type": "str",
+            "default": "230380"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "horse_stats",
+        "arguments": {
+          "id_horse": "97531"
+        }
+      }
+    ],
+    "family": "horse_stats",
+    "rendered_tokens": 216,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "41005",
+    "query": "I want to log in to the system with my username 'admin' and password 'adminpass123', but I'm not sure if I should include the API key. Can you help me with that?",
+    "tools": [
+      {
+        "name": "loginuser",
+        "description": "Logs a user into the system using the provided username and password.",
+        "parameters": {
+          "password": {
+            "description": "The password for login in clear text.",
+            "type": "str",
+            "default": "string"
+          },
+          "username": {
+            "description": "The username for login.",
+            "type": "str",
+            "default": "string"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "loginuser",
+        "arguments": {
+          "password": "adminpass123",
+          "username": "admin"
+        }
+      }
+    ],
+    "family": "loginuser",
+    "rendered_tokens": 251,
+    "supervised_tokens": 23
+  }
+]

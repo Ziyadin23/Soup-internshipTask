@@ -1,0 +1,45 @@
+2026-11-10T13:26:08.410759+00:00 INTENTIONAL SYNTHETIC TOKENIZER CHECK
+["/home/ziyadin/orca/projects/Soup-internshipTask/.venv/bin/python", "-m", "soup_cli", "data", "doctor", "tmp/local-synthetic-chat.jsonl", "--model", "/home/ziyadin/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e", "--format", "chatml", "--max-length", "32", "--show-mask", "1", "--output", "evidence/local-checks/soup-doctor-truncation.json"]
+                                soup data doctor                                
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃ Check              ┃ Verdict ┃ Message                    ┃ Evidence         ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ chat_template      │ OK      │ tokenizer has a            │ 4168 chars       │
+│                    │         │ chat_template              │                  │
+│ template_render    │ OK      │ 0/1 rows failed to render  │                  │
+│                    │         │ through the chat template  │                  │
+│ generation_markers │ MINOR   │ template lacks {%          │                  │
+│                    │         │ generation %} markers —    │                  │
+│                    │         │ assistant-only masking     │                  │
+│                    │         │ falls back to a heuristic  │                  │
+│                    │         │ that may include           │                  │
+│                    │         │ role-prefix tokens in the  │                  │
+│                    │         │ loss                       │                  │
+│ eos_in_labels      │ OK      │ no assistant turns to      │                  │
+│                    │         │ check                      │                  │
+│ bos_duplication    │ OK      │ tokenizer has no           │                  │
+│                    │         │ bos_token_id               │                  │
+│ system_role        │ OK      │ template supports the      │                  │
+│                    │         │ system role (1 rows use    │                  │
+│                    │         │ one)                       │                  │
+│ unknown_roles      │ OK      │ 0/1 rows (0.0%) contain a  │                  │
+│                    │         │ message role outside       │                  │
+│                    │         │ ['assistant', 'function',  │                  │
+│                    │         │ 'system', 'tool', 'user']  │                  │
+│ truncation_risk    │ MAJOR   │ p95 length = 178 tokens vs │ p50=178, max=178 │
+│                    │         │ max_length=32; 1/1 rows    │                  │
+│                    │         │ (100.0%) would be          │                  │
+│                    │         │ truncated                  │                  │
+└────────────────────┴─────────┴────────────────────────────┴──────────────────┘
+╭──────── overall ─────────╮
+│ MAJOR — 1/1 rows scanned │
+╰──────────────────────────╯
+Wrote evidence/local-checks/soup-doctor-truncation.json
+╭─────────────────────────── row 0 (assistant_only) ───────────────────────────╮
+│ <|im_start|>systemĊSelectĠatĠmostĠoneĠfunctionĠfromĠtheĠsuppliedĠtools.ĠUseĠ │
+│ onlyĠargumentĠvaluesĠsupportedĠbyĠtheĠuserĠrequest.ĠDoĠnotĠinventĠmissingĠre │
+│ quiredĠvalues.ĠIfĠno                                                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+
+EXIT 2

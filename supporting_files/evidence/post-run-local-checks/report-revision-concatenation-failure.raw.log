@@ -1,0 +1,129 @@
+2026-11-10T14:57:31.267861+00:00 COMMAND pytest tests/test_reporting.py -q
+F.                                                                       [100%]
+=================================== FAILURES ===================================
+____________ test_report_is_exactly_two_pages_and_labeled_synthetic ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-ziyadin/pytest-15/test_report_is_exactly_two_pag0')
+
+    def test_report_is_exactly_two_pages_and_labeled_synthetic(tmp_path):
+        run = tmp_path/'fixture'
+        make_layout_fixture(run)
+>       path = create_report(run,layout_test=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_reporting.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+run = PosixPath('/tmp/pytest-of-ziyadin/pytest-15/test_report_is_exactly_two_pag0/fixture')
+layout_test = True, output_dir = None
+verification_file = PosixPath('/tmp/pytest-of-ziyadin/pytest-15/test_report_is_exactly_two_pag0/fixture/results/verification.json')
+
+    def create_report(run, layout_test=False, output_dir=None, verification_file=None):
+        run = Path(run)
+        c = read_json(run/'config.json')
+        verification_file = Path(verification_file) if verification_file else run/'results/verification.json'
+        v = read_json(verification_file)
+        evaluations = {n: read_json(run/f'results/eval-{n}.json') for n in ['base','merged','quantized']}
+        estimate = read_json(run/'evidence/memory_estimate_before_training.json')
+        env = read_json(run/'evidence/colab_environment.json')
+        train = read_json(run/'results/train.json')
+        selection = read_json(run/'data/selection.json')
+        out = Path(output_dir) if output_dir else run/'submission'
+        out.mkdir(parents=True, exist_ok=True)
+        path = out/'report.pdf'
+        if path.exists():
+            raise FileExistsError('Report exists; preserve it and use a versioned output for a revision')
+        styles = getSampleStyleSheet()
+        styles.add(ParagraphStyle('BodySmall', fontName='Helvetica', fontSize=9.1, leading=12,
+                                 spaceAfter=6, textColor=colors.HexColor('#202733')))
+        styles.add(ParagraphStyle('SectionSmall', fontName='Helvetica-Bold', fontSize=11,
+                                 leading=14, spaceBefore=9, spaceAfter=5))
+        styles.add(ParagraphStyle('CellSmall', fontName='Helvetica', fontSize=8.1, leading=10))
+        story = []
+        def p(text):
+            return Paragraph(text, styles['BodySmall'])
+        def section(text):
+            story.append(Paragraph(text, styles['SectionSmall']))
+        def table(rows, widths):
+            cells = [[Paragraph(escape(str(x)), styles['CellSmall']) for x in row] for row in rows]
+            t = Table(cells, colWidths=widths, repeatRows=1, hAlign='LEFT')
+            t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e9edf2')),
+                ('VALIGN',(0,0),(-1,-1),'TOP'), ('LINEBELOW',(0,0),(-1,0),.6,colors.HexColor('#aab5c2')),
+                ('BOTTOMPADDING',(0,0),(-1,-1),5), ('TOPPADDING',(0,0),(-1,-1),5),
+                ('LEFTPADDING',(0,0),(-1,-1),6), ('RIGHTPADDING',(0,0),(-1,-1),6)]))
+            story.extend([t, Spacer(1,6)])
+        def gib(n): return f'{n/2**30:.2f}' if n is not None else 'not measured'
+        story.append(Paragraph('Soup | AI Engineer experiment', styles['Title']))
+        story.append(p(f'<b>{escape(v["verdict"])}</b> for automatic execution. Run: {escape(run.name)}. '
+                       f'Generated: {escape(utc())}.'))
+        if layout_test:
+            story.append(p('<b>SYNTHETIC LAYOUT TEST - not Qwen training results and not a submission.</b>'))
+        section('Choice and protocol')
+        story.append(p('<a href="https://huggingface.co/Qwen/Qwen3-1.7B">Qwen3-1.7B</a> provides an ungated Apache-2.0 dense Transformer and a manageable '
+                       'T4 footprint. xLAM supplies a concrete function-calling task with independently '
+                       'checkable syntax, function selection, and typed arguments. Source: Salesforce '
+                       '<a href="https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k">APIGen/xLAM-60k</a> '
+                       '(CC BY 4.0); source-card limitations remain documented.'))
+        story.append(p(f'{c["train_examples"]} train / {c["validation_examples"]} validation / '
+                       f'{c["test_examples"]} test; naming-based API families separated, normalized prompts '
+                       f'deduplicated, cross-split near duplicates excluded. One call, at most {c["max_tools"]} '
+                       f'tools; literal arguments/defaults only. No truncation, length limit {c["max_length"]}. LoRA r={c["lora_rank"]}, '
+                       f'alpha={c["lora_alpha"]}, q/v projections; one epoch, lr={c["learning_rate"]}, '
+                       f'batch 1, accumulation {c["gradient_accumulation"]}, FP16 compute and FP32 adapter/Adam '
+                       'states. Explicit response+EOT supervision; thinking disabled.'))
+        story.append(p('PyTorch/Transformers/PEFT exposes masks, gradients, and effective updates directly; '
+                       'Soup is separately audited. The alternative stack is an observability choice, '
+                       'not evidence of a Soup defect.'))
+        section('Measured artifact comparison')
+        rows = [['Artifact','Answer NLL','Exact call','JSON valid','Flat schema','Probe failures']]
+        for name, result in evaluations.items():
+            rows.append([name, f'{result["response_nll"]:.4f}', f'{result["exact_accuracy"]:.1%}',
+                         f'{result["json_validity"]:.1%}',f'{result["schema_validity"]:.1%}',
+                         f'{result["critical_probe_failures"]}/48'])
+        table(rows,[74,70,75,75,75,82])
+        ci = v['comparison']['quant_vs_base_exact_ci']
+        story.append(p(f'4-bit minus base exact-call change: {ci["mean"]:+.3f}; paired 95% family-bootstrap '
+                       f'interval [{ci["low"]:+.3f}, {ci["high"]:+.3f}], {ci["groups"]} groups. '
+                       'NLL is response-token weighted; its separate paired intervals use per-example NLL. '
+                       'Exact call permits documented optional-default equivalence; raw strict exact is retained.'))
+        section('Memory budget made before training')
+        if env.get('fallback_reason'):
+            story.append(p('<b>Hardware deviation:</b> '+escape(env['fallback_reason'])+
+                           ' All model measurements below come from the declared fallback, not Colab.'))
+        story.append(p(f'GPU: {escape(env.get("gpu","unknown"))}, {gib(env.get("gpu_memory_bytes"))} GiB; '
+                       f'host RAM: {gib(env.get("system_ram_bytes"))} GiB. '
+                       f'P={estimate["unique_parameters"]:,} unique parameters; frozen FP16 weights '
+                       f'2P={gib(estimate["training_components_bytes"]["frozen_fp16_weights"])} GiB. '
+                       f'A={estimate["lora_parameters"]:,}; adapter+gradient+Adam moments = 16A bytes. '
+                       'Logits/loss/backward allowance = BSV(2+4+4) bytes, with B=1. '
+                       'Checkpoint activations and a 1 GiB workspace/context allowance are added.'))
+        rows = [['Stage','Estimate GiB','Peak allocated','Peak reserved','Host RSS highwater']]
+        gaps, device_peaks = [], []
+        for phase, key in [('train','training_peak_estimate_bytes'),('merge','merge_peak_estimate_bytes'),
+                           ('quantize','quantize_peak_estimate_bytes')]:
+            m = read_json(run/f'evidence/{phase}/memory.json')
+            rows.append([phase,gib(estimate[key]),gib(m['gpu_allocated_peak_bytes']),
+                         gib(m['gpu_reserved_peak_bytes']),gib(m['process_lifetime_rss_highwater_bytes'])])
+            if m['gpu_allocated_peak_bytes'] is not None:
+                gaps.append(f'{phase}: {(m["gpu_allocated_peak_bytes"]-estimate[key])/2**30:+.2f} GiB')
+            raw = run/f'evidence/{phase}/nvidia-smi.raw.txt'
+            if raw.exists():
+                used = [int(x.group(2))*2**20 for x in
+                        re.finditer(r',\s*(\d+)\s*MiB,\s*(\d+)\s*MiB,', raw.read_text())]
+                if used: device_peaks.append(f'{phase} {gib(max(used))}')
+        table(rows,[65,83,100,100,103])
+>       story.append(p('Allocated minus estimate: '+escape('; '.join(gaps))+'. '
+                       ('Sampled device peaks (GiB): '+escape('; '.join(device_peaks))+'. ' if device_peaks else '')+
+                       'Training uses shorter unpadded sequences (selected max 821 vs budget 1024). Merge allows '
+                       '4P + largest-tensor overlap + temporary work. Quantization conservatively allowed a full FP16 '
+                       'source plus packed destination; its low peak supports streamed conversion. Embeddings/norms '
+                       'remain unquantized. Reserved memory retains cached blocks; device samples include external '
+                       'CUDA memory and can miss spikes. RSS includes imports/file-backed pages.'))
+E       TypeError: 'str' object is not callable
+
+soup_task/reporting.py:114: TypeError
+=========================== short test summary info ============================
+FAILED tests/test_reporting.py::test_report_is_exactly_two_pages_and_labeled_synthetic
+1 failed, 1 passed in 0.17s
+
+EXIT 1

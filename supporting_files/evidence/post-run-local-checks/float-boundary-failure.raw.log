@@ -1,0 +1,27 @@
+2026-11-10T14:52:59.390258+00:00 COMMAND ['.venv/bin/python', '-m', 'pytest', 'tests/test_core.py::test_release_allows_exactly_the_committed_general_regression_limit', '-q']
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_release_allows_exactly_the_committed_general_regression_limit ______
+
+    def test_release_allows_exactly_the_committed_general_regression_limit():
+        policy = {'minimum_exact_accuracy': .99, 'maximum_quant_nll_increase': .1,
+                  'maximum_quant_accuracy_drop': .01, 'maximum_general_drop': .05,
+                  'maximum_critical_probe_failures': 0, 'intended_use': 'automatic calls'}
+        base = {'exact_accuracy': .8, 'response_nll': 1., 'general': {'g': .8}}
+        good = {'exact_accuracy': 1., 'response_nll': .7, 'general': {'g': .8},
+                'critical_probe_failures': 0}
+        ci = {'quant_vs_base_exact_ci': {'low': .1}}
+        boundary = dict(good, general={'g': .75})
+>       assert release_verdict({'integrity': True}, base, good, boundary, ci, policy,
+                               deployment_validated=True)['verdict'] == 'SHIP'
+E       assert "DON'T SHIP" == 'SHIP'
+E         
+E         - SHIP
+E         + DON'T SHIP
+
+tests/test_core.py:124: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_core.py::test_release_allows_exactly_the_committed_general_regression_limit
+1 failed in 0.11s
+
+EXIT 1

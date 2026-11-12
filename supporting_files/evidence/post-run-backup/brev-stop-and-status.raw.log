@@ -1,0 +1,25 @@
+2026-11-10T17:03:36.651871+00:00 COMMAND brev stop soup-internship-t4
+soup-internship-t4
+
+2026-11-10T17:03:43.130919+00:00 EXIT 0
+
+2026-11-10T17:03:47.079776+00:00 COMMAND brev ls
+You have 1 instances in Org ziyadin2307-5bd459-mb7n
+ NAME                STATUS    BUILD      SHELL      ID         MACHINE                         GPU 
+ soup-internship-t4  STOPPING  COMPLETED  NOT READY  60ueidr3n  n1-highmem-4:nvidia-tesla-t4:1  T4  
+
+
+
+2026-11-10T17:04:00.314274+00:00 COMMAND brev ls
+You have 1 instances in Org ziyadin2307-5bd459-mb7n
+ NAME                STATUS    BUILD      SHELL      ID         MACHINE                         GPU 
+ soup-internship-t4  STOPPING  COMPLETED  NOT READY  60ueidr3n  n1-highmem-4:nvidia-tesla-t4:1  T4  
+
+
+
+2026-11-10T17:04:14.491073+00:00 COMMAND brev ls
+You have 1 instances in Org ziyadin2307-5bd459-mb7n
+ NAME                STATUS   BUILD      SHELL      ID         MACHINE                         GPU 
+ soup-internship-t4  STOPPED  COMPLETED  NOT READY  60ueidr3n  n1-highmem-4:nvidia-tesla-t4:1  T4  
+
+

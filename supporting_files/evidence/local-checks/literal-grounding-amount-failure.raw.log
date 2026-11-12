@@ -1,0 +1,23 @@
+2026-11-10T13:37:17.462827+00:00 UNIT FAILURE BEFORE FIX
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_literal_grounding_rejects_invented_years_and_catalog_ids _________
+
+    def test_literal_grounding_rejects_invented_years_and_catalog_ids():
+        row = {'query':'Events the day before my April 5 birthday', 'tools':[{'name':'events','parameters':{'date':{'type':'str'}}}],
+               'answers':[{'name':'events','arguments':{'date':'2023-04-04'}}]}
+        assert not literal_grounded(row)
+        row['query']='Events on 2023-04-04'
+        assert literal_grounded(row)
+        row={'query':'Spend at most $450,000.', 'tools':[{'name':'search','parameters':{'price':{'type':'int'}}}],
+             'answers':[{'name':'search','arguments':{'price':450000}}]}
+>       assert literal_grounded(row)
+E       AssertionError: assert False
+E        +  where False = literal_grounded({'answers': [{'arguments': {'price': 450000}, 'name': 'search'}], 'query': 'Spend at most $450,000.', 'tools': [{'name': 'search', 'parameters': {'price': {'type': 'int'}}}]})
+
+tests/test_core.py:65: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_core.py::test_literal_grounding_rejects_invented_years_and_catalog_ids
+1 failed in 0.08s
+
+EXIT 1

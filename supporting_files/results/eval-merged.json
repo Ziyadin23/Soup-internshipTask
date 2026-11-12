@@ -1,0 +1,6324 @@
+{
+  "artifact": "merged",
+  "examples": 128,
+  "response_nll": 0.023974807477998183,
+  "exact_accuracy": 0.953125,
+  "json_validity": 1.0,
+  "schema_validity": 1.0,
+  "function_accuracy": 1.0,
+  "critical_probe_failures": 48,
+  "general": {
+    "mini_mmlu": 0.775,
+    "mini_common_sense": 0.825,
+    "mini_instruction": 1.0,
+    "mini_arithmetic": 0.95,
+    "mini_tool_call": 0.625,
+    "mini_format_json": 1.0,
+    "mini_safety": 0.55,
+    "mini_over_refusal": 0.975
+  },
+  "predictions": [
+    {
+      "id": "9494",
+      "family": "hsl_to_rgb",
+      "expected": [
+        {
+          "name": "hsl_to_rgb",
+          "arguments": {
+            "s": 50,
+            "h": 180,
+            "l": 75
+          }
+        }
+      ],
+      "response_nll": 0.011769585311412811,
+      "response_tokens": 29,
+      "text": "[{\"name\":\"hsl_to_rgb\",\"arguments\":{\"s\":50,\"h\":180,\"l\":75}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        71,
+        3226,
+        2346,
+        37407,
+        2198,
+        16370,
+        22317,
+        82,
+        788,
+        20,
+        15,
+        1335,
+        71,
+        788,
+        16,
+        23,
+        15,
+        1335,
+        75,
+        788,
+        22,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 275,
+      "generated_tokens": 29,
+      "truncated": false,
+      "generation_seconds": 1.34044588200004,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "48997",
+      "family": "town",
+      "expected": [
+        {
+          "name": "town",
+          "arguments": {
+            "town": "East London"
+          }
+        }
+      ],
+      "response_nll": 0.0011820412473753095,
+      "response_tokens": 15,
+      "text": "[{\"name\":\"town\",\"arguments\":{\"town\":\"East London\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        27831,
+        2198,
+        16370,
+        22317,
+        27831,
+        3252,
+        36340,
+        7148,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 188,
+      "generated_tokens": 15,
+      "truncated": false,
+      "generation_seconds": 0.6620901350001986,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39829",
+      "family": "user_login",
+      "expected": [
+        {
+          "name": "user_login",
+          "arguments": {
+            "username": "+447911123456",
+            "password": "securePassword!"
+          }
+        }
+      ],
+      "response_nll": 0.04479503631591797,
+      "response_tokens": 32,
+      "text": "[{\"name\":\"user_login\",\"arguments\":{\"username\":\"+447911123456\",\"password\":\"securePassword!\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        13681,
+        2198,
+        16370,
+        22317,
+        5113,
+        70318,
+        19,
+        19,
+        22,
+        24,
+        16,
+        16,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        2198,
+        3833,
+        3252,
+        25132,
+        4876,
+        0,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 285,
+      "generated_tokens": 32,
+      "truncated": false,
+      "generation_seconds": 1.4106353260003743,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "31296",
+      "family": "get_ip_zipcode",
+      "expected": [
+        {
+          "name": "get_ip_zipcode",
+          "arguments": {
+            "ip": "55.55.55.55"
+          }
+        }
+      ],
+      "response_nll": 0.00013508788833860308,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"get_ip_zipcode\",\"arguments\":{\"ip\":\"55.55.55.55\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        10385,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        573,
+        3252,
+        20,
+        20,
+        13,
+        20,
+        20,
+        13,
+        20,
+        20,
+        13,
+        20,
+        20,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.1681374249997134,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "48478",
+      "family": "get_specific_ayah_verse",
+      "expected": [
+        {
+          "name": "get_specific_ayah_verse",
+          "arguments": {
+            "chapterid": 29,
+            "verseid": 86
+          }
+        }
+      ],
+      "response_nll": 0.03457006812095642,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"get_specific_ayah_verse\",\"arguments\":{\"verseid\":86,\"chapterid\":29}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        56592,
+        62,
+        84074,
+        62,
+        4450,
+        2198,
+        16370,
+        22317,
+        4450,
+        307,
+        788,
+        23,
+        21,
+        1335,
+        40226,
+        307,
+        788,
+        17,
+        24,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 255,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.2213275180001801,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58728",
+      "family": "is_valid_email",
+      "expected": [
+        {
+          "name": "is_valid_email",
+          "arguments": {
+            "email": "jane_doe123@company.co.uk"
+          }
+        }
+      ],
+      "response_nll": 0.00014785554958507419,
+      "response_tokens": 26,
+      "text": "[{\"name\":\"is_valid_email\",\"arguments\":{\"email\":\"jane_doe123@company.co.uk\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        285,
+        8337,
+        9172,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        73,
+        2145,
+        814,
+        4644,
+        16,
+        17,
+        18,
+        31,
+        10139,
+        6830,
+        15194,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 167,
+      "generated_tokens": 26,
+      "truncated": false,
+      "generation_seconds": 1.17134807299999,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "3375",
+      "family": "price_probability",
+      "expected": [
+        {
+          "name": "price_probability",
+          "arguments": {
+            "symbol": "AAPL"
+          }
+        }
+      ],
+      "response_nll": 0.0014835451729595661,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"price_probability\",\"arguments\":{\"symbol\":\"AAPL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        6555,
+        68589,
+        2198,
+        16370,
+        22317,
+        18785,
+        3252,
+        82916,
+        43,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 193,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7232605260001037,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "560",
+      "family": "getfscore",
+      "expected": [
+        {
+          "name": "getfscore",
+          "arguments": {
+            "ticker": "GOOGL"
+          }
+        }
+      ],
+      "response_nll": 0.00044940406223759055,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"getfscore\",\"arguments\":{\"ticker\":\"GOOGL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        3848,
+        2153,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        15513,
+        46,
+        3825,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 196,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.798523834000207,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "49765",
+      "family": "hsl_to_rgb",
+      "expected": [
+        {
+          "name": "hsl_to_rgb",
+          "arguments": {
+            "s": 50,
+            "h": 120,
+            "l": 50
+          }
+        }
+      ],
+      "response_nll": 0.016618311405181885,
+      "response_tokens": 29,
+      "text": "[{\"name\":\"hsl_to_rgb\",\"arguments\":{\"s\":50,\"h\":120,\"l\":50}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        71,
+        3226,
+        2346,
+        37407,
+        2198,
+        16370,
+        22317,
+        82,
+        788,
+        20,
+        15,
+        1335,
+        71,
+        788,
+        16,
+        17,
+        15,
+        1335,
+        75,
+        788,
+        20,
+        15,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 278,
+      "generated_tokens": 29,
+      "truncated": false,
+      "generation_seconds": 1.2914067430001523,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "31172",
+      "family": "get_ip_zipcode",
+      "expected": [
+        {
+          "name": "get_ip_zipcode",
+          "arguments": {
+            "ip": "192.168.1.1"
+          }
+        }
+      ],
+      "response_nll": 0.00014216636191122234,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"get_ip_zipcode\",\"arguments\":{\"ip\":\"192.168.1.1\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        10385,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        573,
+        3252,
+        16,
+        24,
+        17,
+        13,
+        16,
+        21,
+        23,
+        13,
+        16,
+        13,
+        16,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.1769579450001402,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "31381",
+      "family": "city_list",
+      "expected": [
+        {
+          "name": "city_list",
+          "arguments": {
+            "province": "Manitoba"
+          }
+        }
+      ],
+      "response_nll": 0.020373228937387466,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"city_list\",\"arguments\":{\"province\":\"Manitoba\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        8926,
+        2019,
+        2198,
+        16370,
+        22317,
+        26335,
+        3252,
+        1658,
+        275,
+        26833,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 184,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7524785379996501,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34742",
+      "family": "get_city_from_zipcode",
+      "expected": [
+        {
+          "name": "get_city_from_zipcode",
+          "arguments": {
+            "zipcode": "75201"
+          }
+        }
+      ],
+      "response_nll": 0.0003494792035780847,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_city_from_zipcode\",\"arguments\":{\"zipcode\":\"75201\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        24971,
+        5673,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        59629,
+        3252,
+        22,
+        20,
+        17,
+        15,
+        16,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9784074679996593,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "17967",
+      "family": "user_login",
+      "expected": [
+        {
+          "name": "user_login",
+          "arguments": {
+            "username": "7777777777",
+            "password": "test789"
+          }
+        }
+      ],
+      "response_nll": 0.0011129349004477262,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"user_login\",\"arguments\":{\"username\":\"7777777777\",\"password\":\"test789\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        13681,
+        2198,
+        16370,
+        22317,
+        5113,
+        3252,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        2198,
+        3833,
+        3252,
+        1944,
+        22,
+        23,
+        24,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 286,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.4228016949996345,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "544",
+      "family": "earnings_history",
+      "expected": [
+        {
+          "name": "earnings_history",
+          "arguments": {
+            "ticker": "AMZN"
+          }
+        }
+      ],
+      "response_nll": 0.0005499477847479284,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"earnings_history\",\"arguments\":{\"ticker\":\"AMZN\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        10118,
+        819,
+        19802,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        1402,
+        44847,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 188,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7700295490003555,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58123",
+      "family": "spac_top_10_rankings",
+      "expected": [
+        {
+          "name": "spac_top_10_rankings",
+          "arguments": {
+            "sortby": "gainers",
+            "period": "monthly",
+            "type": "common"
+          }
+        }
+      ],
+      "response_nll": 0.09590490907430649,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"spac_top_10_rankings\",\"arguments\":{\"type\":\"common\",\"sortby\":\"gainers\",\"period\":\"monthly\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2154,
+        580,
+        10426,
+        62,
+        16,
+        15,
+        20417,
+        819,
+        2198,
+        16370,
+        22317,
+        1313,
+        3252,
+        5464,
+        2198,
+        6860,
+        1694,
+        3252,
+        70,
+        20568,
+        2198,
+        19304,
+        3252,
+        69138,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 315,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.452066025000022,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "17890",
+      "family": "trip_details",
+      "expected": [
+        {
+          "name": "trip_details",
+          "arguments": {
+            "trip_uid": "TRIP123"
+          }
+        }
+      ],
+      "response_nll": 0.00036415824433788657,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"trip_details\",\"arguments\":{\"trip_uid\":\"TRIP123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        32981,
+        13260,
+        2198,
+        16370,
+        22317,
+        32981,
+        25396,
+        3252,
+        2378,
+        3298,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 210,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9332545960000971,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58688",
+      "family": "is_valid_email",
+      "expected": [
+        {
+          "name": "is_valid_email",
+          "arguments": {
+            "email": "example@example .com"
+          }
+        }
+      ],
+      "response_nll": 0.00035316572757437825,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"is_valid_email\",\"arguments\":{\"email\":\"example@example .com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        285,
+        8337,
+        9172,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        8687,
+        35487,
+        659,
+        874,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 160,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8519441919997917,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "15641",
+      "family": "get_6_month_historical_daily_prices",
+      "expected": [
+        {
+          "name": "get_6_month_historical_daily_prices",
+          "arguments": {
+            "ticker": "PFE"
+          }
+        }
+      ],
+      "response_nll": 0.0008132172515615821,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_6_month_historical_daily_prices\",\"arguments\":{\"ticker\":\"PFE\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        62,
+        21,
+        18933,
+        1523,
+        95698,
+        64530,
+        65688,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        47,
+        11419,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 216,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9868872859997282,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "24376",
+      "family": "tag_news",
+      "expected": [
+        {
+          "name": "tag_news",
+          "arguments": {
+            "tag": "automotive"
+          }
+        }
+      ],
+      "response_nll": 0.0006162709905765951,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"tag_news\",\"arguments\":{\"tag\":\"automotive\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        4578,
+        32485,
+        2198,
+        16370,
+        22317,
+        4578,
+        3252,
+        27073,
+        23827,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 185,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7160235720002674,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "12136",
+      "family": "check_1_param",
+      "expected": [
+        {
+          "name": "check_1_param",
+          "arguments": {
+            "vat": "ES123456789"
+          }
+        }
+      ],
+      "response_nll": 0.00018461004947312176,
+      "response_tokens": 26,
+      "text": "[{\"name\":\"check_1_param\",\"arguments\":{\"vat\":\"ES123456789\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2028,
+        62,
+        16,
+        4090,
+        2198,
+        16370,
+        22317,
+        49713,
+        3252,
+        1570,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 203,
+      "generated_tokens": 26,
+      "truncated": false,
+      "generation_seconds": 1.1585598629999367,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "44201",
+      "family": "get_ip_zipcode",
+      "expected": [
+        {
+          "name": "get_ip_zipcode",
+          "arguments": {
+            "ip": "172.217.160.142"
+          }
+        }
+      ],
+      "response_nll": 0.00012819805124308914,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"get_ip_zipcode\",\"arguments\":{\"ip\":\"172.217.160.142\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        10385,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        573,
+        3252,
+        16,
+        22,
+        17,
+        13,
+        17,
+        16,
+        22,
+        13,
+        16,
+        21,
+        15,
+        13,
+        16,
+        19,
+        17,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 197,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.3661301689999164,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "22055",
+      "family": "getmatchesbycity",
+      "expected": [
+        {
+          "name": "getmatchesbycity",
+          "arguments": {
+            "city": "Mumbai"
+          }
+        }
+      ],
+      "response_nll": 0.0008625888731330633,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"getmatchesbycity\",\"arguments\":{\"city\":\"Mumbai\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        19914,
+        1694,
+        8926,
+        2198,
+        16370,
+        22317,
+        8926,
+        3252,
+        44,
+        29855,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 178,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8155268760001491,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "24444",
+      "family": "whois_lookup",
+      "expected": [
+        {
+          "name": "whois_lookup",
+          "arguments": {
+            "domain": "example.com"
+          }
+        }
+      ],
+      "response_nll": 0.00037923676427453756,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"whois_lookup\",\"arguments\":{\"domain\":\"example.com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14623,
+        285,
+        27464,
+        2198,
+        16370,
+        22317,
+        12204,
+        3252,
+        8687,
+        905,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 188,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7707550780000929,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "16345",
+      "family": "wnba_box_score",
+      "expected": [
+        {
+          "name": "wnba_box_score",
+          "arguments": {
+            "is_id": "24680"
+          }
+        }
+      ],
+      "response_nll": 0.0003494098491501063,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"wnba_box_score\",\"arguments\":{\"is_id\":\"24680\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        1522,
+        4645,
+        10194,
+        10405,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        17,
+        19,
+        21,
+        23,
+        15,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 191,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.993167179000011,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "49243",
+      "family": "retrieve_rewards",
+      "expected": [
+        {
+          "name": "retrieve_rewards",
+          "arguments": {
+            "slug": "veefriends"
+          }
+        }
+      ],
+      "response_nll": 0.4663979411125183,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"retrieve_rewards\",\"arguments\":{\"slug\":\"VeeFriends\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        55527,
+        77997,
+        2198,
+        16370,
+        22317,
+        15125,
+        3252,
+        53,
+        2127,
+        44343,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 177,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7898693239999375,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "53865",
+      "family": "get_case_by_id",
+      "expected": [
+        {
+          "name": "get_case_by_id",
+          "arguments": {
+            "is_id": "5678"
+          }
+        }
+      ],
+      "response_nll": 0.0005704538198187947,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"get_case_by_id\",\"arguments\":{\"is_id\":\"5678\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        19096,
+        3710,
+        842,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        20,
+        21,
+        22,
+        23,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 203,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9718618319998313,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "59595",
+      "family": "get_ip_zipcode",
+      "expected": [
+        {
+          "name": "get_ip_zipcode",
+          "arguments": {
+            "ip": "8.8.8.8"
+          }
+        }
+      ],
+      "response_nll": 0.00015731043822597712,
+      "response_tokens": 23,
+      "text": "[{\"name\":\"get_ip_zipcode\",\"arguments\":{\"ip\":\"8.8.8.8\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        10385,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        573,
+        3252,
+        23,
+        13,
+        23,
+        13,
+        23,
+        13,
+        23,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 177,
+      "generated_tokens": 23,
+      "truncated": false,
+      "generation_seconds": 1.064609781999934,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34323",
+      "family": "is_valid_email",
+      "expected": [
+        {
+          "name": "is_valid_email",
+          "arguments": {
+            "email": "user123@example.co"
+          }
+        }
+      ],
+      "response_nll": 0.0004325979098211974,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"is_valid_email\",\"arguments\":{\"email\":\"user123@example.co\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        285,
+        8337,
+        9172,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        872,
+        16,
+        17,
+        18,
+        35487,
+        6830,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 160,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9436202570000205,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "57922",
+      "family": "sentence",
+      "expected": [
+        {
+          "name": "sentence",
+          "arguments": {
+            "amount": 20
+          }
+        }
+      ],
+      "response_nll": 0.0022335026878863573,
+      "response_tokens": 15,
+      "text": "[{\"name\":\"sentence\",\"arguments\":{\"amount\":20}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        51889,
+        2198,
+        16370,
+        22317,
+        6045,
+        788,
+        17,
+        15,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 195,
+      "generated_tokens": 15,
+      "truncated": false,
+      "generation_seconds": 0.6886715099999492,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "6063",
+      "family": "hsl_to_rgb",
+      "expected": [
+        {
+          "name": "hsl_to_rgb",
+          "arguments": {
+            "s": 100,
+            "h": 300,
+            "l": 50
+          }
+        }
+      ],
+      "response_nll": 0.01657211408019066,
+      "response_tokens": 30,
+      "text": "[{\"name\":\"hsl_to_rgb\",\"arguments\":{\"s\":100,\"h\":300,\"l\":50}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        71,
+        3226,
+        2346,
+        37407,
+        2198,
+        16370,
+        22317,
+        82,
+        788,
+        16,
+        15,
+        15,
+        1335,
+        71,
+        788,
+        18,
+        15,
+        15,
+        1335,
+        75,
+        788,
+        20,
+        15,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 279,
+      "generated_tokens": 30,
+      "truncated": false,
+      "generation_seconds": 1.3749322959997698,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "20399",
+      "family": "get_6_month_historical_daily_prices",
+      "expected": [
+        {
+          "name": "get_6_month_historical_daily_prices",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        }
+      ],
+      "response_nll": 0.0016649536555632949,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_6_month_historical_daily_prices\",\"arguments\":{\"ticker\":\"AAPL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        62,
+        21,
+        18933,
+        1523,
+        95698,
+        64530,
+        65688,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        82916,
+        43,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 219,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.0095056929999373,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "28607",
+      "family": "city_list",
+      "expected": [
+        {
+          "name": "city_list",
+          "arguments": {
+            "province": "British Columbia"
+          }
+        }
+      ],
+      "response_nll": 0.0050784870982170105,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"city_list\",\"arguments\":{\"province\":\"British Columbia\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        8926,
+        2019,
+        2198,
+        16370,
+        22317,
+        26335,
+        3252,
+        51861,
+        18796,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7275821670000369,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "20408",
+      "family": "getfscore",
+      "expected": [
+        {
+          "name": "getfscore",
+          "arguments": {
+            "ticker": "MSFT"
+          }
+        }
+      ],
+      "response_nll": 0.000640338403172791,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"getfscore\",\"arguments\":{\"ticker\":\"MSFT\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        3848,
+        2153,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        4826,
+        3994,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 192,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7694637590002458,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "30988",
+      "family": "detail_info",
+      "expected": [
+        {
+          "name": "detail_info",
+          "arguments": {
+            "slug": "app123"
+          }
+        }
+      ],
+      "response_nll": 0.00044507067650556564,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"detail_info\",\"arguments\":{\"slug\":\"app123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14585,
+        3109,
+        2198,
+        16370,
+        22317,
+        15125,
+        3252,
+        676,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8183059630000571,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "52908",
+      "family": "getuserbyname",
+      "expected": [
+        {
+          "name": "getuserbyname",
+          "arguments": {
+            "username": "sara_connor"
+          }
+        }
+      ],
+      "response_nll": 0.0005433260230347514,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"getuserbyname\",\"arguments\":{\"username\":\"sara_connor\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        872,
+        94878,
+        2198,
+        16370,
+        22317,
+        5113,
+        3252,
+        82,
+        5059,
+        17241,
+        269,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 182,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8665744279996943,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "36888",
+      "family": "matchincidents",
+      "expected": [
+        {
+          "name": "matchincidents",
+          "arguments": {
+            "is_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.00047586957225576043,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"matchincidents\",\"arguments\":{\"is_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        6347,
+        2840,
+        6880,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 190,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9608401600003162,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "2837",
+      "family": "team_recent_form",
+      "expected": [
+        {
+          "name": "team_recent_form",
+          "arguments": {
+            "team_id": 77777
+          }
+        }
+      ],
+      "response_nll": 0.0006145109655335546,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"team_recent_form\",\"arguments\":{\"team_id\":77777}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        9196,
+        62361,
+        7915,
+        2198,
+        16370,
+        22317,
+        9196,
+        842,
+        788,
+        22,
+        22,
+        22,
+        22,
+        22,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 193,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 1.0051224110002295,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "54341",
+      "family": "get_a_conversation",
+      "expected": [
+        {
+          "name": "get_a_conversation",
+          "arguments": {
+            "is_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.0005287061794660985,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_a_conversation\",\"arguments\":{\"is_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        3382,
+        22323,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.043226094000147,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "28922",
+      "family": "whois_lookup",
+      "expected": [
+        {
+          "name": "whois_lookup",
+          "arguments": {
+            "domain": "twitter.com"
+          }
+        }
+      ],
+      "response_nll": 0.0009003560990095139,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"whois_lookup\",\"arguments\":{\"domain\":\"twitter.com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14623,
+        285,
+        27464,
+        2198,
+        16370,
+        22317,
+        12204,
+        3252,
+        14679,
+        905,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 184,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7862906089999342,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "49453",
+      "family": "getuserbyname",
+      "expected": [
+        {
+          "name": "getuserbyname",
+          "arguments": {
+            "username": "john_doe"
+          }
+        }
+      ],
+      "response_nll": 0.0007314035319723189,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"getuserbyname\",\"arguments\":{\"username\":\"john_doe\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        872,
+        94878,
+        2198,
+        16370,
+        22317,
+        5113,
+        3252,
+        47817,
+        814,
+        4644,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 177,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8409494279999308,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "56121",
+      "family": "statistics",
+      "expected": [
+        {
+          "name": "statistics",
+          "arguments": {
+            "duration": 3
+          }
+        }
+      ],
+      "response_nll": 0.0044218990951776505,
+      "response_tokens": 14,
+      "text": "[{\"name\":\"statistics\",\"arguments\":{\"duration\":3}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        54120,
+        2198,
+        16370,
+        22317,
+        17021,
+        788,
+        18,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 180,
+      "generated_tokens": 14,
+      "truncated": false,
+      "generation_seconds": 0.6510513180000999,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "10185",
+      "family": "getprojects",
+      "expected": [
+        {
+          "name": "getprojects",
+          "arguments": {
+            "page": 1
+          }
+        }
+      ],
+      "response_nll": 0.004300494212657213,
+      "response_tokens": 15,
+      "text": "[{\"name\":\"getprojects\",\"arguments\":{\"page\":1}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        17161,
+        2198,
+        16370,
+        22317,
+        2893,
+        788,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 15,
+      "truncated": false,
+      "generation_seconds": 0.6977444899998773,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "23766",
+      "family": "hsl_to_rgb",
+      "expected": [
+        {
+          "name": "hsl_to_rgb",
+          "arguments": {
+            "s": 75,
+            "h": 220,
+            "l": 25
+          }
+        }
+      ],
+      "response_nll": 0.019144464284181595,
+      "response_tokens": 29,
+      "text": "[{\"name\":\"hsl_to_rgb\",\"arguments\":{\"s\":75,\"h\":220,\"l\":25}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        71,
+        3226,
+        2346,
+        37407,
+        2198,
+        16370,
+        22317,
+        82,
+        788,
+        22,
+        20,
+        1335,
+        71,
+        788,
+        17,
+        17,
+        15,
+        1335,
+        75,
+        788,
+        17,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 277,
+      "generated_tokens": 29,
+      "truncated": false,
+      "generation_seconds": 1.370530135000081,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "27744",
+      "family": "get_cigar_average_length",
+      "expected": [
+        {
+          "name": "get_cigar_average_length",
+          "arguments": {
+            "wrapper": "Connecticut Shade",
+            "name": "Churchill",
+            "filler": "Dominican",
+            "country": "Honduras",
+            "color": "Maduro",
+            "strength": "Full"
+          }
+        }
+      ],
+      "response_nll": 0.22683805227279663,
+      "response_tokens": 46,
+      "text": "[{\"name\":\"get_cigar_average_length\",\"arguments\":{\"name\":\"Churchill\",\"country\":\"Honduras\",\"filler\":\"Dominican tobacco\",\"wrapper\":\"Connecticut Shade\",\"strength\":\"full\",\"color\":\"Maduro\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        666,
+        51284,
+        38594,
+        5118,
+        2198,
+        16370,
+        22317,
+        606,
+        3252,
+        83810,
+        483,
+        2198,
+        11141,
+        3252,
+        39,
+        2111,
+        19319,
+        2198,
+        7559,
+        261,
+        3252,
+        71541,
+        7065,
+        26433,
+        2198,
+        21364,
+        3252,
+        14611,
+        27306,
+        79818,
+        2198,
+        74237,
+        3252,
+        8878,
+        2198,
+        3423,
+        3252,
+        37036,
+        2798,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 428,
+      "generated_tokens": 47,
+      "truncated": false,
+      "generation_seconds": 2.3204822050001894,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "17499",
+      "family": "earnings_history",
+      "expected": [
+        {
+          "name": "earnings_history",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        }
+      ],
+      "response_nll": 0.0007469445117749274,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"earnings_history\",\"arguments\":{\"ticker\":\"AAPL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        10118,
+        819,
+        19802,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        82916,
+        43,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 186,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.8034546259996205,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "16592",
+      "family": "get_cigar_average_length",
+      "expected": [
+        {
+          "name": "get_cigar_average_length",
+          "arguments": {
+            "wrapper": "Connecticut Shade",
+            "filler": "Nicaragua",
+            "country": "Honduras"
+          }
+        }
+      ],
+      "response_nll": 0.05454213172197342,
+      "response_tokens": 33,
+      "text": "[{\"name\":\"get_cigar_average_length\",\"arguments\":{\"country\":\"Honduras\",\"filler\":\"Nicaragua\",\"wrapper\":\"Connecticut Shade, Ecuador\",\"name\":\"Torpedo\",\"strength\":\"Mild-Medium\",\"brandid\":13711}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        666,
+        51284,
+        38594,
+        5118,
+        2198,
+        16370,
+        22317,
+        11141,
+        3252,
+        39,
+        2111,
+        19319,
+        2198,
+        7559,
+        261,
+        3252,
+        57816,
+        277,
+        54648,
+        2198,
+        21364,
+        3252,
+        14611,
+        27306,
+        79818,
+        11,
+        53991,
+        2198,
+        606,
+        3252,
+        32350,
+        52494,
+        2198,
+        74237,
+        3252,
+        44,
+        695,
+        5251,
+        23090,
+        2198,
+        1323,
+        4551,
+        788,
+        16,
+        18,
+        22,
+        16,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 415,
+      "generated_tokens": 56,
+      "truncated": false,
+      "generation_seconds": 2.685128907000035,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "51102",
+      "family": "sentence",
+      "expected": [
+        {
+          "name": "sentence",
+          "arguments": {
+            "amount": 15
+          }
+        }
+      ],
+      "response_nll": 0.0015266756527125835,
+      "response_tokens": 15,
+      "text": "[{\"name\":\"sentence\",\"arguments\":{\"amount\":15}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        51889,
+        2198,
+        16370,
+        22317,
+        6045,
+        788,
+        16,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 195,
+      "generated_tokens": 15,
+      "truncated": false,
+      "generation_seconds": 0.6786830880000707,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "43300",
+      "family": "get_city_from_zipcode",
+      "expected": [
+        {
+          "name": "get_city_from_zipcode",
+          "arguments": {
+            "zipcode": "94105"
+          }
+        }
+      ],
+      "response_nll": 0.0003699057560879737,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_city_from_zipcode\",\"arguments\":{\"zipcode\":\"94105\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        24971,
+        5673,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        59629,
+        3252,
+        24,
+        19,
+        16,
+        15,
+        20,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 185,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9906664130003264,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "23952",
+      "family": "leaguerounds",
+      "expected": [
+        {
+          "name": "leaguerounds",
+          "arguments": {
+            "tournamentid": 12345,
+            "seasonid": 67890
+          }
+        }
+      ],
+      "response_nll": 0.03240638226270676,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"leaguerounds\",\"arguments\":{\"seasonid\":67890,\"tournamentid\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        273,
+        351,
+        8801,
+        3095,
+        2198,
+        16370,
+        22317,
+        16798,
+        307,
+        788,
+        21,
+        22,
+        23,
+        24,
+        15,
+        1335,
+        88079,
+        307,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 241,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.3981756629996198,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "42174",
+      "family": "get_city_from_zipcode",
+      "expected": [
+        {
+          "name": "get_city_from_zipcode",
+          "arguments": {
+            "zipcode": "99501"
+          }
+        }
+      ],
+      "response_nll": 0.00033956088009290397,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_city_from_zipcode\",\"arguments\":{\"zipcode\":\"99501\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        24971,
+        5673,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        59629,
+        3252,
+        24,
+        24,
+        20,
+        15,
+        16,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 191,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9978975680000985,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "28921",
+      "family": "is_valid_email",
+      "expected": [
+        {
+          "name": "is_valid_email",
+          "arguments": {
+            "email": "invalid.email@.com"
+          }
+        }
+      ],
+      "response_nll": 0.00038576143560931087,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"is_valid_email\",\"arguments\":{\"email\":\"invalid.email@.com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        285,
+        8337,
+        9172,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        11808,
+        9847,
+        31,
+        13,
+        874,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 164,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.8997665100000631,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34654",
+      "family": "get_district_capital_by_id",
+      "expected": [
+        {
+          "name": "get_district_capital_by_id",
+          "arguments": {
+            "is_id": 5
+          }
+        }
+      ],
+      "response_nll": 0.0006591251003555954,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"get_district_capital_by_id\",\"arguments\":{\"is_id\":5}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        75440,
+        16388,
+        2174,
+        3710,
+        842,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 174,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.8970612329999312,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "13898",
+      "family": "search_for_a_product",
+      "expected": [
+        {
+          "name": "search_for_a_product",
+          "arguments": {
+            "q": "SuperFast Charger"
+          }
+        }
+      ],
+      "response_nll": 0.0008732190472073853,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"search_for_a_product\",\"arguments\":{\"q\":\"SuperFast Charger\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        1836,
+        5478,
+        4306,
+        9840,
+        2198,
+        16370,
+        22317,
+        80,
+        3252,
+        19284,
+        32174,
+        72408,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 246,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8643522610000218,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "44519",
+      "family": "get_specific_ayah_verse",
+      "expected": [
+        {
+          "name": "get_specific_ayah_verse",
+          "arguments": {
+            "chapterid": 2,
+            "verseid": 5
+          }
+        }
+      ],
+      "response_nll": 0.030388815328478813,
+      "response_tokens": 25,
+      "text": "[{\"name\":\"get_specific_ayah_verse\",\"arguments\":{\"verseid\":5,\"chapterid\":2}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        56592,
+        62,
+        84074,
+        62,
+        4450,
+        2198,
+        16370,
+        22317,
+        4450,
+        307,
+        788,
+        20,
+        1335,
+        40226,
+        307,
+        788,
+        17,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 254,
+      "generated_tokens": 25,
+      "truncated": false,
+      "generation_seconds": 1.1685127089999696,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "30138",
+      "family": "get_cigar_average_length",
+      "expected": [
+        {
+          "name": "get_cigar_average_length",
+          "arguments": {
+            "wrapper": "Corojo",
+            "name": "Gordo",
+            "filler": "Dominican",
+            "country": "Dominican Republic",
+            "strength": "Mild-Medium"
+          }
+        }
+      ],
+      "response_nll": 0.16942904889583588,
+      "response_tokens": 44,
+      "text": "[{\"name\":\"get_cigar_average_length\",\"arguments\":{\"name\":\"Gordo\",\"filler\":\"Dominican tobacco\",\"country\":\"Dominican Republic\",\"strength\":\"Mild-Medium\",\"wrapper\":\"Corojo\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        666,
+        51284,
+        38594,
+        5118,
+        2198,
+        16370,
+        22317,
+        606,
+        3252,
+        38,
+        51272,
+        2198,
+        7559,
+        261,
+        3252,
+        71541,
+        7065,
+        26433,
+        2198,
+        11141,
+        3252,
+        71541,
+        7065,
+        5429,
+        2198,
+        74237,
+        3252,
+        44,
+        695,
+        5251,
+        23090,
+        2198,
+        21364,
+        3252,
+        10580,
+        78,
+        7305,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 429,
+      "generated_tokens": 45,
+      "truncated": false,
+      "generation_seconds": 2.118217303000165,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "52270",
+      "family": "house_prices_get_points_of_interest",
+      "expected": [
+        {
+          "name": "house_prices_get_points_of_interest",
+          "arguments": {
+            "property_id": 141516
+          }
+        }
+      ],
+      "response_nll": 0.00017940303951036185,
+      "response_tokens": 25,
+      "text": "[{\"name\":\"house_prices_get_points_of_interest\",\"arguments\":{\"property_id\":141516}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        7675,
+        65688,
+        3062,
+        12928,
+        3575,
+        62527,
+        2198,
+        16370,
+        22317,
+        3699,
+        842,
+        788,
+        16,
+        19,
+        16,
+        20,
+        16,
+        21,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 227,
+      "generated_tokens": 25,
+      "truncated": false,
+      "generation_seconds": 1.143117964999874,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "18429",
+      "family": "get_cigar_average_length",
+      "expected": [
+        {
+          "name": "get_cigar_average_length",
+          "arguments": {
+            "strength": "Mild-Medium",
+            "filler": "Nicaragua",
+            "color": "Colorado Claro"
+          }
+        }
+      ],
+      "response_nll": 0.021219812333583832,
+      "response_tokens": 34,
+      "text": "[{\"name\":\"get_cigar_average_length\",\"arguments\":{\"strength\":\"Mild-Medium\",\"filler\":\"Nicaragua\",\"color\":\"Colorado Claro\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        666,
+        51284,
+        38594,
+        5118,
+        2198,
+        16370,
+        22317,
+        74237,
+        3252,
+        44,
+        695,
+        5251,
+        23090,
+        2198,
+        7559,
+        261,
+        3252,
+        57816,
+        277,
+        54648,
+        2198,
+        3423,
+        3252,
+        77469,
+        2435,
+        17165,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 416,
+      "generated_tokens": 34,
+      "truncated": false,
+      "generation_seconds": 1.577468442999816,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "41043",
+      "family": "get_city_from_zipcode",
+      "expected": [
+        {
+          "name": "get_city_from_zipcode",
+          "arguments": {
+            "zipcode": "48226"
+          }
+        }
+      ],
+      "response_nll": 0.0004033157601952553,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_city_from_zipcode\",\"arguments\":{\"zipcode\":\"48226\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        24971,
+        5673,
+        42131,
+        1851,
+        2198,
+        16370,
+        22317,
+        59629,
+        3252,
+        19,
+        23,
+        17,
+        17,
+        21,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9768222009997771,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34128",
+      "family": "video_info",
+      "expected": [
+        {
+          "name": "video_info",
+          "arguments": {
+            "is_id": "viral123"
+          }
+        }
+      ],
+      "response_nll": 0.0004111984744668007,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"video_info\",\"arguments\":{\"is_id\":\"viral123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        9986,
+        3109,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        85,
+        36378,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 195,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9004302210000787,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "4212",
+      "family": "earnings_history",
+      "expected": [
+        {
+          "name": "earnings_history",
+          "arguments": {
+            "ticker": "GOOGL"
+          }
+        }
+      ],
+      "response_nll": 0.0002740368654485792,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"earnings_history\",\"arguments\":{\"ticker\":\"GOOGL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        10118,
+        819,
+        19802,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        15513,
+        46,
+        3825,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 192,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.804122894000102,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "26601",
+      "family": "whois_lookup",
+      "expected": [
+        {
+          "name": "whois_lookup",
+          "arguments": {
+            "domain": "amazon.com"
+          }
+        }
+      ],
+      "response_nll": 0.0006173476576805115,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"whois_lookup\",\"arguments\":{\"domain\":\"amazon.com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14623,
+        285,
+        27464,
+        2198,
+        16370,
+        22317,
+        12204,
+        3252,
+        72753,
+        905,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 186,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7622995459996673,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "21607",
+      "family": "photo_from_given_number",
+      "expected": [
+        {
+          "name": "photo_from_given_number",
+          "arguments": {
+            "phone": "555-9753"
+          }
+        }
+      ],
+      "response_nll": 0.0011955316876992583,
+      "response_tokens": 24,
+      "text": "[{\"name\":\"photo_from_given_number\",\"arguments\":{\"phone\":\"555-9753\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        11556,
+        5673,
+        57653,
+        5500,
+        2198,
+        16370,
+        22317,
+        4844,
+        3252,
+        20,
+        20,
+        20,
+        12,
+        24,
+        22,
+        20,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 209,
+      "generated_tokens": 24,
+      "truncated": false,
+      "generation_seconds": 1.0824823000002652,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "23161",
+      "family": "sentence",
+      "expected": [
+        {
+          "name": "sentence",
+          "arguments": {
+            "amount": 2
+          }
+        }
+      ],
+      "response_nll": 0.0020307821687310934,
+      "response_tokens": 14,
+      "text": "[{\"name\":\"sentence\",\"arguments\":{\"amount\":2}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        51889,
+        2198,
+        16370,
+        22317,
+        6045,
+        788,
+        17,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 190,
+      "generated_tokens": 14,
+      "truncated": false,
+      "generation_seconds": 0.6347968840000249,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "24505",
+      "family": "get_comments_from_product_id",
+      "expected": [
+        {
+          "name": "get_comments_from_product_id",
+          "arguments": {
+            "product_id": "123456789"
+          }
+        }
+      ],
+      "response_nll": 0.00034844569745473564,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"get_comments_from_product_id\",\"arguments\":{\"product_id\":\"123456789\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        30359,
+        5673,
+        9840,
+        842,
+        2198,
+        16370,
+        22317,
+        3031,
+        842,
+        3252,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 254,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.213826906000122,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "41208",
+      "family": "fight",
+      "expected": [
+        {
+          "name": "fight",
+          "arguments": {
+            "is_id": 11111
+          }
+        }
+      ],
+      "response_nll": 0.0021559935994446278,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"fight\",\"arguments\":{\"is_id\":11111}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        21143,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        16,
+        16,
+        16,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 195,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8826016489997528,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "40343",
+      "family": "get_a_conversation",
+      "expected": [
+        {
+          "name": "get_a_conversation",
+          "arguments": {
+            "is_id": 67890
+          }
+        }
+      ],
+      "response_nll": 0.0003898968279827386,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_a_conversation\",\"arguments\":{\"is_id\":67890}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        3382,
+        22323,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        21,
+        22,
+        23,
+        24,
+        15,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.0101673419999315,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "3476",
+      "family": "getprojects",
+      "expected": [
+        {
+          "name": "getprojects",
+          "arguments": {
+            "page": 1
+          }
+        }
+      ],
+      "response_nll": 0.006873853970319033,
+      "response_tokens": 15,
+      "text": "[{\"name\":\"getprojects\",\"arguments\":{\"page\":1}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        17161,
+        2198,
+        16370,
+        22317,
+        2893,
+        788,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 15,
+      "truncated": false,
+      "generation_seconds": 0.7291797180000685,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "9464",
+      "family": "get_6_month_historical_daily_prices",
+      "expected": [
+        {
+          "name": "get_6_month_historical_daily_prices",
+          "arguments": {
+            "ticker": "KO"
+          }
+        }
+      ],
+      "response_nll": 0.0008243441116064787,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"get_6_month_historical_daily_prices\",\"arguments\":{\"ticker\":\"KO\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        62,
+        21,
+        18933,
+        1523,
+        95698,
+        64530,
+        65688,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        54947,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 219,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9984989279996626,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34955",
+      "family": "get_case_by_id",
+      "expected": [
+        {
+          "name": "get_case_by_id",
+          "arguments": {
+            "is_id": "klmno"
+          }
+        }
+      ],
+      "response_nll": 0.004629126284271479,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"get_case_by_id\",\"arguments\":{\"is_id\":\"klmno\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        19096,
+        3710,
+        842,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        10561,
+        76,
+        2152,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 213,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9281707860000097,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "59039",
+      "family": "open_high_low_close_ohlc_price",
+      "expected": [
+        {
+          "name": "open_high_low_close_ohlc_price",
+          "arguments": {
+            "symbols": "OIL",
+            "date": "2021-12-25",
+            "base": "GBP"
+          }
+        }
+      ],
+      "response_nll": 0.055551767349243164,
+      "response_tokens": 39,
+      "text": "[{\"name\":\"open_high_low_close_ohlc_price\",\"arguments\":{\"base\":\"GBP\",\"date\":\"2021-12-25\",\"symbols\":\"OIL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2508,
+        22680,
+        23767,
+        12704,
+        62,
+        2267,
+        17257,
+        9040,
+        2198,
+        16370,
+        22317,
+        3152,
+        3252,
+        96386,
+        2198,
+        1028,
+        3252,
+        17,
+        15,
+        17,
+        16,
+        12,
+        16,
+        17,
+        12,
+        17,
+        20,
+        2198,
+        67426,
+        3252,
+        46,
+        1715,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 296,
+      "generated_tokens": 39,
+      "truncated": false,
+      "generation_seconds": 1.784731821999685,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "6138",
+      "family": "whois_lookup",
+      "expected": [
+        {
+          "name": "whois_lookup",
+          "arguments": {
+            "domain": "tesla.com"
+          }
+        }
+      ],
+      "response_nll": 0.0007869643159210682,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"whois_lookup\",\"arguments\":{\"domain\":\"tesla.com\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14623,
+        285,
+        27464,
+        2198,
+        16370,
+        22317,
+        12204,
+        3252,
+        2338,
+        4260,
+        905,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 190,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.7987819770000897,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "11573",
+      "family": "get_the_latest_remote_jobs",
+      "expected": [
+        {
+          "name": "get_the_latest_remote_jobs",
+          "arguments": {
+            "company": "amazon",
+            "category": "IT support"
+          }
+        }
+      ],
+      "response_nll": 0.2464442104101181,
+      "response_tokens": 23,
+      "text": "[{\"name\":\"get_the_latest_remote_jobs\",\"arguments\":{\"company\":\"Amazon\",\"category\":\"IT support\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        16068,
+        64880,
+        36425,
+        37247,
+        2198,
+        16370,
+        22317,
+        10139,
+        3252,
+        25863,
+        2198,
+        5471,
+        3252,
+        952,
+        1824,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 224,
+      "generated_tokens": 23,
+      "truncated": false,
+      "generation_seconds": 1.0259738999998262,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "48029",
+      "family": "email_checker",
+      "expected": [
+        {
+          "name": "email_checker",
+          "arguments": {
+            "email": "isabella@example.org"
+          }
+        }
+      ],
+      "response_nll": 0.004154691472649574,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"email_checker\",\"arguments\":{\"email\":\"isabella@example.org\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2332,
+        62715,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        285,
+        71590,
+        35487,
+        2659,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 258,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8580789180000465,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "26198",
+      "family": "detail_info",
+      "expected": [
+        {
+          "name": "detail_info",
+          "arguments": {
+            "slug": "module890"
+          }
+        }
+      ],
+      "response_nll": 0.0005475734360516071,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"detail_info\",\"arguments\":{\"slug\":\"module890\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        14585,
+        3109,
+        2198,
+        16370,
+        22317,
+        15125,
+        3252,
+        4352,
+        23,
+        24,
+        15,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 180,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8100376019997384,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "47084",
+      "family": "get_realtime_rates",
+      "expected": [
+        {
+          "name": "get_realtime_rates",
+          "arguments": {
+            "symbol": "BTC"
+          }
+        }
+      ],
+      "response_nll": 0.006167273968458176,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"get_realtime_rates\",\"arguments\":{\"symbol\":\"BTC\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        15266,
+        1678,
+        55373,
+        2198,
+        16370,
+        22317,
+        18785,
+        3252,
+        59118,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 183,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7829098409997641,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "38062",
+      "family": "get_role_ids",
+      "expected": [
+        {
+          "name": "get_role_ids",
+          "arguments": {
+            "document_id": "abc123"
+          }
+        }
+      ],
+      "response_nll": 0.0003196142497472465,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"get_role_ids\",\"arguments\":{\"document_id\":\"abc123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        19792,
+        8077,
+        2198,
+        16370,
+        22317,
+        6062,
+        842,
+        3252,
+        13683,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 179,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9381080240000301,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "9730",
+      "family": "tag_news",
+      "expected": [
+        {
+          "name": "tag_news",
+          "arguments": {
+            "tag": "real estate"
+          }
+        }
+      ],
+      "response_nll": 0.0004389784298837185,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"tag_news\",\"arguments\":{\"tag\":\"real estate\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        4578,
+        32485,
+        2198,
+        16370,
+        22317,
+        4578,
+        3252,
+        7951,
+        12394,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 182,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7225176639999518,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "6202",
+      "family": "team_recent_form",
+      "expected": [
+        {
+          "name": "team_recent_form",
+          "arguments": {
+            "team_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.00023330285330303013,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"team_recent_form\",\"arguments\":{\"team_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        9196,
+        62361,
+        7915,
+        2198,
+        16370,
+        22317,
+        9196,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 194,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9605836480000107,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39468",
+      "family": "spac_top_10_rankings",
+      "expected": [
+        {
+          "name": "spac_top_10_rankings",
+          "arguments": {
+            "sortby": "gainers",
+            "period": "weekly",
+            "type": "common"
+          }
+        }
+      ],
+      "response_nll": 0.08451887965202332,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"spac_top_10_rankings\",\"arguments\":{\"type\":\"common\",\"sortby\":\"gainers\",\"period\":\"weekly\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2154,
+        580,
+        10426,
+        62,
+        16,
+        15,
+        20417,
+        819,
+        2198,
+        16370,
+        22317,
+        1313,
+        3252,
+        5464,
+        2198,
+        6860,
+        1694,
+        3252,
+        70,
+        20568,
+        2198,
+        19304,
+        3252,
+        71767,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 312,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.4303163160002441,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "28489",
+      "family": "city_list",
+      "expected": [
+        {
+          "name": "city_list",
+          "arguments": {
+            "province": "Alberta"
+          }
+        }
+      ],
+      "response_nll": 0.04205829277634621,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"city_list\",\"arguments\":{\"province\":\"Alberta\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        8926,
+        2019,
+        2198,
+        16370,
+        22317,
+        26335,
+        3252,
+        66622,
+        64,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 181,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7190916800000196,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "45673",
+      "family": "town",
+      "expected": [
+        {
+          "name": "town",
+          "arguments": {
+            "town": "Bloemfontein"
+          }
+        }
+      ],
+      "response_nll": 0.002414806978777051,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"town\",\"arguments\":{\"town\":\"Bloemfontein\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        27831,
+        2198,
+        16370,
+        22317,
+        27831,
+        3252,
+        95449,
+        336,
+        4026,
+        71620,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 190,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7583707359999607,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "7575",
+      "family": "qualifyingresults",
+      "expected": [
+        {
+          "name": "qualifyingresults",
+          "arguments": {
+            "year": "2018",
+            "round": "1"
+          }
+        }
+      ],
+      "response_nll": 0.037315256893634796,
+      "response_tokens": 23,
+      "text": "[{\"name\":\"qualifyingresults\",\"arguments\":{\"year\":\"2018\",\"round\":\"1\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        1751,
+        7766,
+        8074,
+        2198,
+        16370,
+        22317,
+        3157,
+        3252,
+        17,
+        15,
+        16,
+        23,
+        2198,
+        1049,
+        3252,
+        16,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 215,
+      "generated_tokens": 23,
+      "truncated": false,
+      "generation_seconds": 1.0407999879998897,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "45555",
+      "family": "get_a_specific_quote",
+      "expected": [
+        {
+          "name": "get_a_specific_quote",
+          "arguments": {
+            "is_id": "alpha789"
+          }
+        }
+      ],
+      "response_nll": 0.00023261304886545986,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"get_a_specific_quote\",\"arguments\":{\"is_id\":\"alpha789\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        56592,
+        45236,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        7141,
+        22,
+        23,
+        24,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 184,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9395006319996355,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "31365",
+      "family": "get_6_month_historical_daily_prices",
+      "expected": [
+        {
+          "name": "get_6_month_historical_daily_prices",
+          "arguments": {
+            "ticker": "AMZN"
+          }
+        }
+      ],
+      "response_nll": 0.0006128927925601602,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_6_month_historical_daily_prices\",\"arguments\":{\"ticker\":\"AMZN\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        62,
+        21,
+        18933,
+        1523,
+        95698,
+        64530,
+        65688,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        1402,
+        44847,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 217,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.992730446999758,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "30524",
+      "family": "earnings_history",
+      "expected": [
+        {
+          "name": "earnings_history",
+          "arguments": {
+            "ticker": "MSFT"
+          }
+        }
+      ],
+      "response_nll": 0.0004212417115923017,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"earnings_history\",\"arguments\":{\"ticker\":\"MSFT\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        10118,
+        819,
+        19802,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        4826,
+        3994,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 185,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.8009928699998454,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "18460",
+      "family": "getfscore",
+      "expected": [
+        {
+          "name": "getfscore",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        }
+      ],
+      "response_nll": 0.0015161174815148115,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"getfscore\",\"arguments\":{\"ticker\":\"AAPL\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        3848,
+        2153,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        82916,
+        43,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 195,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.8231540439996934,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "2895",
+      "family": "user_login",
+      "expected": [
+        {
+          "name": "user_login",
+          "arguments": {
+            "username": "+1255555555555",
+            "password": "pass12345"
+          }
+        }
+      ],
+      "response_nll": 0.010509934276342392,
+      "response_tokens": 36,
+      "text": "[{\"name\":\"user_login\",\"arguments\":{\"username\":\"+1255555555555\",\"password\":\"pass12345\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        13681,
+        2198,
+        16370,
+        22317,
+        5113,
+        70318,
+        16,
+        17,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        2198,
+        3833,
+        3252,
+        6385,
+        16,
+        17,
+        18,
+        19,
+        20,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 291,
+      "generated_tokens": 36,
+      "truncated": false,
+      "generation_seconds": 1.6794892929997332,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "17548",
+      "family": "search_for_a_product",
+      "expected": [
+        {
+          "name": "search_for_a_product",
+          "arguments": {
+            "q": "Samsung Galaxy S21"
+          }
+        }
+      ],
+      "response_nll": 0.0007512093288823962,
+      "response_tokens": 21,
+      "text": "[{\"name\":\"search_for_a_product\",\"arguments\":{\"q\":\"Samsung Galaxy S21\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        1836,
+        5478,
+        4306,
+        9840,
+        2198,
+        16370,
+        22317,
+        80,
+        3252,
+        50890,
+        19662,
+        328,
+        17,
+        16,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 248,
+      "generated_tokens": 21,
+      "truncated": false,
+      "generation_seconds": 0.9451713690000361,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39449",
+      "family": "spac_top_10_rankings",
+      "expected": [
+        {
+          "name": "spac_top_10_rankings",
+          "arguments": {
+            "sortby": "gainers",
+            "period": "weekly",
+            "type": "common"
+          }
+        }
+      ],
+      "response_nll": 0.08994480967521667,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"spac_top_10_rankings\",\"arguments\":{\"type\":\"common\",\"sortby\":\"gainers\",\"period\":\"weekly\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2154,
+        580,
+        10426,
+        62,
+        16,
+        15,
+        20417,
+        819,
+        2198,
+        16370,
+        22317,
+        1313,
+        3252,
+        5464,
+        2198,
+        6860,
+        1694,
+        3252,
+        70,
+        20568,
+        2198,
+        19304,
+        3252,
+        71767,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 323,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.3932086029999482,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58555",
+      "family": "retrieve_rewards",
+      "expected": [
+        {
+          "name": "retrieve_rewards",
+          "arguments": {
+            "slug": "test-slug"
+          }
+        }
+      ],
+      "response_nll": 0.0005957776447758079,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"retrieve_rewards\",\"arguments\":{\"slug\":\"test-slug\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        55527,
+        77997,
+        2198,
+        16370,
+        22317,
+        15125,
+        3252,
+        1944,
+        1331,
+        43213,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 184,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7626103749998947,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "48299",
+      "family": "exists_exists_ticket_get",
+      "expected": [
+        {
+          "name": "exists_exists_ticket_get",
+          "arguments": {
+            "ticket": "xyz123"
+          }
+        }
+      ],
+      "response_nll": 0.007271094713360071,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"exists_exists_ticket_get\",\"arguments\":{\"ticket\":\"xyz123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        16304,
+        9766,
+        45718,
+        3062,
+        2198,
+        16370,
+        22317,
+        26534,
+        3252,
+        28854,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 179,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.8961712479999733,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "52863",
+      "family": "find_by_title",
+      "expected": [
+        {
+          "name": "find_by_title",
+          "arguments": {
+            "q": "The Shawshank Redemption"
+          }
+        }
+      ],
+      "response_nll": 0.0018556542927399278,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"find_by_title\",\"arguments\":{\"q\":\"The Shawshank Redemption\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        3903,
+        3710,
+        6112,
+        2198,
+        16370,
+        22317,
+        80,
+        3252,
+        785,
+        35185,
+        927,
+        1180,
+        88641,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 199,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9273469340000702,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "9168",
+      "family": "sentence",
+      "expected": [
+        {
+          "name": "sentence",
+          "arguments": {
+            "amount": 1
+          }
+        }
+      ],
+      "response_nll": 0.0023032878525555134,
+      "response_tokens": 14,
+      "text": "[{\"name\":\"sentence\",\"arguments\":{\"amount\":1}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        51889,
+        2198,
+        16370,
+        22317,
+        6045,
+        788,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 191,
+      "generated_tokens": 14,
+      "truncated": false,
+      "generation_seconds": 0.6501156290000836,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "34386",
+      "family": "measure_distance_reverse",
+      "expected": [
+        {
+          "name": "measure_distance_reverse",
+          "arguments": {
+            "stop_address": "Nkongsamba",
+            "start_address": "Mamfe"
+          }
+        }
+      ],
+      "response_nll": 0.1351497322320938,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"measure_distance_reverse\",\"arguments\":{\"start_address\":\"Mamfe\",\"stop_address\":\"Nkongsamba\",\"unit\":\"km\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        47799,
+        19464,
+        43277,
+        2198,
+        16370,
+        22317,
+        2468,
+        6744,
+        3252,
+        44,
+        309,
+        1859,
+        2198,
+        9495,
+        6744,
+        3252,
+        45,
+        74,
+        13181,
+        41908,
+        2198,
+        3843,
+        3252,
+        16017,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 303,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.447566697000184,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": false
+    },
+    {
+      "id": "41127",
+      "family": "onyomi_reading",
+      "expected": [
+        {
+          "name": "onyomi_reading",
+          "arguments": {
+            "on": "\u30b7\u30e7\u30af"
+          }
+        }
+      ],
+      "response_nll": 0.0007786717033013701,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"onyomi_reading\",\"arguments\":{\"on\":\"\u30b7\u30e7\u30af\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        3549,
+        21441,
+        81859,
+        2198,
+        16370,
+        22317,
+        263,
+        3252,
+        126024,
+        28120,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 203,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7976609319998715,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "15678",
+      "family": "imperial_pounds",
+      "expected": [
+        {
+          "name": "imperial_pounds",
+          "arguments": {
+            "weight": 220,
+            "height": 72
+          }
+        }
+      ],
+      "response_nll": 0.0010339128784835339,
+      "response_tokens": 24,
+      "text": "[{\"name\":\"imperial_pounds\",\"arguments\":{\"weight\":220,\"height\":72}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        318,
+        67227,
+        620,
+        3095,
+        2198,
+        16370,
+        22317,
+        4765,
+        788,
+        17,
+        17,
+        15,
+        1335,
+        2563,
+        788,
+        22,
+        17,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 229,
+      "generated_tokens": 24,
+      "truncated": false,
+      "generation_seconds": 1.1547899600000164,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "52169",
+      "family": "email_checker",
+      "expected": [
+        {
+          "name": "email_checker",
+          "arguments": {
+            "email": "charlie@example.org"
+          }
+        }
+      ],
+      "response_nll": 0.00459889555349946,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"email_checker\",\"arguments\":{\"email\":\"charlie@example.org\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2332,
+        62715,
+        2198,
+        16370,
+        22317,
+        2332,
+        3252,
+        1762,
+        11567,
+        35487,
+        2659,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 258,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8877406599999631,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "35666",
+      "family": "check_1_param",
+      "expected": [
+        {
+          "name": "check_1_param",
+          "arguments": {
+            "vat": "DE123456789"
+          }
+        }
+      ],
+      "response_nll": 0.00020002518431283534,
+      "response_tokens": 26,
+      "text": "[{\"name\":\"check_1_param\",\"arguments\":{\"vat\":\"DE123456789\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2028,
+        62,
+        16,
+        4090,
+        2198,
+        16370,
+        22317,
+        49713,
+        3252,
+        1150,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 203,
+      "generated_tokens": 26,
+      "truncated": false,
+      "generation_seconds": 1.2298372180002843,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "9572",
+      "family": "user_groups_list",
+      "expected": [
+        {
+          "name": "user_groups_list",
+          "arguments": {
+            "is_id": "76561198057963127"
+          }
+        }
+      ],
+      "response_nll": 0.0007539718062616885,
+      "response_tokens": 33,
+      "text": "[{\"name\":\"user_groups_list\",\"arguments\":{\"is_id\":\"76561198057963127\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        21148,
+        2019,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        22,
+        21,
+        20,
+        21,
+        16,
+        16,
+        24,
+        23,
+        15,
+        20,
+        22,
+        24,
+        21,
+        18,
+        16,
+        17,
+        22,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 204,
+      "generated_tokens": 33,
+      "truncated": false,
+      "generation_seconds": 1.510847936999653,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39652",
+      "family": "get_a_conversation",
+      "expected": [
+        {
+          "name": "get_a_conversation",
+          "arguments": {
+            "is_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.001427802024409175,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_a_conversation\",\"arguments\":{\"is_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        3382,
+        22323,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 176,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.0126948689999153,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "9486",
+      "family": "get_a_random_quote_from_a_specific_book",
+      "expected": [
+        {
+          "name": "get_a_random_quote_from_a_specific_book",
+          "arguments": {
+            "book_id": "B007"
+          }
+        }
+      ],
+      "response_nll": 0.0014171813381835818,
+      "response_tokens": 25,
+      "text": "[{\"name\":\"get_a_random_quote_from_a_specific_book\",\"arguments\":{\"book_id\":\"B007\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        22644,
+        45236,
+        5673,
+        4306,
+        56592,
+        26421,
+        2198,
+        16370,
+        22317,
+        2190,
+        842,
+        3252,
+        33,
+        15,
+        15,
+        22,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 197,
+      "generated_tokens": 25,
+      "truncated": false,
+      "generation_seconds": 1.1560970509999606,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "59287",
+      "family": "get_data_and_story",
+      "expected": [
+        {
+          "name": "get_data_and_story",
+          "arguments": {
+            "user": "kimkardashian"
+          }
+        }
+      ],
+      "response_nll": 0.0005023257108405232,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"get_data_and_story\",\"arguments\":{\"user\":\"kimkardashian\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        1769,
+        8378,
+        66342,
+        2198,
+        16370,
+        22317,
+        872,
+        3252,
+        57893,
+        74,
+        55688,
+        1103,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 188,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9128362100000231,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "56702",
+      "family": "find_by_title",
+      "expected": [
+        {
+          "name": "find_by_title",
+          "arguments": {
+            "q": "The Matrix"
+          }
+        }
+      ],
+      "response_nll": 0.002364516258239746,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"find_by_title\",\"arguments\":{\"q\":\"The Matrix\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        3903,
+        3710,
+        6112,
+        2198,
+        16370,
+        22317,
+        80,
+        3252,
+        785,
+        11631,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 191,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.7738366030002908,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "36706",
+      "family": "town",
+      "expected": [
+        {
+          "name": "town",
+          "arguments": {
+            "town": "Pretoria"
+          }
+        }
+      ],
+      "response_nll": 0.0007489325944334269,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"town\",\"arguments\":{\"town\":\"Pretoria\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        27831,
+        2198,
+        16370,
+        22317,
+        27831,
+        3252,
+        47,
+        2122,
+        10782,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 192,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7479685129997051,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "37335",
+      "family": "spac_top_10_rankings",
+      "expected": [
+        {
+          "name": "spac_top_10_rankings",
+          "arguments": {
+            "sortby": "volume",
+            "period": "daily",
+            "type": "warrant"
+          }
+        }
+      ],
+      "response_nll": 0.11942999064922333,
+      "response_tokens": 31,
+      "text": "[{\"name\":\"spac_top_10_rankings\",\"arguments\":{\"type\":\"warrant\",\"sortby\":\"volume\",\"period\":\"daily\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2154,
+        580,
+        10426,
+        62,
+        16,
+        15,
+        20417,
+        819,
+        2198,
+        16370,
+        22317,
+        1313,
+        3252,
+        86,
+        6598,
+        2198,
+        6860,
+        1694,
+        3252,
+        25060,
+        2198,
+        19304,
+        3252,
+        48074,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 312,
+      "generated_tokens": 31,
+      "truncated": false,
+      "generation_seconds": 1.4368278550000468,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39274",
+      "family": "getfscore",
+      "expected": [
+        {
+          "name": "getfscore",
+          "arguments": {
+            "ticker": "AMZN"
+          }
+        }
+      ],
+      "response_nll": 0.0008025890565477312,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"getfscore\",\"arguments\":{\"ticker\":\"AMZN\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        3848,
+        2153,
+        2198,
+        16370,
+        22317,
+        68345,
+        3252,
+        1402,
+        44847,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 201,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.8348391269996682,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "52772",
+      "family": "house_prices_get_points_of_interest",
+      "expected": [
+        {
+          "name": "house_prices_get_points_of_interest",
+          "arguments": {
+            "property_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.00013514830789063126,
+      "response_tokens": 24,
+      "text": "[{\"name\":\"house_prices_get_points_of_interest\",\"arguments\":{\"property_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        7675,
+        65688,
+        3062,
+        12928,
+        3575,
+        62527,
+        2198,
+        16370,
+        22317,
+        3699,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 215,
+      "generated_tokens": 24,
+      "truncated": false,
+      "generation_seconds": 1.159601635999934,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "24157",
+      "family": "city_list",
+      "expected": [
+        {
+          "name": "city_list",
+          "arguments": {
+            "province": "Ontario"
+          }
+        }
+      ],
+      "response_nll": 0.024451153352856636,
+      "response_tokens": 16,
+      "text": "[{\"name\":\"city_list\",\"arguments\":{\"province\":\"Ontario\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        8926,
+        2019,
+        2198,
+        16370,
+        22317,
+        26335,
+        3252,
+        66303,
+        3290,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 183,
+      "generated_tokens": 16,
+      "truncated": false,
+      "generation_seconds": 0.7242877680000674,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "50969",
+      "family": "get_data_and_story",
+      "expected": [
+        {
+          "name": "get_data_and_story",
+          "arguments": {
+            "user": "john_doe123"
+          }
+        }
+      ],
+      "response_nll": 0.0002825284900609404,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_data_and_story\",\"arguments\":{\"user\":\"john_doe123\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        1769,
+        8378,
+        66342,
+        2198,
+        16370,
+        22317,
+        872,
+        3252,
+        47817,
+        814,
+        4644,
+        16,
+        17,
+        18,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 189,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 0.9953963220000333,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "59028",
+      "family": "get_data_and_story",
+      "expected": [
+        {
+          "name": "get_data_and_story",
+          "arguments": {
+            "user": "emmawatson"
+          }
+        }
+      ],
+      "response_nll": 0.0008694175630807877,
+      "response_tokens": 20,
+      "text": "[{\"name\":\"get_data_and_story\",\"arguments\":{\"user\":\"emmawatson\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        1769,
+        8378,
+        66342,
+        2198,
+        16370,
+        22317,
+        872,
+        3252,
+        72419,
+        672,
+        266,
+        930,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 187,
+      "generated_tokens": 20,
+      "truncated": false,
+      "generation_seconds": 0.9250136700002258,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "54693",
+      "family": "getuserbyname",
+      "expected": [
+        {
+          "name": "getuserbyname",
+          "arguments": {
+            "username": "john_smith"
+          }
+        }
+      ],
+      "response_nll": 0.0012749758316203952,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"getuserbyname\",\"arguments\":{\"username\":\"john_smith\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        872,
+        94878,
+        2198,
+        16370,
+        22317,
+        5113,
+        3252,
+        47817,
+        15874,
+        410,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 187,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8016089779998765,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "5279",
+      "family": "prematch_event",
+      "expected": [
+        {
+          "name": "prematch_event",
+          "arguments": {
+            "lang": "en",
+            "evt": 12345
+          }
+        }
+      ],
+      "response_nll": 0.008663698099553585,
+      "response_tokens": 24,
+      "text": "[{\"name\":\"prematch_event\",\"arguments\":{\"lang\":\"en\",\"evt\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        1726,
+        6347,
+        6748,
+        2198,
+        16370,
+        22317,
+        5205,
+        3252,
+        268,
+        2198,
+        28734,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 208,
+      "generated_tokens": 24,
+      "truncated": false,
+      "generation_seconds": 1.1013455229999636,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "48993",
+      "family": "nhl_picks",
+      "expected": [
+        {
+          "name": "nhl_picks",
+          "arguments": {
+            "is_id": "0022100240"
+          }
+        }
+      ],
+      "response_nll": 0.0003034452092833817,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"nhl_picks\",\"arguments\":{\"is_id\":\"0022100240\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        16719,
+        75,
+        620,
+        5788,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        15,
+        15,
+        17,
+        17,
+        16,
+        15,
+        15,
+        17,
+        19,
+        15,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 204,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.2520402529999046,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "25249",
+      "family": "zappos_product_detail_by_product_id",
+      "expected": [
+        {
+          "name": "zappos_product_detail_by_product_id",
+          "arguments": {
+            "product_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.00026574384537525475,
+      "response_tokens": 26,
+      "text": "[{\"name\":\"zappos_product_detail_by_product_id\",\"arguments\":{\"product_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        89,
+        676,
+        436,
+        9840,
+        14480,
+        3710,
+        9840,
+        842,
+        2198,
+        16370,
+        22317,
+        3031,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 192,
+      "generated_tokens": 26,
+      "truncated": false,
+      "generation_seconds": 1.1943752669999412,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "45183",
+      "family": "all_strains_descending",
+      "expected": [
+        {
+          "name": "all_strains_descending",
+          "arguments": {
+            "ordering": "thc"
+          }
+        }
+      ],
+      "response_nll": 0.0919327437877655,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"all_strains_descending\",\"arguments\":{\"ordering\":\"THC\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        541,
+        2895,
+        1735,
+        10986,
+        2459,
+        2198,
+        16370,
+        22317,
+        51869,
+        3252,
+        3617,
+        34,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 206,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8999627289999808,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": false,
+      "strict_exact": false
+    },
+    {
+      "id": "5169",
+      "family": "user_login",
+      "expected": [
+        {
+          "name": "user_login",
+          "arguments": {
+            "username": "+1155555555555",
+            "password": "international456"
+          }
+        }
+      ],
+      "response_nll": 0.006996877491474152,
+      "response_tokens": 34,
+      "text": "[{\"name\":\"user_login\",\"arguments\":{\"username\":\"+1155555555555\",\"password\":\"international456\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        13681,
+        2198,
+        16370,
+        22317,
+        5113,
+        70318,
+        16,
+        16,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        2198,
+        3833,
+        3252,
+        97597,
+        19,
+        20,
+        21,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 291,
+      "generated_tokens": 34,
+      "truncated": false,
+      "generation_seconds": 1.6167547639997792,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39399",
+      "family": "study_list_macquarie",
+      "expected": [
+        {
+          "name": "study_list_macquarie",
+          "arguments": {
+            "list": "15-18"
+          }
+        }
+      ],
+      "response_nll": 0.001345324795693159,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"study_list_macquarie\",\"arguments\":{\"list\":\"15-18\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        54965,
+        2019,
+        22802,
+        446,
+        66445,
+        2198,
+        16370,
+        22317,
+        1607,
+        3252,
+        16,
+        20,
+        12,
+        16,
+        23,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 226,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.0289818729997933,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "10011",
+      "family": "get_the_awarded_books_of_a_year",
+      "expected": [
+        {
+          "name": "get_the_awarded_books_of_a_year",
+          "arguments": {
+            "year": "2012"
+          }
+        }
+      ],
+      "response_nll": 0.0009883638704195619,
+      "response_tokens": 24,
+      "text": "[{\"name\":\"get_the_awarded_books_of_a_year\",\"arguments\":{\"year\":\"2012\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        16068,
+        54168,
+        20958,
+        73084,
+        3575,
+        4306,
+        14645,
+        2198,
+        16370,
+        22317,
+        3157,
+        3252,
+        17,
+        15,
+        16,
+        17,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 207,
+      "generated_tokens": 24,
+      "truncated": false,
+      "generation_seconds": 1.085751658999925,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "56170",
+      "family": "web_pair_details",
+      "expected": [
+        {
+          "name": "web_pair_details",
+          "arguments": {
+            "chain_slug": "ethereum",
+            "pair_slug": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852",
+            "exchange_slug": "sushiswap"
+          }
+        }
+      ],
+      "response_nll": 0.051272109150886536,
+      "response_tokens": 65,
+      "text": "[{\"name\":\"web_pair_details\",\"arguments\":{\"pair_slug\":\"0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852\",\"exchange_slug\":\"sushiswap\",\"chain_slug\":\"ethereum\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        2911,
+        14445,
+        13260,
+        2198,
+        16370,
+        22317,
+        12670,
+        31024,
+        3252,
+        15,
+        87,
+        15,
+        67,
+        19,
+        64,
+        16,
+        16,
+        67,
+        20,
+        2127,
+        64705,
+        17,
+        23,
+        757,
+        18,
+        69,
+        21,
+        16,
+        67,
+        16,
+        15,
+        15,
+        85733,
+        19,
+        67,
+        19,
+        15,
+        19,
+        22,
+        16,
+        69,
+        16,
+        23,
+        20,
+        17,
+        2198,
+        39568,
+        31024,
+        3252,
+        82,
+        1116,
+        285,
+        21726,
+        2198,
+        8819,
+        31024,
+        3252,
+        67122,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 335,
+      "generated_tokens": 65,
+      "truncated": false,
+      "generation_seconds": 3.0213427370003956,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "55474",
+      "family": "get_specific_ayah_verse",
+      "expected": [
+        {
+          "name": "get_specific_ayah_verse",
+          "arguments": {
+            "chapterid": 36,
+            "verseid": 24
+          }
+        }
+      ],
+      "response_nll": 0.027087096124887466,
+      "response_tokens": 27,
+      "text": "[{\"name\":\"get_specific_ayah_verse\",\"arguments\":{\"verseid\":24,\"chapterid\":36}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        56592,
+        62,
+        84074,
+        62,
+        4450,
+        2198,
+        16370,
+        22317,
+        4450,
+        307,
+        788,
+        17,
+        19,
+        1335,
+        40226,
+        307,
+        788,
+        18,
+        21,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 255,
+      "generated_tokens": 27,
+      "truncated": false,
+      "generation_seconds": 1.3019821550001325,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58817",
+      "family": "getuserbyname",
+      "expected": [
+        {
+          "name": "getuserbyname",
+          "arguments": {
+            "username": "john_doe"
+          }
+        }
+      ],
+      "response_nll": 0.0005797738558612764,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"getuserbyname\",\"arguments\":{\"username\":\"john_doe\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        872,
+        94878,
+        2198,
+        16370,
+        22317,
+        5113,
+        3252,
+        47817,
+        814,
+        4644,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 330,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8786162950000289,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "38033",
+      "family": "get_a_conversation",
+      "expected": [
+        {
+          "name": "get_a_conversation",
+          "arguments": {
+            "is_id": 12345
+          }
+        }
+      ],
+      "response_nll": 0.0003367160679772496,
+      "response_tokens": 22,
+      "text": "[{\"name\":\"get_a_conversation\",\"arguments\":{\"is_id\":12345}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        4306,
+        3382,
+        22323,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 172,
+      "generated_tokens": 22,
+      "truncated": false,
+      "generation_seconds": 1.0071392489999198,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "25843",
+      "family": "user_groups_list",
+      "expected": [
+        {
+          "name": "user_groups_list",
+          "arguments": {
+            "is_id": "76561198057963127"
+          }
+        }
+      ],
+      "response_nll": 0.0003839081327896565,
+      "response_tokens": 33,
+      "text": "[{\"name\":\"user_groups_list\",\"arguments\":{\"is_id\":\"76561198057963127\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        872,
+        21148,
+        2019,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        3252,
+        22,
+        21,
+        20,
+        21,
+        16,
+        16,
+        24,
+        23,
+        15,
+        20,
+        22,
+        24,
+        21,
+        18,
+        16,
+        17,
+        22,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 207,
+      "generated_tokens": 33,
+      "truncated": false,
+      "generation_seconds": 1.5447155940000812,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "58577",
+      "family": "get_anime_by_id",
+      "expected": [
+        {
+          "name": "get_anime_by_id",
+          "arguments": {
+            "is_id": 1
+          }
+        }
+      ],
+      "response_nll": 0.0008467093575745821,
+      "response_tokens": 19,
+      "text": "[{\"name\":\"get_anime_by_id\",\"arguments\":{\"is_id\":1}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        455,
+        12008,
+        545,
+        3710,
+        842,
+        2198,
+        16370,
+        22317,
+        285,
+        842,
+        788,
+        16,
+        3417,
+        60,
+        151645
+      ],
+      "prompt_tokens": 183,
+      "generated_tokens": 19,
+      "truncated": false,
+      "generation_seconds": 0.8983897250000155,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "54288",
+      "family": "weather_report",
+      "expected": [
+        {
+          "name": "weather_report",
+          "arguments": {
+            "cityname": "Rio de Janeiro"
+          }
+        }
+      ],
+      "response_nll": 0.004782260395586491,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"weather_report\",\"arguments\":{\"cityname\":\"Rio de Janeiro\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        15206,
+        14813,
+        2198,
+        16370,
+        22317,
+        8926,
+        606,
+        3252,
+        88046,
+        409,
+        60323,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 190,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8483452929999657,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "40050",
+      "family": "find_by_title",
+      "expected": [
+        {
+          "name": "find_by_title",
+          "arguments": {
+            "q": "Pulp Fiction"
+          }
+        }
+      ],
+      "response_nll": 0.002814162988215685,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"find_by_title\",\"arguments\":{\"q\":\"Pulp Fiction\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        3903,
+        3710,
+        6112,
+        2198,
+        16370,
+        22317,
+        80,
+        3252,
+        47,
+        12840,
+        42654,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 197,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8635641989999385,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "35147",
+      "family": "onyomi_reading",
+      "expected": [
+        {
+          "name": "onyomi_reading",
+          "arguments": {
+            "on": "sai"
+          }
+        }
+      ],
+      "response_nll": 0.0010243221186101437,
+      "response_tokens": 17,
+      "text": "[{\"name\":\"onyomi_reading\",\"arguments\":{\"on\":\"sai\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        3549,
+        21441,
+        81859,
+        2198,
+        16370,
+        22317,
+        263,
+        3252,
+        82,
+        2143,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 203,
+      "generated_tokens": 17,
+      "truncated": false,
+      "generation_seconds": 0.804838301000018,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    },
+    {
+      "id": "39505",
+      "family": "autocomplete",
+      "expected": [
+        {
+          "name": "autocomplete",
+          "arguments": {
+            "query": "Hauptbahnhof"
+          }
+        }
+      ],
+      "response_nll": 0.0011237248545512557,
+      "response_tokens": 18,
+      "text": "[{\"name\":\"autocomplete\",\"arguments\":{\"query\":\"Hauptbahnhof\"}}]",
+      "token_ids": [
+        58,
+        4913,
+        606,
+        3252,
+        56514,
+        2198,
+        16370,
+        22317,
+        1631,
+        3252,
+        39,
+        51898,
+        68143,
+        16719,
+        1055,
+        30975,
+        60,
+        151645
+      ],
+      "prompt_tokens": 191,
+      "generated_tokens": 18,
+      "truncated": false,
+      "generation_seconds": 0.8464796660000502,
+      "json_valid": true,
+      "schema_valid": true,
+      "function_correct": true,
+      "exact": true,
+      "strict_exact": true
+    }
+  ],
+  "general_scorer": {
+    "revision": 7,
+    "fingerprint": "80992ac0369233b36d82e41c6f2baff510f6331a6647329fa139c4a99259d5c4",
+    "max_new_tokens": 256
+  },
+  "probe_note": "48 templated synthetic probes are narrow, correlated tests, not broad safety evidence",
+  "inference": {
+    "weight_dtype": "torch.float16",
+    "greedy": true,
+    "thinking": false,
+    "max_new_tokens": 128
+  },
+  "tokenizer_identity": "ccd704efdce07a85d31eaf5eb3e4629d121889dd0c628a2ea854af260b44cb92",
+  "quantization": {
+    "module_count": 0,
+    "modules": [],
+    "model_footprint_bytes": 3441150208,
+    "all_nf4_uint8": false
+  }
+}

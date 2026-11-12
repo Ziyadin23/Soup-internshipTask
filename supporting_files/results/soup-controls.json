@@ -1,0 +1,87 @@
+{
+  "commands": [
+    {
+      "name": "ship-untrained-live",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "ship",
+        "--base",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/base",
+        "--adapter",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/untrained_adapter",
+        "--task-eval",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/data/soup_task_eval.jsonl",
+        "--device",
+        "cuda",
+        "--output",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/ship-untrained.json"
+      ],
+      "returncode": 2,
+      "started_at": "2026-11-10T15:29:15.272+00:00",
+      "finished_at": "2026-11-10T15:29:16.190+00:00",
+      "log": "evidence/soup/ship-untrained-live.raw.log"
+    },
+    {
+      "name": "doctor-truncation-control",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "data",
+        "doctor",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/data/train_chat.jsonl",
+        "--model",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/base",
+        "--format",
+        "chatml",
+        "--max-length",
+        "32",
+        "--sample",
+        "1000",
+        "--output",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/doctor-truncation-control.json"
+      ],
+      "returncode": 2,
+      "started_at": "2026-11-10T15:29:16.190+00:00",
+      "finished_at": "2026-11-10T15:29:27.986+00:00",
+      "log": "evidence/soup/doctor-truncation-control.raw.log"
+    },
+    {
+      "name": "ship-merged-offline",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "ship",
+        "--evidence",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/scores-merged.json",
+        "--output",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/verdict-merged.json"
+      ],
+      "returncode": 0,
+      "started_at": "2026-11-10T15:29:27.991+00:00",
+      "finished_at": "2026-11-10T15:29:28.757+00:00",
+      "log": "evidence/soup/ship-merged-offline.raw.log"
+    },
+    {
+      "name": "ship-quantized-offline",
+      "command": [
+        "/home/ubuntu/soup_submission/.venv/bin/python",
+        "-m",
+        "soup_cli",
+        "ship",
+        "--evidence",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/scores-quantized.json",
+        "--output",
+        "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/verdict-quantized.json"
+      ],
+      "returncode": 2,
+      "started_at": "2026-11-10T15:29:28.762+00:00",
+      "finished_at": "2026-11-10T15:29:29.529+00:00",
+      "log": "evidence/soup/ship-quantized-offline.raw.log"
+    }
+  ],
+  "note": "Offline SHIP only applies Soup policy to our measured scores; it does not establish production execution safety or inspect the merged/4-bit weights."
+}

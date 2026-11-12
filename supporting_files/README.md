@@ -1,0 +1,17 @@
+# Soup task submission bundle
+
+The final two-page report and reflection are under submission/. The standalone PDF attached to the email is the same report. docs/ contains the completed decision record, journal, memory/error analyses, AI-use record and source-version explanation. assignment/ preserves the original task.
+
+code/ is the exact original measured source, with code_manifest.json. reviewed_code/ contains the corrected gate and later diagnostic/report/reproduction hardening. The immutable cloud-reviewed ZIP and its historical manifest are under evidence/source-versions/; the verifier and core gate used in the corrected replay match reviewed_code byte for byte. Model data/runtime/stages and core outside the release gate are unchanged from the measured source. See docs/SOURCE_VERSIONS.md.
+
+Both original verification.json and the separately named corrected verification replay are preserved in results/. The reviewed pointer identifies the result used for the final PDF. An exact five-point boundary was incorrectly flagged by the original custom gate; the corrected replay removes that one false flag, while DON'T SHIP remains supported by the other conditions. Source changes are not represented as the source used for original training.
+
+Raw timestamped phase logs, nvidia-smi output, individual predictions, Soup controls and setup failures are under evidence/. Synthetic local controls and real model measurements are explicitly identified. No real external tool was executed. The notebook is an unexecuted reproduction notebook with a separately labeled table read from archived Brev results, not a completed Colab transcript.
+
+Large base/merged/NF4 model weights, full probe arrays and optimizer checkpoints are retained separately in the full run, not this email ZIP. Model file hashes are in artifact_manifest.json; omitted-array hashes are in evidence/probe_array_manifest.json. Publication copies of data/train.json and data/train_chat.jsonl redact a credential-like default from two public source schemas. DATA_REDACTIONS.json records original and packaged hashes; no validity/authentication test was performed. The original measured run remains unchanged. Restore those two private original data files as well as the omitted full artifacts before frozen-input replay; the redacted publication copies deliberately do not match frozen_inputs.json. For a new release run, sanitize tool schemas before training and create a fresh run. Otherwise reproduce the measured reference privately using the pinned source and instructions in docs/README.md.
+
+On a complete run: python reviewed_code/verify.py --run-dir <full-run> --recorded checks hashes and replays evidence; without --recorded it reloads models and reruns inference on the declared T4. Replay is not fresh inference. Exit 2 means an integrity check failed; a release DON'T SHIP verdict alone is not a crash.
+
+For a new reproduction use reviewed_code/experiment.py with the recorded config and a fresh run directory, review the references explicitly, then run the pipeline. Keep CUDA-enabled torch, the pinned libraries and a C compiler on a clean VM. Do not reuse failed run IDs. Respect the retained model/dataset attributions and source-card limitations.
+
+AI assistance and independent applicant review status are described in docs/AI_USE.md. No email was sent automatically. Review the attachments and reply in the original task email thread.

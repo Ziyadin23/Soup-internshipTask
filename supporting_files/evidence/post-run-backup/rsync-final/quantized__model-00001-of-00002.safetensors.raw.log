@@ -1,0 +1,5 @@
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(874) [generator=3.5.0-g483b5efc]
+rsync error: received SIGUSR1 (code 19) at main.c(1660) [receiver=3.5.0-g483b5efc]
+Warning: Permanently added '[global.prd.ga.run.brev.nvidia.com]:25494' (ED25519) to the list of known hosts.
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(874) [generator=3.5.0-g483b5efc]
+rsync error: received SIGUSR1 (code 19) at main.c(1660) [receiver=3.5.0-g483b5efc]

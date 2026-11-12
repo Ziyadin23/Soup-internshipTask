@@ -1,0 +1,46 @@
+2026-11-10T14:03:56.480450+00:00 COMMAND [".venv/bin/python", "-m", "soup_cli", "data", "doctor", "evidence/local-checks/ungrounded-reference-control.jsonl", "--model", "runs/local-audit-final-20261110T1345Z/artifacts/base", "--format", "chatml", "--max-length", "1024", "--sample", "1", "--output", "evidence/local-checks/soup-doctor-ungrounded.json"]
+                                soup data doctor                                
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Check              ┃ Verdict ┃ Message               ┃ Evidence              ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ chat_template      │ OK      │ tokenizer has a       │ 4168 chars            │
+│                    │         │ chat_template         │                       │
+│ template_render    │ OK      │ 0/1 rows failed to    │                       │
+│                    │         │ render through the    │                       │
+│                    │         │ chat template         │                       │
+│ generation_markers │ MINOR   │ template lacks {%     │                       │
+│                    │         │ generation %} markers │                       │
+│                    │         │ — assistant-only      │                       │
+│                    │         │ masking falls back to │                       │
+│                    │         │ a heuristic that may  │                       │
+│                    │         │ include role-prefix   │                       │
+│                    │         │ tokens in the loss    │                       │
+│ eos_in_labels      │ OK      │ 0/1 rows (0.0%) never │ eos_token_id=[151645] │
+│                    │         │ train an EOS/EOT      │                       │
+│                    │         │ token — the model     │                       │
+│                    │         │ will not learn to     │                       │
+│                    │         │ stop generating       │                       │
+│ bos_duplication    │ OK      │ tokenizer has no      │                       │
+│                    │         │ bos_token_id          │                       │
+│ system_role        │ OK      │ template supports the │                       │
+│                    │         │ system role (1 rows   │                       │
+│                    │         │ use one)              │                       │
+│ unknown_roles      │ OK      │ 0/1 rows (0.0%)       │                       │
+│                    │         │ contain a message     │                       │
+│                    │         │ role outside          │                       │
+│                    │         │ ['assistant',         │                       │
+│                    │         │ 'function', 'system', │                       │
+│                    │         │ 'tool', 'user']       │                       │
+│ truncation_risk    │ OK      │ p95 length = 180      │ p50=180, max=180      │
+│                    │         │ tokens vs             │                       │
+│                    │         │ max_length=1024; 0/1  │                       │
+│                    │         │ rows (0.0%) would be  │                       │
+│                    │         │ truncated             │                       │
+└────────────────────┴─────────┴───────────────────────┴───────────────────────┘
+╭──────── overall ─────────╮
+│ MINOR — 1/1 rows scanned │
+╰──────────────────────────╯
+Wrote evidence/local-checks/soup-doctor-ungrounded.json
+return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+
+EXIT 0

@@ -1,0 +1,15 @@
+2026-11-10T14:10:44.503+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-u", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/code/experiment.py", "_stage", "quantize", "--run-dir", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01"]
+2026-11-10T14:10:49.624+00:00 {"timestamp": "2026-11-10T14:10:49.624+00:00", "event": "phase_started", "phase": "quantize"}
+2026-11-10T14:10:49.627+00:00 `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-10T14:10:51.014+00:00 
+2026-11-10T14:10:51.459+00:00 Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-11-10T14:10:52.372+00:00 Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:02,  2.25it/s]
+2026-11-10T14:10:53.111+00:00 Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:03,  1.39it/s]
+2026-11-10T14:10:53.756+00:00 Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:02,  1.37it/s]
+2026-11-10T14:10:54.369+00:00 Loading checkpoint shards:  57%|█████▋    | 4/7 [00:02<00:02,  1.44it/s]
+2026-11-10T14:10:55.094+00:00 Loading checkpoint shards:  71%|███████▏  | 5/7 [00:03<00:01,  1.50it/s]
+2026-11-10T14:10:55.605+00:00 Loading checkpoint shards:  86%|████████▌ | 6/7 [00:04<00:00,  1.46it/s]
+2026-11-10T14:10:55.605+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:04<00:00,  1.59it/s]
+2026-11-10T14:10:55.605+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:04<00:00,  1.52it/s]
+2026-11-10T14:10:59.677+00:00 {"timestamp": "2026-11-10T14:10:59.677+00:00", "event": "phase_finished", "started_at": "2026-11-10T14:10:49.623+00:00", "finished_at": "2026-11-10T14:10:59.676+00:00", "phase": "quantize", "success": true, "wall_seconds": 9.035897922000004, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 2571182080, "process_lifetime_rss_highwater_bytes": 2635710464, "gpu_allocated_peak_bytes": 1867513856, "gpu_reserved_peak_bytes": 2428502016, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T14:11:01.166+00:00 EXIT 0

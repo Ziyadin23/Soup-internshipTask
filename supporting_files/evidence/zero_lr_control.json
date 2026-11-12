@@ -1,0 +1,575 @@
+{
+  "deliberate_control": true,
+  "optimizer_steps": 1,
+  "learning_rate": 0.0,
+  "loss": 0.5876401661372767,
+  "gradient_norm": 2.9351749420166016,
+  "adapter": {
+    "modules": [
+      {
+        "module": "base_model.model.model.layers.0.self_attn.q_proj",
+        "a_norm": 1.6374199390411377,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.0.self_attn.v_proj",
+        "a_norm": 1.631787657737732,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.1.self_attn.q_proj",
+        "a_norm": 1.6335923671722412,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.1.self_attn.v_proj",
+        "a_norm": 1.6358487606048584,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.2.self_attn.q_proj",
+        "a_norm": 1.633453130722046,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.2.self_attn.v_proj",
+        "a_norm": 1.6277050971984863,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.3.self_attn.q_proj",
+        "a_norm": 1.6332283020019531,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.3.self_attn.v_proj",
+        "a_norm": 1.6341577768325806,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.4.self_attn.q_proj",
+        "a_norm": 1.6286020278930664,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.4.self_attn.v_proj",
+        "a_norm": 1.6397795677185059,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.5.self_attn.q_proj",
+        "a_norm": 1.6289616823196411,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.5.self_attn.v_proj",
+        "a_norm": 1.6294500827789307,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.6.self_attn.q_proj",
+        "a_norm": 1.6347956657409668,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.6.self_attn.v_proj",
+        "a_norm": 1.6400822401046753,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.7.self_attn.q_proj",
+        "a_norm": 1.6404143571853638,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.7.self_attn.v_proj",
+        "a_norm": 1.6265015602111816,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.8.self_attn.q_proj",
+        "a_norm": 1.640419840812683,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.8.self_attn.v_proj",
+        "a_norm": 1.6405034065246582,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.9.self_attn.q_proj",
+        "a_norm": 1.6324896812438965,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.9.self_attn.v_proj",
+        "a_norm": 1.6259900331497192,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.10.self_attn.q_proj",
+        "a_norm": 1.6325396299362183,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.10.self_attn.v_proj",
+        "a_norm": 1.6347670555114746,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.11.self_attn.q_proj",
+        "a_norm": 1.6378992795944214,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.11.self_attn.v_proj",
+        "a_norm": 1.6298577785491943,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.12.self_attn.q_proj",
+        "a_norm": 1.6362013816833496,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.12.self_attn.v_proj",
+        "a_norm": 1.6390303373336792,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.13.self_attn.q_proj",
+        "a_norm": 1.6375840902328491,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.13.self_attn.v_proj",
+        "a_norm": 1.6279051303863525,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.14.self_attn.q_proj",
+        "a_norm": 1.6311880350112915,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.14.self_attn.v_proj",
+        "a_norm": 1.6291043758392334,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.15.self_attn.q_proj",
+        "a_norm": 1.6348841190338135,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.15.self_attn.v_proj",
+        "a_norm": 1.6313796043395996,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.16.self_attn.q_proj",
+        "a_norm": 1.6354764699935913,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.16.self_attn.v_proj",
+        "a_norm": 1.635602593421936,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.17.self_attn.q_proj",
+        "a_norm": 1.6348992586135864,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.17.self_attn.v_proj",
+        "a_norm": 1.6301385164260864,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.18.self_attn.q_proj",
+        "a_norm": 1.6258231401443481,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.18.self_attn.v_proj",
+        "a_norm": 1.622599482536316,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.19.self_attn.q_proj",
+        "a_norm": 1.6350115537643433,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.19.self_attn.v_proj",
+        "a_norm": 1.6457120180130005,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.20.self_attn.q_proj",
+        "a_norm": 1.6320996284484863,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.20.self_attn.v_proj",
+        "a_norm": 1.6336010694503784,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.21.self_attn.q_proj",
+        "a_norm": 1.6385265588760376,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.21.self_attn.v_proj",
+        "a_norm": 1.636664867401123,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.22.self_attn.q_proj",
+        "a_norm": 1.6419124603271484,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.22.self_attn.v_proj",
+        "a_norm": 1.6318390369415283,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.23.self_attn.q_proj",
+        "a_norm": 1.6366275548934937,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.23.self_attn.v_proj",
+        "a_norm": 1.6303796768188477,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.24.self_attn.q_proj",
+        "a_norm": 1.6303181648254395,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.24.self_attn.v_proj",
+        "a_norm": 1.6409765481948853,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.25.self_attn.q_proj",
+        "a_norm": 1.6225252151489258,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.25.self_attn.v_proj",
+        "a_norm": 1.6237940788269043,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.26.self_attn.q_proj",
+        "a_norm": 1.6297874450683594,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.26.self_attn.v_proj",
+        "a_norm": 1.6306709051132202,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.27.self_attn.q_proj",
+        "a_norm": 1.6380078792572021,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      },
+      {
+        "module": "base_model.model.model.layers.27.self_attn.v_proj",
+        "a_norm": 1.6283819675445557,
+        "b_norm": 0.0,
+        "effective_delta_norm": 0.0,
+        "relative_delta_norm": 0.0,
+        "finite": true
+      }
+    ],
+    "tensor_sha256": {
+      "base_model.model.model.layers.0.self_attn.q_proj.lora_A.weight": "5a9d31d56f114a4a52ebb403d4affe378d3f85249ae461180af75463eefb01b3",
+      "base_model.model.model.layers.0.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.0.self_attn.v_proj.lora_A.weight": "a438f0f649eae7d4bd04aeb8cacbc0f735cd2dfcc1c7d76b68cf135d3e62dcf1",
+      "base_model.model.model.layers.0.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.1.self_attn.q_proj.lora_A.weight": "43e073fbfb3b9dbfc4222ac748974ef73d254a03354c42c4da49d155aa0bab8e",
+      "base_model.model.model.layers.1.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.1.self_attn.v_proj.lora_A.weight": "f9d4a3d3ec64a4f9a3de3542f8d2d544d5d7b7dc88d49d4af45f7c2b93d0a301",
+      "base_model.model.model.layers.1.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.2.self_attn.q_proj.lora_A.weight": "0404ae4098be5f5033377519a9f8ab59f60073201bd528df9ca0ac5d02ae96fc",
+      "base_model.model.model.layers.2.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.2.self_attn.v_proj.lora_A.weight": "3fd56f89d7b1983d0714868cad61acb16de0c1d50aa6f3b5ead4679499217fc3",
+      "base_model.model.model.layers.2.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.3.self_attn.q_proj.lora_A.weight": "491da52c415aade4e6cba7e49bc27bb10176628973c3ab4fd77ced962c4c828f",
+      "base_model.model.model.layers.3.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.3.self_attn.v_proj.lora_A.weight": "752b9a204954afe38aae27f263987955d1d9dd88ff16e9b3037b56a11c08bbab",
+      "base_model.model.model.layers.3.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.4.self_attn.q_proj.lora_A.weight": "467de389b316d5057a0cc79d7363d08bc2661d6e1dd19061fbbe478e468ffa87",
+      "base_model.model.model.layers.4.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.4.self_attn.v_proj.lora_A.weight": "27848f51030dc720479201e006a39cc185d31a4027d5407b0a3be3363593e1d8",
+      "base_model.model.model.layers.4.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.5.self_attn.q_proj.lora_A.weight": "e46c1c6edc667d0a40f2346597776b9f29d9a2f7e742a179cc0c99589fcb3553",
+      "base_model.model.model.layers.5.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.5.self_attn.v_proj.lora_A.weight": "45af9a29ae37243a6a08d6259b7628003b146317bcb590d78acd8c91ba295fd2",
+      "base_model.model.model.layers.5.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.6.self_attn.q_proj.lora_A.weight": "1cbe26b9971583b01bd9451d6a336216d183acc1cba609877dbb188229cbea7c",
+      "base_model.model.model.layers.6.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.6.self_attn.v_proj.lora_A.weight": "4f1e228ea4b62bfb1e849ad38923ec3d67343d2520b48c34cc598275bfd30bd3",
+      "base_model.model.model.layers.6.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.7.self_attn.q_proj.lora_A.weight": "d5d3041786188c2b4f79fcbd4f3ebf29055f0df42590c2cb15d2c8d946cb9345",
+      "base_model.model.model.layers.7.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.7.self_attn.v_proj.lora_A.weight": "0fe0bb4fbb580035d222b30043937a5e4f110cda0aea22e5799b3bfc075ab8ce",
+      "base_model.model.model.layers.7.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.8.self_attn.q_proj.lora_A.weight": "7b098356026de8dd9860c5dfcd7fbe8a3ac57a1052f63fc89998070ccf868547",
+      "base_model.model.model.layers.8.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.8.self_attn.v_proj.lora_A.weight": "f792c1eabe70b0e43a9bdad9e7e739f5e0954431aa3e08d2ad2e5c185839bb80",
+      "base_model.model.model.layers.8.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.9.self_attn.q_proj.lora_A.weight": "002035dd5d47639290f60d624478db130a9b35a1f873990abaafe4bc67c4a8ca",
+      "base_model.model.model.layers.9.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.9.self_attn.v_proj.lora_A.weight": "5e52d6f02f95bfd3617dac99de3888b47d0632c7c0a137e099053194ea5382ba",
+      "base_model.model.model.layers.9.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.10.self_attn.q_proj.lora_A.weight": "0060eedceda4d1fb1c9edd54b6717d6b32005cc13510d2e707f816feaf735cdb",
+      "base_model.model.model.layers.10.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.10.self_attn.v_proj.lora_A.weight": "c36b8d02f319e881da0c2aff52d7f2664d9ccf6ff717b4faad38d0515ef78f98",
+      "base_model.model.model.layers.10.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.11.self_attn.q_proj.lora_A.weight": "17a58663ba5da67a1a23e5326b50302b2bfd818ac9ef08f4fba0ada865280be5",
+      "base_model.model.model.layers.11.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.11.self_attn.v_proj.lora_A.weight": "2d1d2777c5c98e4754be2d862ffba65f3b4c8f6a862ea8b7e0c4d23e8ef022c7",
+      "base_model.model.model.layers.11.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.12.self_attn.q_proj.lora_A.weight": "0eaea8999494b44ec40808fc90300fe7e4a06d9c359869551f3691b99d4b4b50",
+      "base_model.model.model.layers.12.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.12.self_attn.v_proj.lora_A.weight": "fb081927b3d8114d3ac50571a5baaa03c6991a02e9e2580b569c7326064b6134",
+      "base_model.model.model.layers.12.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.13.self_attn.q_proj.lora_A.weight": "46985ff7049423565b897443cbe3992309abef6b1f771549affbd0e299296233",
+      "base_model.model.model.layers.13.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.13.self_attn.v_proj.lora_A.weight": "b631a7821d72be1caf041982a5bd3c5f4e1d47079eb169eb0305d7f296c8e527",
+      "base_model.model.model.layers.13.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.14.self_attn.q_proj.lora_A.weight": "ffbdd9dabff7bd3bf0ca1687bd33865c5df78b239ba2f19af844c3c1c4c700ad",
+      "base_model.model.model.layers.14.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.14.self_attn.v_proj.lora_A.weight": "108bb49d0d87ff4da694ba0683ff2393909a51d6ffa66b9151b6800426944b4b",
+      "base_model.model.model.layers.14.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.15.self_attn.q_proj.lora_A.weight": "dd738cfa73a53a791af9970b4be05b8a9d784e1b3ba25a93715a5da14ba1e03e",
+      "base_model.model.model.layers.15.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.15.self_attn.v_proj.lora_A.weight": "169a30a90936230be7304ee977a4eb8a9ab6157e1561d85037f32cd3064411b7",
+      "base_model.model.model.layers.15.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.16.self_attn.q_proj.lora_A.weight": "5d43e20e8524c516da1725a48a9e949f58bc27bc1d686d48567ecf4ee16125b9",
+      "base_model.model.model.layers.16.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.16.self_attn.v_proj.lora_A.weight": "26fe287546ed17158cd35223986442db029420be07c85aff79adcf41bc6ea059",
+      "base_model.model.model.layers.16.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.17.self_attn.q_proj.lora_A.weight": "51cf1e90de93746dc73966ec5ab22bad8f1b771d046e3423b220165a0f027090",
+      "base_model.model.model.layers.17.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.17.self_attn.v_proj.lora_A.weight": "06e5f171250ac7ec1afbe86dd1dfaa67c039a29c15cd5e5adab378f936b81e04",
+      "base_model.model.model.layers.17.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.18.self_attn.q_proj.lora_A.weight": "504ac983a13adcee68f9d893c2b8ca63ee2820a652a7293072588b5c6f5f4327",
+      "base_model.model.model.layers.18.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.18.self_attn.v_proj.lora_A.weight": "2fadc4a47eb82a20bfced11e7bf9cd04390b5e626c49feee60ee8684544b95d8",
+      "base_model.model.model.layers.18.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.19.self_attn.q_proj.lora_A.weight": "e50d29cfe1bfbe44b8acca44cea079fa76533df4e4d37a6a298e3d5918084718",
+      "base_model.model.model.layers.19.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.19.self_attn.v_proj.lora_A.weight": "e11445e8ada9b499151f956909e7687a629ba8edededf0216153e75af7a6b1e3",
+      "base_model.model.model.layers.19.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.20.self_attn.q_proj.lora_A.weight": "0c1b9e7fa035be32f41957ee75f3a29d5a1aff904386c8ecb407e8963c50ef88",
+      "base_model.model.model.layers.20.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.20.self_attn.v_proj.lora_A.weight": "4523df52ed798efee9492bfe6b1839c0521f25a4e649866eb86b34a7d6d642f9",
+      "base_model.model.model.layers.20.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.21.self_attn.q_proj.lora_A.weight": "b61d4c3dfc24e5536cc6c9bafd6859b0baf600fa0501b7576bfd3e1d47d30d1f",
+      "base_model.model.model.layers.21.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.21.self_attn.v_proj.lora_A.weight": "64d7eebef82fafcbf488c20000a23f7156a818aa027b60ca2c8a324dfc0bedb1",
+      "base_model.model.model.layers.21.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.22.self_attn.q_proj.lora_A.weight": "ee192cef79a5457c1a8696beebb651adac5aa9fa0042468fe7dc30868f27ec34",
+      "base_model.model.model.layers.22.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.22.self_attn.v_proj.lora_A.weight": "e6552fc81e57709ad3da1b4d0ff38806c2431980b61b3cd2fef76bfe9e065a7a",
+      "base_model.model.model.layers.22.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.23.self_attn.q_proj.lora_A.weight": "87534ddc18aff07a64c664948458b9e04e3e60fc7c3fbc539d92e16f92572c3e",
+      "base_model.model.model.layers.23.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.23.self_attn.v_proj.lora_A.weight": "df89aba38457f3425c03cf5f6c0956765a6d79231a13d9acaa12eb6eef01a113",
+      "base_model.model.model.layers.23.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.24.self_attn.q_proj.lora_A.weight": "0e375ca66f69eb20314c75836e2d6e6511e5d813fa3ce172003c430dcdd396be",
+      "base_model.model.model.layers.24.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.24.self_attn.v_proj.lora_A.weight": "d904418efa413b57d112cd3b660e7ebf1c3d710659db98daa9084764e66043f4",
+      "base_model.model.model.layers.24.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.25.self_attn.q_proj.lora_A.weight": "1145783b4665d604b24c57800334bd9bcd1821ef1137911ddc3bf5cef6b5091d",
+      "base_model.model.model.layers.25.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.25.self_attn.v_proj.lora_A.weight": "86f1f72198de7cf28f5aaaad7504a88976180016a488ca6f0708cc278e403293",
+      "base_model.model.model.layers.25.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.26.self_attn.q_proj.lora_A.weight": "ae5980467ce05006665674739e90d64a6799515d0047d3ac58dd5e6d53ffd697",
+      "base_model.model.model.layers.26.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.26.self_attn.v_proj.lora_A.weight": "e40f3feef0b2081c64059bf5a9d056ada602c194c79383ea98285c090c7029f1",
+      "base_model.model.model.layers.26.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "base_model.model.model.layers.27.self_attn.q_proj.lora_A.weight": "ddaccbfe06713db27f0871e40074960629305fdd41d3aa24a8b2205271220673",
+      "base_model.model.model.layers.27.self_attn.q_proj.lora_B.weight": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "base_model.model.model.layers.27.self_attn.v_proj.lora_A.weight": "7ee1dad9d2d910b595bc32241e2427f92090dfe58cc3b144b12356095692d457",
+      "base_model.model.model.layers.27.self_attn.v_proj.lora_B.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479"
+    },
+    "changed_tensor_count": 0
+  },
+  "conclusion": "Backward and optimizer completed but adapter did not change."
+}

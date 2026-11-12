@@ -1,0 +1,10 @@
+{
+  "finished_at": "2026-11-10T17:02:50.329109+00:00",
+  "success": true,
+  "files": [
+    "quantized/model-00001-of-00002.safetensors",
+    "quantized/model-00002-of-00002.safetensors"
+  ],
+  "note": "Final two NF4 files completed by parallel range copy; other artifacts were already verified. All original cloud hashes remain required.",
+  "previous_transport_log": "tmp/artifact_backup_v5.raw.log"
+}

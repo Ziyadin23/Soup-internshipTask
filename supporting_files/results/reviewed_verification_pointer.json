@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-11-10T15:31:31.797462+00:00",
+  "result": "results/verification-replay-2026-11-10T15-31-31.125+00-00.json",
+  "returncode": 0,
+  "source_manifest_sha256": "b15c072f35d30bc8650203059a68fea2174d932d4f81e274a6378d66d51a466a",
+  "change": "Roundoff-safe excess comparisons only; predictions, policy values and original verification remain unchanged."
+}

@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-10T14:35:35.414074+00:00",
+  "prompt_sequences_checked": 1240,
+  "token_ids_identical": true,
+  "backend_identity": {
+    "base": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb",
+    "merged": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb",
+    "quantized": "3acb3950f88b260a84986310577ab41b8adbb6660a4007d169f63eaa549ff1bb"
+  },
+  "backend_identical": true,
+  "warning_handling": "No model-specific regex patch applied. Equivalence checked on the full selected data and probe prompts, plus serialized backend state."
+}

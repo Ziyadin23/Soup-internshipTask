@@ -1,0 +1,44 @@
+{
+  "prepared_at": "2026-11-10T13:44:35.309+00:00",
+  "selection": {
+    "source_rows": 60000,
+    "selected": {
+      "train": 1000,
+      "validation": 64,
+      "test": 128
+    },
+    "filter_counts": {
+      "rows_examined": 40743,
+      "rejected:unsupported parameter type": 27048,
+      "rejected:reference is not one schema-valid call": 8274,
+      "mixed_tool_family_partitions": 797,
+      "rejected:missing or duplicate tool names": 183,
+      "nonliteral_or_ungrounded_reference": 1271,
+      "too_many_tools": 131,
+      "manual_audit_exclusion": 3,
+      "family_cap": 81,
+      "duplicate_id_or_query": 11,
+      "partition_already_full": 1752
+    },
+    "selected_length_p50_p95_max": [
+      246.0,
+      468.45000000000005,
+      821
+    ],
+    "selection_note": "Seeded candidate scan stops when quotas are full; not a whole-corpus audit.",
+    "grounding_note": "Nonliteral exclusions restrict the supported task; they are not a count of factually incorrect source labels. Valid derivations and conversions are excluded too.",
+    "family_caps": {
+      "train": 20,
+      "validation": 4,
+      "test": 4
+    },
+    "split_limit": "Naming-based API families and 3-gram Jaccard>=0.85 exclusion cannot prove semantic independence or absence of pretraining exposure.",
+    "integrity": {
+      "unique_ids": 1192,
+      "unique_queries": 1192,
+      "unique_api_families": 747,
+      "cross_split_api_families": 0
+    }
+  },
+  "requires_reference_review": true
+}

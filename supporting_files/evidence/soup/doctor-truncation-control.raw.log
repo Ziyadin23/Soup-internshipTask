@@ -1,0 +1,42 @@
+2026-11-10T15:29:16.190+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-m", "soup_cli", "data", "doctor", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/data/train_chat.jsonl", "--model", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/base", "--format", "chatml", "--max-length", "32", "--sample", "1000", "--output", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/doctor-truncation-control.json"]
+return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+                                soup data doctor                                
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃ Check              ┃ Verdict ┃ Message                    ┃ Evidence         ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ chat_template      │ OK      │ tokenizer has a            │ 4168 chars       │
+│                    │         │ chat_template              │                  │
+│ template_render    │ OK      │ 0/1000 rows failed to      │                  │
+│                    │         │ render through the chat    │                  │
+│                    │         │ template                   │                  │
+│ generation_markers │ MINOR   │ template lacks {%          │                  │
+│                    │         │ generation %} markers —    │                  │
+│                    │         │ assistant-only masking     │                  │
+│                    │         │ falls back to a heuristic  │                  │
+│                    │         │ that may include           │                  │
+│                    │         │ role-prefix tokens in the  │                  │
+│                    │         │ loss                       │                  │
+│ eos_in_labels      │ OK      │ no assistant turns to      │                  │
+│                    │         │ check                      │                  │
+│ bos_duplication    │ OK      │ tokenizer has no           │                  │
+│                    │         │ bos_token_id               │                  │
+│ system_role        │ OK      │ template supports the      │                  │
+│                    │         │ system role (1000 rows use │                  │
+│                    │         │ one)                       │                  │
+│ unknown_roles      │ OK      │ 0/1000 rows (0.0%) contain │                  │
+│                    │         │ a message role outside     │                  │
+│                    │         │ ['assistant', 'function',  │                  │
+│                    │         │ 'system', 'tool', 'user']  │                  │
+│ truncation_risk    │ MAJOR   │ p95 length = 490 tokens vs │ p50=260, max=825 │
+│                    │         │ max_length=32; 1000/1000   │                  │
+│                    │         │ rows (100.0%) would be     │                  │
+│                    │         │ truncated                  │                  │
+└────────────────────┴─────────┴────────────────────────────┴──────────────────┘
+╭─────────── overall ────────────╮
+│ MAJOR — 1000/1000 rows scanned │
+╰────────────────────────────────╯
+Wrote 
+/home/ubuntu/soup_submission/runs/brev-20261110-main-01/evidence/soup/doctor-tru
+ncation-control.json
+
+2026-11-10T15:29:27.986+00:00 EXIT 2

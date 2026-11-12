@@ -1,0 +1,724 @@
+2026-11-10T13:58:16Z
+Tue Nov 10 13:58:16 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla T4                       On  |   00000000:00:04.0 Off |                    0 |
+| N/A   64C    P0             31W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+downloading uv 0.13.7 x86_64-unknown-linux-gnu
+installing to /home/ubuntu/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+uv 0.13.7 (x86_64-unknown-linux-gnu)
+Downloading cpython-3.11.18-linux-x86_64-gnu (download) (29.2MiB)
+ Downloaded cpython-3.11.18-linux-x86_64-gnu (download)
+Using CPython 3.11.18
+Creating virtual environment with seed packages at: .venv
+ + packaging==26.3
+ + pip==26.3
+ + setuptools==84.2.1
+ + wheel==0.48.0
+Activate with: source .venv/bin/activate
+Resolved 23 packages in 453ms
+Downloading nvidia-nccl-cu12 (179.9MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading sympy (5.9MiB)
+Downloading networkx (2.0MiB)
+Downloading triton (159.0MiB)
+Downloading nvidia-cusparselt-cu12 (143.1MiB)
+Downloading nvidia-cublas-cu12 (346.6MiB)
+Downloading nvidia-cusolver-cu12 (122.0MiB)
+Downloading torch (732.9MiB)
+Downloading nvidia-nvjitlink-cu12 (20.1MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (23.5MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.2MiB)
+Downloading nvidia-curand-cu12 (53.7MiB)
+Downloading nvidia-cufft-cu12 (201.7MiB)
+Downloading nvidia-cusparse-cu12 (197.8MiB)
+ Downloaded networkx
+ Downloaded sympy
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cusparselt-cu12
+ Downloaded triton
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 23 packages in 27.31s
+Installed 23 packages in 225ms
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + nvidia-cublas-cu12==12.4.5.8
+ + nvidia-cuda-cupti-cu12==12.4.127
+ + nvidia-cuda-nvrtc-cu12==12.4.127
+ + nvidia-cuda-runtime-cu12==12.4.127
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.2.1.3
+ + nvidia-curand-cu12==10.3.5.147
+ + nvidia-cusolver-cu12==11.6.1.9
+ + nvidia-cusparse-cu12==12.3.1.170
+ + nvidia-cusparselt-cu12==0.6.2
+ + nvidia-nccl-cu12==2.21.5
+ + nvidia-nvjitlink-cu12==12.4.127
+ + nvidia-nvtx-cu12==12.4.127
+ + sympy==1.13.1
+ + torch==2.6.0+cu124
+ + triton==3.2.0
+ + typing-extensions==4.16.0
+Resolved 71 packages in 559ms
+Downloading numpy (16.1MiB)
+Downloading tokenizers (3.1MiB)
+Downloading pydantic-core (2.1MiB)
+Downloading hf-xet (4.1MiB)
+Downloading transformers (11.4MiB)
+Downloading reportlab (1.9MiB)
+Downloading pillow (6.8MiB)
+Downloading pygments (1.2MiB)
+Downloading bitsandbytes (57.8MiB)
+Downloading soup-cli (2.8MiB)
+ Downloaded pygments
+ Downloaded reportlab
+ Downloaded pydantic-core
+ Downloaded soup-cli
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded pillow
+ Downloaded transformers
+ Downloaded numpy
+ Downloaded bitsandbytes
+Prepared 47 packages in 1.35s
+Installed 47 packages in 594ms
+ + accelerate==1.12.0
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + attrs==26.1.0
+ + bitsandbytes==0.49.2
+ + certifi==2026.10.23
+ + charset-normalizer==3.5.2
+ + click==8.4.2
+ + fastjsonschema==2.22.3
+ + hf-xet==1.8.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + iniconfig==2.3.1
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + jupyter-core==5.9.1
+ + markdown-it-py==4.2.0
+ + mdurl==0.1.2
+ + nbformat==5.10.4
+ + numpy==2.4.6
+ + peft==0.18.0
+ + pillow==13.0.0
+ + platformdirs==4.14.5
+ + plotext==6.1.0
+ + pluggy==1.7.0
+ + psutil==7.2.2
+ + pydantic==2.14.3
+ + pydantic-core==2.50.4
+ + pygments==2.21.0
+ + pytest==9.0.2
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + regex==2026.11.9
+ + reportlab==4.4.7
+ + requests==2.34.2
+ + rich==15.0.0
+ + rpds-py==2026.9.1
+ + safetensors==0.8.0
+ + shellingham==1.5.4
+ + soup-cli==0.77.2
+ + tokenizers==0.22.2
+ + tqdm==4.70.1
+ + traitlets==5.16.1
+ + transformers==4.57.6
+ + typer==0.27.3
+ + typing-inspection==0.4.5
+ + urllib3==2.8.0
+............................FF..                                         [100%]
+=================================== FAILURES ===================================
+_______________ test_real_qwen_lora_zero_lr_and_merge_roundtrip ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-0/test_real_qwen_lora_zero_lr_an0')
+
+    def test_real_qwen_lora_zero_lr_and_merge_roundtrip(tmp_path):
+        torch.set_num_threads(2)
+>       model = get_peft_model(tiny_model(), LoraConfig(r=4,lora_alpha=8,lora_dropout=0.,
+                                target_modules=['q_proj','v_proj'],task_type='CAUSAL_LM'))
+
+tests/test_models.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.11/site-packages/peft/mapping_func.py:122: in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+.venv/lib/python3.11/site-packages/peft/peft_model.py:1885: in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+.venv/lib/python3.11/site-packages/peft/peft_model.py:129: in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py:295: in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
+.venv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py:801: in inject_adapter
+    self._create_and_replace(
+.venv/lib/python3.11/site-packages/peft/tuners/lora/model.py:249: in _create_and_replace
+    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/peft/tuners/lora/model.py:311: in _create_new_module
+    from .bnb import dispatch_bnb_8bit
+.venv/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:19: in <module>
+    import bitsandbytes as bnb
+.venv/lib/python3.11/site-packages/bitsandbytes/__init__.py:20: in <module>
+    from .nn import modules
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/__init__.py:21: in <module>
+    from .triton_based_modules import (
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/triton_based_modules.py:6: in <module>
+    from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise
+.venv/lib/python3.11/site-packages/bitsandbytes/triton/dequantize_rowwise.py:18: in <module>
+    @triton.autotune(
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:368: in decorator
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:130: in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:23: in __getattr__
+    self._initialize_obj()
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:20: in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:9: in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:450: in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:80: in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:57: in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'cuda_utils', src = '/tmp/tmpvl28w9q9/main.c'
+srcdir = '/tmp/tmpvl28w9q9'
+library_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/lib', '/lib/x86_64-linux-gnu']
+include_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/include']
+libraries = ['cuda']
+
+    def _build(name, src, srcdir, library_dirs, include_dirs, libraries):
+        suffix = sysconfig.get_config_var('EXT_SUFFIX')
+        so = os.path.join(srcdir, '{name}{suffix}'.format(name=name, suffix=suffix))
+        # try to avoid setuptools if possible
+        cc = os.environ.get("CC")
+        if cc is None:
+            # TODO: support more things here.
+            clang = shutil.which("clang")
+            gcc = shutil.which("gcc")
+            cc = gcc if gcc is not None else clang
+            if cc is None:
+>               raise RuntimeError("Failed to find C compiler. Please specify via CC environment variable.")
+E               RuntimeError: Failed to find C compiler. Please specify via CC environment variable.
+
+.venv/lib/python3.11/site-packages/triton/runtime/build.py:32: RuntimeError
+__________ test_actual_nf4_save_reload_has_packed_weights_and_forward __________
+
+self = <module 'transformers.integrations' from '/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/transformers/integrations/__init__.py'>
+name = 'validate_bnb_backend_availability'
+
+    def __getattr__(self, name: str) -> Any:
+        if name in self._objects:
+            return self._objects[name]
+        if name in self._object_missing_backend:
+            missing_backends = self._object_missing_backend[name]
+    
+            class Placeholder(metaclass=DummyObject):
+                _backends = missing_backends
+    
+                def __init__(self, *args, **kwargs):
+                    requires_backends(self, missing_backends)
+    
+                def call(self, *args, **kwargs):
+                    pass
+    
+            Placeholder.__name__ = name
+    
+            if name not in self._class_to_module:
+                module_name = f"transformers.{name}"
+            else:
+                module_name = self._class_to_module[name]
+                if not module_name.startswith("transformers."):
+                    module_name = f"transformers.{module_name}"
+    
+            Placeholder.__module__ = module_name
+    
+            value = Placeholder
+        elif name in self._class_to_module:
+            try:
+>               module = self._get_module(self._class_to_module[name])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2317: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2347: in _get_module
+    raise e
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2345: in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/integrations/bitsandbytes.py:20: in <module>
+    import bitsandbytes as bnb
+.venv/lib/python3.11/site-packages/bitsandbytes/__init__.py:20: in <module>
+    from .nn import modules
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/__init__.py:21: in <module>
+    from .triton_based_modules import (
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/triton_based_modules.py:6: in <module>
+    from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise
+.venv/lib/python3.11/site-packages/bitsandbytes/triton/dequantize_rowwise.py:18: in <module>
+    @triton.autotune(
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:368: in decorator
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:130: in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:23: in __getattr__
+    self._initialize_obj()
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:20: in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:9: in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:450: in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:80: in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:57: in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'cuda_utils', src = '/tmp/tmpg4he1yg4/main.c'
+srcdir = '/tmp/tmpg4he1yg4'
+library_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/lib', '/lib/x86_64-linux-gnu']
+include_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/include']
+libraries = ['cuda']
+
+    def _build(name, src, srcdir, library_dirs, include_dirs, libraries):
+        suffix = sysconfig.get_config_var('EXT_SUFFIX')
+        so = os.path.join(srcdir, '{name}{suffix}'.format(name=name, suffix=suffix))
+        # try to avoid setuptools if possible
+        cc = os.environ.get("CC")
+        if cc is None:
+            # TODO: support more things here.
+            clang = shutil.which("clang")
+            gcc = shutil.which("gcc")
+            cc = gcc if gcc is not None else clang
+            if cc is None:
+>               raise RuntimeError("Failed to find C compiler. Please specify via CC environment variable.")
+E               RuntimeError: Failed to find C compiler. Please specify via CC environment variable.
+
+.venv/lib/python3.11/site-packages/triton/runtime/build.py:32: RuntimeError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-0/test_actual_nf4_save_reload_ha0')
+
+    def test_actual_nf4_save_reload_has_packed_weights_and_forward(tmp_path):
+        torch.set_num_threads(2)
+        model = tiny_model().eval()
+        model.save_pretrained(tmp_path/'base',safe_serialization=True)
+>       q = load_model(tmp_path/'base',device='cpu',dtype=torch.float32,
+            quantization_config=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',
+                bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.float32))
+
+tests/test_models.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+soup_task/runtime.py:71: in load_model
+    return AutoModelForCausalLM.from_pretrained(path, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py:604: in from_pretrained
+    return model_class.from_pretrained(
+.venv/lib/python3.11/site-packages/transformers/modeling_utils.py:277: in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/modeling_utils.py:4881: in from_pretrained
+    hf_quantizer, config, dtype, device_map = get_hf_quantizer(
+.venv/lib/python3.11/site-packages/transformers/quantizers/auto.py:319: in get_hf_quantizer
+    hf_quantizer.validate_environment(
+.venv/lib/python3.11/site-packages/transformers/quantizers/quantizer_bnb_4bit.py:103: in validate_environment
+    from ..integrations import validate_bnb_backend_availability
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <module 'transformers.integrations' from '/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/transformers/integrations/__init__.py'>
+name = 'validate_bnb_backend_availability'
+
+    def __getattr__(self, name: str) -> Any:
+        if name in self._objects:
+            return self._objects[name]
+        if name in self._object_missing_backend:
+            missing_backends = self._object_missing_backend[name]
+    
+            class Placeholder(metaclass=DummyObject):
+                _backends = missing_backends
+    
+                def __init__(self, *args, **kwargs):
+                    requires_backends(self, missing_backends)
+    
+                def call(self, *args, **kwargs):
+                    pass
+    
+            Placeholder.__name__ = name
+    
+            if name not in self._class_to_module:
+                module_name = f"transformers.{name}"
+            else:
+                module_name = self._class_to_module[name]
+                if not module_name.startswith("transformers."):
+                    module_name = f"transformers.{module_name}"
+    
+            Placeholder.__module__ = module_name
+    
+            value = Placeholder
+        elif name in self._class_to_module:
+            try:
+                module = self._get_module(self._class_to_module[name])
+                value = getattr(module, name)
+            except (ModuleNotFoundError, RuntimeError) as e:
+>               raise ModuleNotFoundError(
+                    f"Could not import module '{name}'. Are this object's requirements defined correctly?"
+                ) from e
+E               ModuleNotFoundError: Could not import module 'validate_bnb_backend_availability'. Are this object's requirements defined correctly?
+
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2320: ModuleNotFoundError
+----------------------------- Captured stderr call -----------------------------
+`torch_dtype` is deprecated! Use `dtype` instead!
+=========================== short test summary info ============================
+FAILED tests/test_models.py::test_real_qwen_lora_zero_lr_and_merge_roundtrip
+FAILED tests/test_models.py::test_actual_nf4_save_reload_has_packed_weights_and_forward
+2 failed, 30 passed in 14.03s
+2026-11-10T13:59:21Z
+Tue Nov 10 13:59:21 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla T4                       On  |   00000000:00:04.0 Off |                    0 |
+| N/A   60C    P8             11W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+downloading uv 0.13.7 x86_64-unknown-linux-gnu
+installing to /home/ubuntu/.local/bin
+  uv
+  uvx
+everything's installed!
+uv 0.13.7 (x86_64-unknown-linux-gnu)
+Checked 1 package in 3ms
+Checked 12 packages in 8ms
+............................FF..                                         [100%]
+=================================== FAILURES ===================================
+_______________ test_real_qwen_lora_zero_lr_and_merge_roundtrip ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-1/test_real_qwen_lora_zero_lr_an0')
+
+    def test_real_qwen_lora_zero_lr_and_merge_roundtrip(tmp_path):
+        torch.set_num_threads(2)
+>       model = get_peft_model(tiny_model(), LoraConfig(r=4,lora_alpha=8,lora_dropout=0.,
+                                target_modules=['q_proj','v_proj'],task_type='CAUSAL_LM'))
+
+tests/test_models.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.11/site-packages/peft/mapping_func.py:122: in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+.venv/lib/python3.11/site-packages/peft/peft_model.py:1885: in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+.venv/lib/python3.11/site-packages/peft/peft_model.py:129: in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py:295: in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
+.venv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py:801: in inject_adapter
+    self._create_and_replace(
+.venv/lib/python3.11/site-packages/peft/tuners/lora/model.py:249: in _create_and_replace
+    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/peft/tuners/lora/model.py:311: in _create_new_module
+    from .bnb import dispatch_bnb_8bit
+.venv/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:19: in <module>
+    import bitsandbytes as bnb
+.venv/lib/python3.11/site-packages/bitsandbytes/__init__.py:20: in <module>
+    from .nn import modules
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/__init__.py:21: in <module>
+    from .triton_based_modules import (
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/triton_based_modules.py:6: in <module>
+    from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise
+.venv/lib/python3.11/site-packages/bitsandbytes/triton/dequantize_rowwise.py:18: in <module>
+    @triton.autotune(
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:368: in decorator
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:130: in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:23: in __getattr__
+    self._initialize_obj()
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:20: in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:9: in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:450: in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:80: in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:57: in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'cuda_utils', src = '/tmp/tmpguj1yq3g/main.c'
+srcdir = '/tmp/tmpguj1yq3g'
+library_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/lib', '/lib/x86_64-linux-gnu']
+include_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/include']
+libraries = ['cuda']
+
+    def _build(name, src, srcdir, library_dirs, include_dirs, libraries):
+        suffix = sysconfig.get_config_var('EXT_SUFFIX')
+        so = os.path.join(srcdir, '{name}{suffix}'.format(name=name, suffix=suffix))
+        # try to avoid setuptools if possible
+        cc = os.environ.get("CC")
+        if cc is None:
+            # TODO: support more things here.
+            clang = shutil.which("clang")
+            gcc = shutil.which("gcc")
+            cc = gcc if gcc is not None else clang
+            if cc is None:
+>               raise RuntimeError("Failed to find C compiler. Please specify via CC environment variable.")
+E               RuntimeError: Failed to find C compiler. Please specify via CC environment variable.
+
+.venv/lib/python3.11/site-packages/triton/runtime/build.py:32: RuntimeError
+__________ test_actual_nf4_save_reload_has_packed_weights_and_forward __________
+
+self = <module 'transformers.integrations' from '/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/transformers/integrations/__init__.py'>
+name = 'validate_bnb_backend_availability'
+
+    def __getattr__(self, name: str) -> Any:
+        if name in self._objects:
+            return self._objects[name]
+        if name in self._object_missing_backend:
+            missing_backends = self._object_missing_backend[name]
+    
+            class Placeholder(metaclass=DummyObject):
+                _backends = missing_backends
+    
+                def __init__(self, *args, **kwargs):
+                    requires_backends(self, missing_backends)
+    
+                def call(self, *args, **kwargs):
+                    pass
+    
+            Placeholder.__name__ = name
+    
+            if name not in self._class_to_module:
+                module_name = f"transformers.{name}"
+            else:
+                module_name = self._class_to_module[name]
+                if not module_name.startswith("transformers."):
+                    module_name = f"transformers.{module_name}"
+    
+            Placeholder.__module__ = module_name
+    
+            value = Placeholder
+        elif name in self._class_to_module:
+            try:
+>               module = self._get_module(self._class_to_module[name])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2317: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2347: in _get_module
+    raise e
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2345: in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/integrations/bitsandbytes.py:20: in <module>
+    import bitsandbytes as bnb
+.venv/lib/python3.11/site-packages/bitsandbytes/__init__.py:20: in <module>
+    from .nn import modules
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/__init__.py:21: in <module>
+    from .triton_based_modules import (
+.venv/lib/python3.11/site-packages/bitsandbytes/nn/triton_based_modules.py:6: in <module>
+    from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise
+.venv/lib/python3.11/site-packages/bitsandbytes/triton/dequantize_rowwise.py:18: in <module>
+    @triton.autotune(
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:368: in decorator
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+.venv/lib/python3.11/site-packages/triton/runtime/autotuner.py:130: in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:23: in __getattr__
+    self._initialize_obj()
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:20: in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/runtime/driver.py:9: in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:450: in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:80: in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/triton/backends/nvidia/driver.py:57: in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'cuda_utils', src = '/tmp/tmp4exxv9n6/main.c'
+srcdir = '/tmp/tmp4exxv9n6'
+library_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/lib', '/lib/x86_64-linux-gnu']
+include_dirs = ['/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/triton/backends/nvidia/include']
+libraries = ['cuda']
+
+    def _build(name, src, srcdir, library_dirs, include_dirs, libraries):
+        suffix = sysconfig.get_config_var('EXT_SUFFIX')
+        so = os.path.join(srcdir, '{name}{suffix}'.format(name=name, suffix=suffix))
+        # try to avoid setuptools if possible
+        cc = os.environ.get("CC")
+        if cc is None:
+            # TODO: support more things here.
+            clang = shutil.which("clang")
+            gcc = shutil.which("gcc")
+            cc = gcc if gcc is not None else clang
+            if cc is None:
+>               raise RuntimeError("Failed to find C compiler. Please specify via CC environment variable.")
+E               RuntimeError: Failed to find C compiler. Please specify via CC environment variable.
+
+.venv/lib/python3.11/site-packages/triton/runtime/build.py:32: RuntimeError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-1/test_actual_nf4_save_reload_ha0')
+
+    def test_actual_nf4_save_reload_has_packed_weights_and_forward(tmp_path):
+        torch.set_num_threads(2)
+        model = tiny_model().eval()
+        model.save_pretrained(tmp_path/'base',safe_serialization=True)
+>       q = load_model(tmp_path/'base',device='cpu',dtype=torch.float32,
+            quantization_config=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',
+                bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.float32))
+
+tests/test_models.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+soup_task/runtime.py:71: in load_model
+    return AutoModelForCausalLM.from_pretrained(path, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py:604: in from_pretrained
+    return model_class.from_pretrained(
+.venv/lib/python3.11/site-packages/transformers/modeling_utils.py:277: in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/transformers/modeling_utils.py:4881: in from_pretrained
+    hf_quantizer, config, dtype, device_map = get_hf_quantizer(
+.venv/lib/python3.11/site-packages/transformers/quantizers/auto.py:319: in get_hf_quantizer
+    hf_quantizer.validate_environment(
+.venv/lib/python3.11/site-packages/transformers/quantizers/quantizer_bnb_4bit.py:103: in validate_environment
+    from ..integrations import validate_bnb_backend_availability
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <module 'transformers.integrations' from '/home/ubuntu/soup_submission/.venv/lib/python3.11/site-packages/transformers/integrations/__init__.py'>
+name = 'validate_bnb_backend_availability'
+
+    def __getattr__(self, name: str) -> Any:
+        if name in self._objects:
+            return self._objects[name]
+        if name in self._object_missing_backend:
+            missing_backends = self._object_missing_backend[name]
+    
+            class Placeholder(metaclass=DummyObject):
+                _backends = missing_backends
+    
+                def __init__(self, *args, **kwargs):
+                    requires_backends(self, missing_backends)
+    
+                def call(self, *args, **kwargs):
+                    pass
+    
+            Placeholder.__name__ = name
+    
+            if name not in self._class_to_module:
+                module_name = f"transformers.{name}"
+            else:
+                module_name = self._class_to_module[name]
+                if not module_name.startswith("transformers."):
+                    module_name = f"transformers.{module_name}"
+    
+            Placeholder.__module__ = module_name
+    
+            value = Placeholder
+        elif name in self._class_to_module:
+            try:
+                module = self._get_module(self._class_to_module[name])
+                value = getattr(module, name)
+            except (ModuleNotFoundError, RuntimeError) as e:
+>               raise ModuleNotFoundError(
+                    f"Could not import module '{name}'. Are this object's requirements defined correctly?"
+                ) from e
+E               ModuleNotFoundError: Could not import module 'validate_bnb_backend_availability'. Are this object's requirements defined correctly?
+
+.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py:2320: ModuleNotFoundError
+----------------------------- Captured stderr call -----------------------------
+`torch_dtype` is deprecated! Use `dtype` instead!
+=========================== short test summary info ============================
+FAILED tests/test_models.py::test_real_qwen_lora_zero_lr_and_merge_roundtrip
+FAILED tests/test_models.py::test_actual_nf4_save_reload_has_packed_weights_and_forward
+2 failed, 30 passed in 6.82s

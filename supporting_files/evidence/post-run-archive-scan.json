@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-10T17:13:20.078002+00:00",
+  "source_ids": [
+    "17135",
+    "43443"
+  ],
+  "files": {
+    "data/train.json": {
+      "original_sha256": "79cc7555ee1fd2f64c038888fae655bd4d898723da5c4d170c2b173c6f27b05c",
+      "occurrences": 2
+    },
+    "data/train_chat.jsonl": {
+      "original_sha256": "045f39d7884f0b21ab6522a8a341fb6ef5ec69f9805c23234fc1773df560dfaf",
+      "occurrences": 2
+    }
+  },
+  "token_fingerprint_sha256": "6b70010961f24eea44c155f490e3bbccfdc02c0a3cb050ef39de7e54b2d599d7",
+  "finding": "GitHub credential-like default in unused list_folder_contents tool schema from the pinned public xLAM source. Validity is unknown; no authentication request was made.",
+  "treatment": "Original measured run remains unchanged. Publication copies replace only this source token-like default; packaged and original hashes are recorded. Restore private originals before frozen-input replay. A future release run must sanitize schemas before training."
+}

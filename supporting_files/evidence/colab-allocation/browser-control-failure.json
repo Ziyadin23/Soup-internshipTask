@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-11-10T13:55:25.822641+00:00",
+  "observed_connection": "Google Compute Engine GPU connected; T4 identity not independently verified before UI stalled",
+  "actions": [
+    {
+      "action": "fill first cell with updated source",
+      "result": {
+        "code": "runtime_timeout",
+        "message": "Timed out waiting for the Orca runtime to respond."
+      }
+    },
+    {
+      "action": "click first cell Run",
+      "result": {
+        "code": "runtime_timeout",
+        "message": "Timed out waiting for the Orca runtime to respond."
+      }
+    },
+    {
+      "action": "snapshot notebook",
+      "result": "subprocess timeout after 35 seconds"
+    }
+  ],
+  "status": "Setup execution and GPU results unverified. Brev fallback justified by inability to operate or retrieve evidence reliably, not a second GPU-allocation denial."
+}

@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-11-10T18:01:22.580819+00:00",
+  "arrays": {
+    "probes-adapter.npz": {
+      "bytes": 71468260,
+      "sha256": "a4583f2025dd928d9d5f09a0a9b6eff8a6d303d11abe9a3d3497eb91c9ea18fa"
+    },
+    "probes-merged.npz": {
+      "bytes": 17891555,
+      "sha256": "9f9467de46cdebe7bbc03a461331d4dc1c99ebc77e5949e44902443fd0762156"
+    }
+  },
+  "omission": "Full arrays are retained in the full local run, outside the email ZIP."
+}

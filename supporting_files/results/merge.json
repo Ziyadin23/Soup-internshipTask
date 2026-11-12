@@ -1,0 +1,8 @@
+{
+  "merged_at": "2026-11-10T14:10:42.759+00:00",
+  "dtype": "float32",
+  "device": "cuda:0",
+  "safe_merge": true,
+  "shard_budget": "1GB (an individual tensor may be larger)",
+  "bytes_on_disk": 6898244236
+}

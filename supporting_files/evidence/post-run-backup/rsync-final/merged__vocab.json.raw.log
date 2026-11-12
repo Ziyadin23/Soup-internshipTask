@@ -1,0 +1,20 @@
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(874) [generator=3.5.0-g483b5efc]
+rsync error: received SIGUSR1 (code 19) at main.c(1660) [receiver=3.5.0-g483b5efc]
+Warning: Permanently added '[global.prd.ga.run.brev.nvidia.com]:25494' (ED25519) to the list of known hosts.
+
+Number of files: 1 (reg: 1)
+Number of created files: 0
+Number of deleted files: 0
+Number of regular files transferred: 1
+Total file size: 2,776,833 bytes
+Total transferred file size: 2,776,833 bytes
+Literal data: 2,678,833 bytes
+Matched data: 98,000 bytes
+File list size: 55
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 889
+Total bytes received: 2,680,150
+
+sent 889 bytes  received 2,680,150 bytes  282,214.63 bytes/sec
+total size is 2,776,833  speedup is 1.04

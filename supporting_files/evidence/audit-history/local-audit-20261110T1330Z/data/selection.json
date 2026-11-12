@@ -1,0 +1,37 @@
+{
+  "source_rows": 60000,
+  "selected": {
+    "train": 1000,
+    "validation": 64,
+    "test": 128
+  },
+  "filter_counts": {
+    "rows_examined": 26699,
+    "rejected:unsupported parameter type": 17669,
+    "rejected:reference is not one schema-valid call": 5451,
+    "mixed_tool_family_partitions": 663,
+    "rejected:missing or duplicate tool names": 114,
+    "too_many_tools": 86,
+    "family_cap": 52,
+    "duplicate_id_or_query": 4,
+    "partition_already_full": 1468
+  },
+  "selected_length_p50_p95_max": [
+    259.0,
+    480.45000000000005,
+    821
+  ],
+  "selection_note": "Seeded candidate scan stops when quotas are full; not a whole-corpus audit.",
+  "family_caps": {
+    "train": 20,
+    "validation": 4,
+    "test": 4
+  },
+  "split_limit": "Naming-based API families and 3-gram Jaccard>=0.85 exclusion cannot prove semantic independence or absence of pretraining exposure.",
+  "integrity": {
+    "unique_ids": 1192,
+    "unique_queries": 1192,
+    "unique_api_families": 789,
+    "cross_split_api_families": 0
+  }
+}

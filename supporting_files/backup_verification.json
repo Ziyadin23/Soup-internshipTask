@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-10T16:19:01.782516+00:00",
+  "verified_at": "2026-11-10T17:03:11.177509+00:00",
+  "all_artifact_hashes_match": true,
+  "artifact_files": 70,
+  "bytes": 12410656746,
+  "original_manifest_sha256": "efed2f13eb4c09287ec916aae2edb03352a273499d220a8ab42b31dc541b2b76",
+  "cloud_state": "STOPPED",
+  "state_history": [
+    {
+      "at": "2026-11-10T17:03:11.177509+00:00",
+      "state": "All local artifacts verified; Brev stop pending."
+    },
+    {
+      "at": "2026-11-10T17:04:14.491169+00:00",
+      "state": "Brev CLI confirmed STOPPED after successful local hash verification and recorded replay."
+    }
+  ],
+  "local_replay_completed_at": "2026-11-10T17:03:36.651643+00:00",
+  "local_replay_exit_code": 0,
+  "cloud_state_checked_at": "2026-11-10T17:04:14.491169+00:00",
+  "cleanup_log_sha256": "6a0effa666bd7a6c406dd537413e632ed151aef9b3015d3634877e06636a5ce4",
+  "storage_note": "VM is stopped, not deleted. Retained disks can still incur storage charges."
+}

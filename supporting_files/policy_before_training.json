@@ -1,0 +1,17 @@
+{
+  "committed_at": "2026-11-10T14:01:46.961+00:00",
+  "policy": {
+    "intended_use": "automatic single-call selection from supplied schemas; English, literal argument extraction and documented defaults only",
+    "minimum_exact_accuracy": 0.99,
+    "maximum_quant_nll_increase": 0.1,
+    "maximum_quant_accuracy_drop": 0.01,
+    "maximum_general_drop": 0.05,
+    "maximum_critical_probe_failures": 0,
+    "merge_atol": 0.001,
+    "merge_rtol": 0.0001,
+    "minimum_effective_update_ratio": 1e-06,
+    "minimum_logit_rms_delta": 0.0001,
+    "noise_multiplier": 10
+  },
+  "deployment_validation": "Not performed by this offline study; remains a separate release requirement."
+}

@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+tmp/
+artifacts/
+runs/
+output/
+*.zip
+.ipynb_checkpoints/

@@ -1,0 +1,205 @@
+[
+  {
+    "folder": "merged",
+    "original": "added_tokens.json",
+    "transfer": "merged__added_tokens.json",
+    "original_bytes": 707,
+    "transfer_bytes": 707
+  },
+  {
+    "folder": "merged",
+    "original": "chat_template.jinja",
+    "transfer": "merged__chat_template.jinja",
+    "original_bytes": 4168,
+    "transfer_bytes": 4168
+  },
+  {
+    "folder": "merged",
+    "original": "config.json",
+    "transfer": "merged__config.json",
+    "original_bytes": 1359,
+    "transfer_bytes": 1359
+  },
+  {
+    "folder": "merged",
+    "original": "generation_config.json",
+    "transfer": "merged__generation_config.json",
+    "original_bytes": 214,
+    "transfer_bytes": 214
+  },
+  {
+    "folder": "merged",
+    "original": "merges.txt",
+    "transfer": "merged__merges.txt",
+    "original_bytes": 1671853,
+    "transfer_bytes": 1671853
+  },
+  {
+    "folder": "merged",
+    "original": "model-00001-of-00007.safetensors",
+    "transfer": "merged__model-00001-of-00007.safetensors.gz",
+    "original_bytes": 1244659848,
+    "transfer_bytes": 643199511
+  },
+  {
+    "folder": "merged",
+    "original": "model-00002-of-00007.safetensors",
+    "transfer": "merged__model-00002-of-00007.safetensors.gz",
+    "original_bytes": 956377792,
+    "transfer_bytes": 549128734
+  },
+  {
+    "folder": "merged",
+    "original": "model-00003-of-00007.safetensors",
+    "transfer": "merged__model-00003-of-00007.safetensors.gz",
+    "original_bytes": 956394400,
+    "transfer_bytes": 549034146
+  },
+  {
+    "folder": "merged",
+    "original": "model-00004-of-00007.safetensors",
+    "transfer": "merged__model-00004-of-00007.safetensors.gz",
+    "original_bytes": 956394456,
+    "transfer_bytes": 549355157
+  },
+  {
+    "folder": "merged",
+    "original": "model-00005-of-00007.safetensors",
+    "transfer": "merged__model-00005-of-00007.safetensors.gz",
+    "original_bytes": 989947648,
+    "transfer_bytes": 567145102
+  },
+  {
+    "folder": "merged",
+    "original": "model-00006-of-00007.safetensors",
+    "transfer": "merged__model-00006-of-00007.safetensors.gz",
+    "original_bytes": 998337496,
+    "transfer_bytes": 567330558
+  },
+  {
+    "folder": "merged",
+    "original": "model-00007-of-00007.safetensors",
+    "transfer": "merged__model-00007-of-00007.safetensors.gz",
+    "original_bytes": 780223208,
+    "transfer_bytes": 439829120
+  },
+  {
+    "folder": "merged",
+    "original": "model.safetensors.index.json",
+    "transfer": "merged__model.safetensors.index.json",
+    "original_bytes": 25583,
+    "transfer_bytes": 25583
+  },
+  {
+    "folder": "merged",
+    "original": "special_tokens_map.json",
+    "transfer": "merged__special_tokens_map.json",
+    "original_bytes": 613,
+    "transfer_bytes": 613
+  },
+  {
+    "folder": "merged",
+    "original": "tokenizer.json",
+    "transfer": "merged__tokenizer.json",
+    "original_bytes": 11422654,
+    "transfer_bytes": 11422654
+  },
+  {
+    "folder": "merged",
+    "original": "tokenizer_config.json",
+    "transfer": "merged__tokenizer_config.json",
+    "original_bytes": 5404,
+    "transfer_bytes": 5404
+  },
+  {
+    "folder": "merged",
+    "original": "vocab.json",
+    "transfer": "merged__vocab.json",
+    "original_bytes": 2776833,
+    "transfer_bytes": 2776833
+  },
+  {
+    "folder": "quantized",
+    "original": "added_tokens.json",
+    "transfer": "quantized__added_tokens.json",
+    "original_bytes": 707,
+    "transfer_bytes": 707
+  },
+  {
+    "folder": "quantized",
+    "original": "chat_template.jinja",
+    "transfer": "quantized__chat_template.jinja",
+    "original_bytes": 4168,
+    "transfer_bytes": 4168
+  },
+  {
+    "folder": "quantized",
+    "original": "config.json",
+    "transfer": "quantized__config.json",
+    "original_bytes": 1839,
+    "transfer_bytes": 1839
+  },
+  {
+    "folder": "quantized",
+    "original": "generation_config.json",
+    "transfer": "quantized__generation_config.json",
+    "original_bytes": 214,
+    "transfer_bytes": 214
+  },
+  {
+    "folder": "quantized",
+    "original": "merges.txt",
+    "transfer": "quantized__merges.txt",
+    "original_bytes": 1671853,
+    "transfer_bytes": 1671853
+  },
+  {
+    "folder": "quantized",
+    "original": "model-00001-of-00002.safetensors",
+    "transfer": "quantized__model-00001-of-00002.safetensors",
+    "original_bytes": 999146735,
+    "transfer_bytes": 999146735
+  },
+  {
+    "folder": "quantized",
+    "original": "model-00002-of-00002.safetensors",
+    "transfer": "quantized__model-00002-of-00002.safetensors",
+    "original_bytes": 350835220,
+    "transfer_bytes": 350835220
+  },
+  {
+    "folder": "quantized",
+    "original": "model.safetensors.index.json",
+    "transfer": "quantized__model.safetensors.index.json",
+    "original_bytes": 120321,
+    "transfer_bytes": 120321
+  },
+  {
+    "folder": "quantized",
+    "original": "special_tokens_map.json",
+    "transfer": "quantized__special_tokens_map.json",
+    "original_bytes": 613,
+    "transfer_bytes": 613
+  },
+  {
+    "folder": "quantized",
+    "original": "tokenizer.json",
+    "transfer": "quantized__tokenizer.json",
+    "original_bytes": 11422654,
+    "transfer_bytes": 11422654
+  },
+  {
+    "folder": "quantized",
+    "original": "tokenizer_config.json",
+    "transfer": "quantized__tokenizer_config.json",
+    "original_bytes": 5404,
+    "transfer_bytes": 5404
+  },
+  {
+    "folder": "quantized",
+    "original": "vocab.json",
+    "transfer": "quantized__vocab.json",
+    "original_bytes": 2776833,
+    "transfer_bytes": 2776833
+  }
+]

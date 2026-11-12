@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-10T17:44:50.411089+00:00",
+  "reviewer": "Codex (AI-assisted editorial/visual review)",
+  "pages": 2,
+  "prior_report_sha256": "0b7462f360e1dd4b6b34bb0b8da671c77e39c767b7174cb85305447b2a7d5c52",
+  "revised_report_sha256": "baac4d40293648b99db7af6c5de5a47cdb56e37ad740bbbd9dbc0dade3d75170",
+  "both_pages_visually_inspected": true,
+  "clipping_or_overlap_observed": false,
+  "example_id": "probe-missing-00",
+  "memory_arithmetic_bytes": {
+    "train": [
+      3441149952,
+      25690112,
+      268435456,
+      1555824640,
+      1073741824
+    ],
+    "merge": [
+      6882299904,
+      1244659712,
+      50331648,
+      1073741824
+    ],
+    "quantize": [
+      3441149952,
+      1349584896,
+      1244659712,
+      1073741824
+    ]
+  },
+  "model_data_or_predictions_changed": false,
+  "new_training_or_inference_run": false
+}

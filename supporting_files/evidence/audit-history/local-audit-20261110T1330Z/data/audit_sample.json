@@ -1,0 +1,1493 @@
+[
+  {
+    "id": "38047",
+    "query": "I'm looking for the best match listings of condominiums and townhouses in Lake Worth with a maximum price of $450,000. I want to see the first 15 results.",
+    "tools": [
+      {
+        "name": "getlistings",
+        "description": "Retrieve a list of condominiums and townhouses in specified cities of Southwest Florida and the East Coast.",
+        "parameters": {
+          "sort": {
+            "description": "Defines how the listings should be sorted. Supported values are 'RELEVANCE' (best match), 'NEWEST' (newest first), 'PRICE_LOW' (cheapest first), and 'PRICE_HIGH' (most expensive first). Default is 'RELEVANCE'.",
+            "type": "str",
+            "default": "RELEVANCE"
+          },
+          "offset": {
+            "description": "For pagination. Specifies the starting point in the collection of listings. For example, to get the first set of items, set offset to 0. Default is 0.",
+            "type": "int",
+            "default": "0"
+          },
+          "price_max": {
+            "description": "The maximum price in US dollars for the condos and townhouses. Default is 250,000.",
+            "type": "int",
+            "default": "250000"
+          },
+          "city": {
+            "description": "The name of the city to search within. Supported cities include Cape Coral, Fort Myers, West Palm Beach, Lake Worth, Lantana, Boynton Beach, Delray Beach, Boca Raton, Pompano Beach, Fort Lauderdale, Naples, Tampa, and Saint Petersburg. Default is 'Cape Coral'.",
+            "type": "str",
+            "default": "Cape Coral"
+          },
+          "limit": {
+            "description": "The maximum number of items to return. Default is 50.",
+            "type": "int",
+            "default": "50"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getlistings",
+        "arguments": {
+          "sort": "RELEVANCE",
+          "price_max": 450000,
+          "city": "Lake Worth",
+          "limit": 15
+        }
+      }
+    ],
+    "family": "getlistings",
+    "rendered_tokens": 522,
+    "supervised_tokens": 38
+  },
+  {
+    "id": "57030",
+    "query": "Obtain details for the pincode 920001, which is located in Faridabad.",
+    "tools": [
+      {
+        "name": "findbypincode",
+        "description": "Fetches information for a given Indian pincode using the Toolbench RapidAPI.",
+        "parameters": {
+          "pincode": {
+            "description": "The pincode for which information needs to be fetched.",
+            "type": "int",
+            "default": 518345
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "findbypincode",
+        "arguments": {
+          "pincode": 920001
+        }
+      }
+    ],
+    "family": "findbypincode",
+    "rendered_tokens": 223,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "30665",
+    "query": "Is the Riverside Hotel in Bangkok available for a stay from 2023-06-03 to 2023-06-10?",
+    "tools": [
+      {
+        "name": "is_hotel_available",
+        "description": "Checks the availability of a hotel for a given date range.",
+        "parameters": {
+          "hotel": {
+            "description": "The name of the hotel.",
+            "type": "str"
+          },
+          "city": {
+            "description": "The city where the hotel is located.",
+            "type": "str"
+          },
+          "checkin": {
+            "description": "The check-in date in the format \"YYYY-MM-DD\".",
+            "type": "str"
+          },
+          "checkout": {
+            "description": "The check-out date in the format \"YYYY-MM-DD\".",
+            "type": "str"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "is_hotel_available",
+        "arguments": {
+          "hotel": "Riverside Hotel",
+          "city": "Bangkok",
+          "checkin": "2023-06-03",
+          "checkout": "2023-06-10"
+        }
+      }
+    ],
+    "family": "is_hotel_available",
+    "rendered_tokens": 315,
+    "supervised_tokens": 52
+  },
+  {
+    "id": "55783",
+    "query": "Who was the runner-up team in the NCAA Final Four in the year 2000?",
+    "tools": [
+      {
+        "name": "runner_up",
+        "description": "Fetches the runner-up team data for the given identifying parameter from the NCAA Final Four API.",
+        "parameters": {
+          "identifier": {
+            "description": "The identifier (e.g., year) to fetch the runner-up team data for.",
+            "type": "str",
+            "default": "1959"
+          }
+        }
+      },
+      {
+        "name": "basketball_search",
+        "description": "Search for basketball players, teams, and tournaments using the provided term.",
+        "parameters": {
+          "term": {
+            "description": "The search term used to look for players, teams, and tournaments.",
+            "type": "str",
+            "default": "kevin"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "runner_up",
+        "arguments": {
+          "identifier": "2000"
+        }
+      }
+    ],
+    "family": "runner_up",
+    "rendered_tokens": 281,
+    "supervised_tokens": 18
+  },
+  {
+    "id": "29212",
+    "query": "Fetch the spreadsheet with sales data for last month, located at /data/sales_data_august.xlsx.",
+    "tools": [
+      {
+        "name": "retrieve_file",
+        "description": "Retrieves a file from the server using the provided file path and API key.",
+        "parameters": {
+          "path": {
+            "description": "The path of the file to be retrieved. This path is typically obtained by replacing the /p/ path in the /merge and /edit endpoint responses with /f/ or /d/.",
+            "type": "str",
+            "default": "ABCDEF"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "retrieve_file",
+        "arguments": {
+          "path": "/data/sales_data_august.xlsx"
+        }
+      }
+    ],
+    "family": "retrieve_file",
+    "rendered_tokens": 239,
+    "supervised_tokens": 21
+  },
+  {
+    "id": "12861",
+    "query": "List actors born on October 31st.",
+    "tools": [
+      {
+        "name": "actors_list_born_today",
+        "description": "Fetches a list of actors and actresses born on a specific day and month from the Online Movie Database via the RapidAPI platform.",
+        "parameters": {
+          "month": {
+            "description": "The month of birth of the actors.",
+            "type": "int",
+            "default": "7"
+          },
+          "day": {
+            "description": "The day of birth of the actors.",
+            "type": "int",
+            "default": "27"
+          }
+        }
+      },
+      {
+        "name": "v1_latest_headlines",
+        "description": "Fetches the latest 100 headlines based on specified language, topic, and/or country, and optionally includes media information.",
+        "parameters": {
+          "lang": {
+            "description": "Specifies the language of the search. Allowed values include 'af', 'ar', 'bg', 'bn', 'ca', 'cn', 'cs', 'cy', 'da', 'de', 'el', 'en', 'es', 'et', 'fa', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja', 'kn', 'ko', 'lt', 'lv', 'mk', 'ml', 'mr', 'ne', 'nl', 'no', 'pa', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'so', 'sq', 'sv', 'sw', 'ta', 'te', 'th', 'tl', 'tr', 'tw', 'uk', 'ur', 'vi'. Defaults to 'en'.",
+            "type": "str",
+            "default": "en"
+          },
+          "topic": {
+            "description": "The topic to which you want to restrict the articles. Accepted values are 'news', 'sport', 'tech', 'world', 'finance', 'politics', 'business', 'economics', 'entertainment', 'beauty', 'travel', 'music', 'food', 'science'. This parameter is experimental and not all articles may have a topic assigned.",
+            "type": "str",
+            "default": ""
+          },
+          "country": {
+            "description": "The country to which you want to narrow your search, specified using ISO 3166-1 alpha-2 codes. This parameter is experimental and is best used in conjunction with the 'lang' parameter.",
+            "type": "str",
+            "default": ""
+          },
+          "media": {
+            "description": "If set to 'True', adds additional media information to the output, including the main image and a comma-separated string of all images used in an article. Defaults to 'True'.",
+            "type": "str",
+            "default": "True"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "actors_list_born_today",
+        "arguments": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "family": "actors_list_born_today",
+    "rendered_tokens": 690,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "5759",
+    "query": "What are the recent updates on coronavirus in France?",
+    "tools": [
+      {
+        "name": "getnews",
+        "description": "Fetch the latest coronavirus news for a specified location or globally.",
+        "parameters": {
+          "location": {
+            "description": "The ISO 3166-2 location code. Use \"FR\" for France, \"US\" for the United States, \"US-CA\" for California, or \"global\" for worldwide news.",
+            "type": "str",
+            "default": "US"
+          }
+        }
+      },
+      {
+        "name": "get_article_by_sid",
+        "description": "Retrieve the content of a news article based on the given article ID (`sid`).",
+        "parameters": {
+          "sid": {
+            "description": "The article ID for the news article to be retrieved.",
+            "type": "int",
+            "default": "565154"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "getnews",
+        "arguments": {
+          "location": "FR"
+        }
+      }
+    ],
+    "family": "getnews",
+    "rendered_tokens": 289,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "37440",
+    "query": "Hey, what types of horoscopes can I check for the next few days?",
+    "tools": [
+      {
+        "name": "riddle_by_keyword",
+        "description": "Fetches one random riddle based on a given keyword using the Toolbench RapidAPI service.",
+        "parameters": {
+          "keyword": {
+            "description": "The subject or keyword to get a riddle for.",
+            "type": "str",
+            "default": "cat"
+          }
+        }
+      },
+      {
+        "name": "get_types",
+        "description": "Fetches available types for a specified period from the horoscopes API.",
+        "parameters": {
+          "period": {
+            "description": "The time period for which to retrieve the available types (e.g., daily, weekly, monthly).",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "check_user_exists",
+        "description": "Checks if a user exists on the Waifu service by user ID using the Toolbench RapidAPI key.",
+        "parameters": {
+          "user_id": {
+            "description": "The unique identifier of the user to check.",
+            "type": "str",
+            "default": "sample_user_id"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_types",
+        "arguments": {
+          "period": "daily"
+        }
+      }
+    ],
+    "family": "get_types",
+    "rendered_tokens": 340,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "10108",
+    "query": "Retrieve rugby fixtures and results for the date March 15, 2023.",
+    "tools": [
+      {
+        "name": "fixtures_by_date",
+        "description": "Fetches rugby match fixtures and results for a specific date using the RapidAPI service. If no date is provided, the default date is set to '2023-02-04'.",
+        "parameters": {
+          "date": {
+            "description": "The date for which to retrieve fixtures and results, in the format 'YYYY-MM-DD'. Defaults to '2023-02-04' if not provided.",
+            "type": "str",
+            "default": "2023-02-04"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "fixtures_by_date",
+        "arguments": {
+          "date": "2023-03-15"
+        }
+      }
+    ],
+    "family": "fixtures_by_date",
+    "rendered_tokens": 272,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "34831",
+    "query": "What is the aspect ratio and runtime of the movie 'Interstellar'?",
+    "tools": [
+      {
+        "name": "title_get_technical",
+        "description": "Fetches technical information for a movie or TV show using its tconst identifier and RapidAPI key.",
+        "parameters": {
+          "tconst": {
+            "description": "The unique identifier for a title, typically starting with 'tt', obtained from endpoints like /title/auto-complete or /title/find.",
+            "type": "str",
+            "default": "tt0944947"
+          }
+        }
+      },
+      {
+        "name": "title_get_sound_tracks",
+        "description": "Fetches the sound tracks for a specific title from the online movie database.",
+        "parameters": {
+          "tconst": {
+            "description": "The title identifier, which should start with 'tt' (e.g., 'tt0944947'), typically obtained from the /title/auto-complete or /title/find endpoints.",
+            "type": "str",
+            "default": "tt0944947"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "title_get_technical",
+        "arguments": {
+          "tconst": "tt0816692"
+        }
+      }
+    ],
+    "family": "title_get_technical",
+    "rendered_tokens": 335,
+    "supervised_tokens": 26
+  },
+  {
+    "id": "45420",
+    "query": "Calculate the area of a circle with a radius of 7.5 units.",
+    "tools": [
+      {
+        "name": "least_common_multiple",
+        "description": "Computes the least common multiple (LCM) of two positive integers.",
+        "parameters": {
+          "a": {
+            "description": "The first positive integer.",
+            "type": "int"
+          },
+          "b": {
+            "description": "The second positive integer.",
+            "type": "int"
+          }
+        }
+      },
+      {
+        "name": "circle_area",
+        "description": "Computes the area of a circle given its radius.",
+        "parameters": {
+          "radius": {
+            "description": "The radius of the circle.",
+            "type": "float"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "circle_area",
+        "arguments": {
+          "radius": 7.5
+        }
+      }
+    ],
+    "family": "circle_area",
+    "rendered_tokens": 251,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "53128",
+    "query": "What is the result of incrementing the number 100 by one?",
+    "tools": [
+      {
+        "name": "get_plus_one",
+        "description": "This function takes an integer `number` and uses the RapidAPI service to get the number incremented by one.",
+        "parameters": {
+          "number": {
+            "description": "The integer to be incremented.",
+            "type": "int",
+            "default": "15"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_plus_one",
+        "arguments": {
+          "number": 100
+        }
+      }
+    ],
+    "family": "get_plus_one",
+    "rendered_tokens": 204,
+    "supervised_tokens": 18
+  },
+  {
+    "id": "22164",
+    "query": "How can I get a list of cat breeds ordered by their origin country in ascending order?",
+    "tools": [
+      {
+        "name": "airplanes_by_brand",
+        "description": "Fetches all airplanes by a specified brand from the airplanes database.",
+        "parameters": {
+          "brand": {
+            "description": "The brand of airplanes to fetch information for.",
+            "type": "str",
+            "default": "Airbus"
+          }
+        }
+      },
+      {
+        "name": "order_by_ascending",
+        "description": "Fetches a list of all cats sorted in ascending order by a specified attribute.",
+        "parameters": {
+          "ordering": {
+            "description": "The attribute by which to order the list of cats, e.g., 'name'.",
+            "type": "str",
+            "default": "breedName"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "order_by_ascending",
+        "arguments": {
+          "ordering": "origin"
+        }
+      }
+    ],
+    "family": "order_by_ascending",
+    "rendered_tokens": 272,
+    "supervised_tokens": 17
+  },
+  {
+    "id": "23624",
+    "query": "What are the racing events for the day before my birthday, which is on April 5th?",
+    "tools": [
+      {
+        "name": "racecards",
+        "description": "Fetches and returns the list of horse racing events for a given date from the Horse Racing API.",
+        "parameters": {
+          "date": {
+            "description": "The date for which to fetch the racecards, formatted as 'YYYY-MM-DD'. Defaults to '2020-03-12'.",
+            "type": "str",
+            "default": "2020-03-12"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "racecards",
+        "arguments": {
+          "date": "2023-04-04"
+        }
+      }
+    ],
+    "family": "racecards",
+    "rendered_tokens": 245,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "51602",
+    "query": "Does the following paragraph contain any profanity: 'This is a longer test. It should not contain any profanity, but let's see what the system says.'",
+    "tools": [
+      {
+        "name": "dns",
+        "description": "Fetches DNS records for a given domain using the RapidAPI domain checker service.",
+        "parameters": {
+          "domain": {
+            "description": "The domain for which DNS records are to be retrieved.",
+            "type": "str",
+            "default": "rapidapi.com"
+          }
+        }
+      },
+      {
+        "name": "check_if_text_contains_profanity",
+        "description": "Check if a given text contains profanity using the Purgomalum API.",
+        "parameters": {
+          "text": {
+            "description": "The text to be checked for profanity.",
+            "type": "str",
+            "default": "This is some test input"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "check_if_text_contains_profanity",
+        "arguments": {
+          "text": "This is a longer test. It should not contain any profanity, but let's see what the system says."
+        }
+      }
+    ],
+    "family": "check_if_text_contains_profanity",
+    "rendered_tokens": 311,
+    "supervised_tokens": 42
+  },
+  {
+    "id": "59067",
+    "query": "Tell me about the 'Anglerfish' and provide me the raw response text if it fails to parse as JSON.",
+    "tools": [
+      {
+        "name": "fish_api_fish_name",
+        "description": "Fetch information for a specific fish from the Fish API.",
+        "parameters": {
+          "name": {
+            "description": "Name of the fish to be found.",
+            "type": "str",
+            "default": "Tarpon"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "fish_api_fish_name",
+        "arguments": {
+          "name": "Anglerfish"
+        }
+      }
+    ],
+    "family": "fish_api_fish_name",
+    "rendered_tokens": 207,
+    "supervised_tokens": 20
+  },
+  {
+    "id": "44119",
+    "query": "Get information about the Indian pincode 500001 in Hyderabad, including its taluk and circle.",
+    "tools": [
+      {
+        "name": "findbypincode",
+        "description": "Fetches information for a given Indian pincode using the Toolbench RapidAPI.",
+        "parameters": {
+          "pincode": {
+            "description": "The pincode for which information needs to be fetched.",
+            "type": "int",
+            "default": 518345
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "findbypincode",
+        "arguments": {
+          "pincode": 500001
+        }
+      }
+    ],
+    "family": "findbypincode",
+    "rendered_tokens": 224,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "46843",
+    "query": "Find out the WHOIS information for google.com.",
+    "tools": [
+      {
+        "name": "v1_whois",
+        "description": "Fetches the WHOIS information for a given domain using the API Ninjas Whois API.",
+        "parameters": {
+          "domain": {
+            "description": "The domain to retrieve WHOIS information for.",
+            "type": "str",
+            "default": "example.com"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "v1_whois",
+        "arguments": {
+          "domain": "google.com"
+        }
+      }
+    ],
+    "family": "v1_whois",
+    "rendered_tokens": 201,
+    "supervised_tokens": 19
+  },
+  {
+    "id": "18843",
+    "query": "What are the dynamics in a group of 100, with 60 extroverts and the rest introverts?",
+    "tools": [
+      {
+        "name": "analyze_social_group_dynamics",
+        "description": "Analyzes the social dynamics within a group based on the personality traits and group size.",
+        "parameters": {
+          "total": {
+            "description": "The total group size.",
+            "type": "int"
+          },
+          "extroverts": {
+            "description": "The number of extroverted members in the group.",
+            "type": "int"
+          },
+          "introverts": {
+            "description": "The number of introverted members in the group.",
+            "type": "int"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "analyze_social_group_dynamics",
+        "arguments": {
+          "total": 100,
+          "extroverts": 60,
+          "introverts": 40
+        }
+      }
+    ],
+    "family": "analyze_social_group_dynamics",
+    "rendered_tokens": 268,
+    "supervised_tokens": 33
+  },
+  {
+    "id": "14004",
+    "query": "Is 54748 a number that can be expressed as the sum of the cubes of its digits?",
+    "tools": [
+      {
+        "name": "is_sum_of_cubes",
+        "description": "Checks if a number is the sum of the cubes of its digits.",
+        "parameters": {
+          "num": {
+            "description": "The number to check.",
+            "type": "int"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "is_sum_of_cubes",
+        "arguments": {
+          "num": 54748
+        }
+      }
+    ],
+    "family": "is_sum_of_cubes",
+    "rendered_tokens": 201,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "39582",
+    "query": "Retrieve the monthly data and search count for the keyword 'climate change' from the Targeted Keyword Trend API.",
+    "tools": [
+      {
+        "name": "keyword",
+        "description": "Retrieves \u201cMonthly Data\u201d and \u201cSearch count\u201d for a given keyword from the Targeted Keyword Trend API.",
+        "parameters": {
+          "keyword": {
+            "description": "The keyword to search data for.",
+            "type": "str",
+            "default": "digital marketing"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "keyword",
+        "arguments": {
+          "keyword": "climate change"
+        }
+      }
+    ],
+    "family": "keyword",
+    "rendered_tokens": 208,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "5301",
+    "query": "Identify the car model and engine type for a vehicle with VIN 'ABC123DEF456GHI789'.",
+    "tools": [
+      {
+        "name": "vin_decoder",
+        "description": "Decodes a given VIN (Vehicle Identification Number) for a vehicle manufactured in Europe to retrieve information such as car model, maker, year, engine, and other relevant details.",
+        "parameters": {
+          "vin": {
+            "description": "The VIN number to be decoded.",
+            "type": "str",
+            "default": "VF3CA5FU8DW062146"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "vin_decoder",
+        "arguments": {
+          "vin": "ABC123DEF456GHI789"
+        }
+      }
+    ],
+    "family": "vin_decoder",
+    "rendered_tokens": 249,
+    "supervised_tokens": 27
+  },
+  {
+    "id": "32778",
+    "query": "What is the quote with ID 13579 from the movie and TV shows quotes database?",
+    "tools": [
+      {
+        "name": "get_individual_quotes_by_quote_id",
+        "description": "Fetches individual quotes based on the given quote ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the quote to be retrieved.",
+            "type": "int",
+            "default": "4"
+          }
+        }
+      },
+      {
+        "name": "get_one_anime_by_ranking",
+        "description": "Fetches the details of an anime based on its ranking from the Anime DB API.",
+        "parameters": {
+          "rank": {
+            "description": "The ranking position of the desired anime.",
+            "type": "int",
+            "default": "1"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_individual_quotes_by_quote_id",
+        "arguments": {
+          "is_id": 13579
+        }
+      }
+    ],
+    "family": "get_individual_quotes_by_quote_id",
+    "rendered_tokens": 274,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "49228",
+    "query": "Draw a random card from the Diamonds suit in a regular 52-card playing deck.",
+    "tools": [
+      {
+        "name": "card",
+        "description": "Draw a card from a regular 52-card playing deck using the RapidAPI card draw simulator.",
+        "parameters": {
+          "suit": {
+            "description": "The suit of the card to draw (e.g., 'hearts', 'diamonds', 'clubs', 'spades'). Default is 'all' to allow any suit.",
+            "type": "str",
+            "default": "all"
+          },
+          "value": {
+            "description": "The value of the card to draw (e.g., 'A', '2', 'K'). Default is 'A'.",
+            "type": "str",
+            "default": "A"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "card",
+        "arguments": {
+          "suit": "diamonds"
+        }
+      }
+    ],
+    "family": "card",
+    "rendered_tokens": 273,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "56466",
+    "query": "Find cities in the United States and Canada with the name New York, excluding the first 2 results.",
+    "tools": [
+      {
+        "name": "search_places",
+        "description": "Fetches a list of places (either countries, cities, or administrative divisions) that match a query and can be filtered by various properties.",
+        "parameters": {
+          "type": {
+            "description": "Filters places by `type`. Specifiable values are 'CITY', 'ADMIN_DIVISION_1', 'ADMIN_DIVISION_2', and 'COUNTRY'. Default is 'CITY'.",
+            "type": "str",
+            "default": "CITY"
+          },
+          "language": {
+            "description": "Specifies the language (ISO 639-1) to get the localized name of the place. If translation is unavailable, the \"localizedName\" property will be null.",
+            "type": "str",
+            "default": ""
+          },
+          "skip": {
+            "description": "Number of places to ignore before beginning to return results. Used with `limit` to paginate results. Defaults to 0.",
+            "type": "int",
+            "default": "0"
+          },
+          "country": {
+            "description": "Filters places by their country `id`. Multiple values can be specified, separated by commas (e.g., 'US,CA'). Default is 'US,CA'.",
+            "type": "str",
+            "default": "US,CA"
+          },
+          "limit": {
+            "description": "Maximum number of places to return. Used with `skip` to paginate results. Default is 10, maximum is 100.",
+            "type": "int",
+            "default": "10"
+          },
+          "admindivision1": {
+            "description": "Filters places by their adminDivision1 `id`. Multiple values can be specified, separated by commas (e.g., 'US.CA,US.DE').",
+            "type": "str",
+            "default": ""
+          },
+          "admindivision2": {
+            "description": "Filters places by their adminDivision2 `id`. Multiple values can be specified, separated by commas.",
+            "type": "str",
+            "default": ""
+          },
+          "accuracyradiuskm": {
+            "description": "Maximum radius (in kilometers) from the point specified by `latitude` and `longitude` to filter places located within the area. Default is 100 km.",
+            "type": "int",
+            "default": ""
+          },
+          "latitude": {
+            "description": "Latitude coordinate to filter places by location. Ignored if `longitude` is not specified.",
+            "type": "int",
+            "default": ""
+          },
+          "q": {
+            "description": "Query string to find places with a similar name. Default is 'New York'.",
+            "type": "str",
+            "default": "New York"
+          },
+          "longitude": {
+            "description": "Longitude coordinate to filter places by location. Ignored if `latitude` is not specified.",
+            "type": "int",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "search_places",
+        "arguments": {
+          "type": "CITY",
+          "country": "US,CA",
+          "q": "New York",
+          "skip": 2
+        }
+      }
+    ],
+    "family": "search_places",
+    "rendered_tokens": 716,
+    "supervised_tokens": 31
+  },
+  {
+    "id": "4076",
+    "query": "I need to find manga on page 1 that includes genres of Romance and Comedy.",
+    "tools": [
+      {
+        "name": "fetch_manga",
+        "description": "Fetch a list of manga from the Mangaverse API based on specified page number and genres.",
+        "parameters": {
+          "page": {
+            "description": "The page number to fetch, default is '1'.",
+            "type": "str",
+            "default": "1"
+          },
+          "genres": {
+            "description": "A comma-separated string of genres to filter manga by, default is 'Harem,Fantasy'.",
+            "type": "str",
+            "default": "Harem,Fantasy"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "fetch_manga",
+        "arguments": {
+          "page": "1",
+          "genres": "Romance,Comedy"
+        }
+      }
+    ],
+    "family": "fetch_manga",
+    "rendered_tokens": 254,
+    "supervised_tokens": 24
+  },
+  {
+    "id": "11515",
+    "query": "Fetch the top 10 discounted games in the US region starting from the 20th game.",
+    "tools": [
+      {
+        "name": "gameslist",
+        "description": "Retrieves a list of games on special discount offers from the specified region.",
+        "parameters": {
+          "region": {
+            "description": "The region code to fetch the game offers from.",
+            "type": "str",
+            "default": "US"
+          },
+          "start": {
+            "description": "The starting index for the list of games.",
+            "type": "int",
+            "default": "0"
+          },
+          "count": {
+            "description": "The number of games to retrieve starting from the `start` index.",
+            "type": "int",
+            "default": "10"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "gameslist",
+        "arguments": {
+          "region": "US",
+          "start": 20,
+          "count": 10
+        }
+      }
+    ],
+    "family": "gameslist",
+    "rendered_tokens": 274,
+    "supervised_tokens": 25
+  },
+  {
+    "id": "30554",
+    "query": "Convert an HSL color with hue 60, saturation 80, and lightness 60 to other formats.",
+    "tools": [
+      {
+        "name": "list_specific_qr_code",
+        "description": "Fetches information about a specific registered QR code using the provided reference and RapidAPI key.",
+        "parameters": {
+          "ref": {
+            "description": "The reference identifier for the specific QR code.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "convert_hsl",
+        "description": "Converts an HSL color code to other color codes such as Hex, RGB, and CMYK using the Convexity API.",
+        "parameters": {
+          "s": {
+            "description": "The saturation component of the HSL color code.",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "The hue component of the HSL color code.",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "The lightness component of the HSL color code.",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "convert_hsl",
+        "arguments": {
+          "s": 80,
+          "h": 60,
+          "l": 60
+        }
+      }
+    ],
+    "family": "convert_hsl",
+    "rendered_tokens": 357,
+    "supervised_tokens": 27
+  },
+  {
+    "id": "8678",
+    "query": "What are the conversions for an HSL color with hue 180, saturation 50, and lightness 75?",
+    "tools": [
+      {
+        "name": "list_specific_qr_code",
+        "description": "Fetches information about a specific registered QR code using the provided reference and RapidAPI key.",
+        "parameters": {
+          "ref": {
+            "description": "The reference identifier for the specific QR code.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      },
+      {
+        "name": "convert_hsl",
+        "description": "Converts an HSL color code to other color codes such as Hex, RGB, and CMYK using the Convexity API.",
+        "parameters": {
+          "s": {
+            "description": "The saturation component of the HSL color code.",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "The hue component of the HSL color code.",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "The lightness component of the HSL color code.",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "convert_hsl",
+        "arguments": {
+          "s": 50,
+          "h": 180,
+          "l": 75
+        }
+      }
+    ],
+    "family": "convert_hsl",
+    "rendered_tokens": 360,
+    "supervised_tokens": 28
+  },
+  {
+    "id": "39030",
+    "query": "I need to fetch users from page 30. I'm not sure how to do it. Can you guide me?",
+    "tools": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "description": "Fetches a list of users from a specified page, with each page containing up to one hundred users, using the provided RapidAPI key.",
+        "parameters": {
+          "page": {
+            "description": "The page number to retrieve the users from.",
+            "type": "int",
+            "default": "0"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_all_users_paged_by_hundreds",
+        "arguments": {
+          "page": 30
+        }
+      }
+    ],
+    "family": "get_all_users_paged_by_hundreds",
+    "rendered_tokens": 230,
+    "supervised_tokens": 22
+  },
+  {
+    "id": "36419",
+    "query": "Fetch the detailed information for the school with the encrypted ID '1234567890ABCDEF1234'.",
+    "tools": [
+      {
+        "name": "school_detail",
+        "description": "Fetch detailed information about a school using the encrypted school ID (sekolah_id_enkrip).",
+        "parameters": {
+          "sekolah_id_enkrip": {
+            "description": "The encrypted ID of the school for which details are to be fetched. Default is '5DB43D89E6BFB0F76FBC'.",
+            "type": "str",
+            "default": "5DB43D89E6BFB0F76FBC"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "school_detail",
+        "arguments": {
+          "sekolah_id_enkrip": "1234567890ABCDEF1234"
+        }
+      }
+    ],
+    "family": "school_detail",
+    "rendered_tokens": 284,
+    "supervised_tokens": 36
+  },
+  {
+    "id": "33290",
+    "query": "What are the sport models from Yamaha produced in 2020?",
+    "tools": [
+      {
+        "name": "models_by_make_id_year_category",
+        "description": "Retrieves motorcycle models based on year, category, and make ID.",
+        "parameters": {
+          "year": {
+            "description": "The year of the motorcycle models to retrieve.",
+            "type": "int",
+            "default": "2015"
+          },
+          "category": {
+            "description": "The category of the motorcycle models to retrieve.",
+            "type": "str",
+            "default": "Sport"
+          },
+          "make": {
+            "description": "The make ID of the motorcycle models to retrieve.",
+            "type": "int",
+            "default": "100"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "models_by_make_id_year_category",
+        "arguments": {
+          "year": 2020,
+          "category": "sport",
+          "make": 23
+        }
+      }
+    ],
+    "family": "models_by_make_id_year_category",
+    "rendered_tokens": 276,
+    "supervised_tokens": 31
+  },
+  {
+    "id": "9494",
+    "query": "Convert the HSL color with saturation 50, hue 180, and lightness 75 to RGB.",
+    "tools": [
+      {
+        "name": "hsl_to_rgb",
+        "description": "Converts HSL color values to RGB color values using an external API.",
+        "parameters": {
+          "s": {
+            "description": "Saturation component of the HSL color value (0-100).",
+            "type": "int",
+            "default": "78"
+          },
+          "h": {
+            "description": "Hue component of the HSL color value (0-360).",
+            "type": "int",
+            "default": "250"
+          },
+          "l": {
+            "description": "Lightness component of the HSL color value (0-100).",
+            "type": "int",
+            "default": "45"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "hsl_to_rgb",
+        "arguments": {
+          "s": 50,
+          "h": 180,
+          "l": 75
+        }
+      }
+    ],
+    "family": "hsl_to_rgb",
+    "rendered_tokens": 305,
+    "supervised_tokens": 29
+  },
+  {
+    "id": "48997",
+    "query": "What is the block for the town 'East London'?",
+    "tools": [
+      {
+        "name": "town",
+        "description": "Retrieves information about a specified town, such as province and block, using the Mzansi Loadshedding API.",
+        "parameters": {
+          "town": {
+            "description": "The name of the town for which information is being requested.",
+            "type": "str",
+            "default": "kagiso"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "town",
+        "arguments": {
+          "town": "East London"
+        }
+      }
+    ],
+    "family": "town",
+    "rendered_tokens": 204,
+    "supervised_tokens": 15
+  },
+  {
+    "id": "39829",
+    "query": "Attempt to sign in using the international number +447911123456 and password 'securePassword!'.",
+    "tools": [
+      {
+        "name": "user_login",
+        "description": "Logs in a user with the given username and password, and returns a JSON object containing the account's session key.",
+        "parameters": {
+          "username": {
+            "description": "Username for the user account. For US domestic users, this should be a 10-digit number. For international users, use the full E.164 format (e.g., US: 5555555555, E.164: +1155555555555).",
+            "type": "str",
+            "default": ""
+          },
+          "password": {
+            "description": "Password associated with the username.",
+            "type": "str",
+            "default": ""
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "user_login",
+        "arguments": {
+          "username": "+447911123456",
+          "password": "securePassword!"
+        }
+      }
+    ],
+    "family": "user_login",
+    "rendered_tokens": 318,
+    "supervised_tokens": 32
+  },
+  {
+    "id": "24180",
+    "query": "What events are scheduled for basketball on March 30, 2023?",
+    "tools": [
+      {
+        "name": "team_recent_form",
+        "description": "Fetches and returns the recent form of a sports team using the given team ID.",
+        "parameters": {
+          "team_id": {
+            "description": "The ID of the team for which the recent form is to be retrieved.",
+            "type": "int",
+            "default": "2817"
+          }
+        }
+      },
+      {
+        "name": "matchdetails",
+        "description": "Retrieve handball match details by match ID.",
+        "parameters": {
+          "is_id": {
+            "description": "The ID of the match to retrieve information for.",
+            "type": "int",
+            "default": 10485769
+          }
+        }
+      },
+      {
+        "name": "schedule_by_date",
+        "description": "Fetches the event schedule for a given date and sport ID using the specified API key.",
+        "parameters": {
+          "date": {
+            "description": "The date for which the event schedule is requested, in 'YYYY-MM-DD' format.",
+            "type": "str",
+            "default": "2022-05-11"
+          },
+          "sport_id": {
+            "description": "The ID of the sport for which the schedule is requested.",
+            "type": "int",
+            "default": "1"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "schedule_by_date",
+        "arguments": {
+          "date": "2023-03-30",
+          "sport_id": 2
+        }
+      }
+    ],
+    "family": "schedule_by_date",
+    "rendered_tokens": 398,
+    "supervised_tokens": 30
+  },
+  {
+    "id": "31296",
+    "query": "What is the ZIP code for the IP address 55.55.55.55?",
+    "tools": [
+      {
+        "name": "get_ip_zipcode",
+        "description": "Retrieves the ZIP code of a given IP address using the ip-api.com API.",
+        "parameters": {
+          "ip": {
+            "description": "The IP address to locate.",
+            "type": "str"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_ip_zipcode",
+        "arguments": {
+          "ip": "55.55.55.55"
+        }
+      }
+    ],
+    "family": "get_ip_zipcode",
+    "rendered_tokens": 209,
+    "supervised_tokens": 27
+  },
+  {
+    "id": "48478",
+    "query": "Retrieve the 86th verse from the 29th chapter of the Quran.",
+    "tools": [
+      {
+        "name": "get_specific_ayah_verse",
+        "description": "Fetches a specific Ayah (verse) from a given chapter in the Quran, with details in JSON format.",
+        "parameters": {
+          "chapterid": {
+            "description": "The chapter (Surah) number to fetch the verse from. Must be between 1 and 114.",
+            "type": "int",
+            "default": "38"
+          },
+          "verseid": {
+            "description": "The verse (Ayah) number to fetch within the specified chapter. Must be a valid verse number within the chapter.",
+            "type": "int",
+            "default": "29"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_specific_ayah_verse",
+        "arguments": {
+          "chapterid": 29,
+          "verseid": 86
+        }
+      }
+    ],
+    "family": "get_specific_ayah_verse",
+    "rendered_tokens": 283,
+    "supervised_tokens": 27
+  },
+  {
+    "id": "14285",
+    "query": "What if I need to convert 'January 1, 2023' from Month DD, YYYY to YYYY-MM-DD?",
+    "tools": [
+      {
+        "name": "format_date",
+        "description": "Converts a date string from one format to another.",
+        "parameters": {
+          "date": {
+            "description": "The date string to convert.",
+            "type": "str"
+          },
+          "input_format": {
+            "description": "The format of the input date string.",
+            "type": "str"
+          },
+          "output_format": {
+            "description": "The desired format of the output date string.",
+            "type": "str"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "format_date",
+        "arguments": {
+          "date": "January 1, 2023",
+          "input_format": "%B %d, %Y",
+          "output_format": "%Y-%m-%d"
+        }
+      }
+    ],
+    "family": "format_date",
+    "rendered_tokens": 267,
+    "supervised_tokens": 44
+  },
+  {
+    "id": "56742",
+    "query": "I'm trying to find out the ZIP code of the IP address that belongs to the Facebook's DNS server. Can you help me with that?",
+    "tools": [
+      {
+        "name": "get_ip_zipcode",
+        "description": "Retrieves the ZIP code of a given IP address using the ip-api.com API.",
+        "parameters": {
+          "ip": {
+            "description": "The IP address to locate.",
+            "type": "str"
+          }
+        }
+      }
+    ],
+    "answers": [
+      {
+        "name": "get_ip_zipcode",
+        "arguments": {
+          "ip": "69.171.247.12"
+        }
+      }
+    ],
+    "family": "get_ip_zipcode",
+    "rendered_tokens": 218,
+    "supervised_tokens": 29
+  }
+]

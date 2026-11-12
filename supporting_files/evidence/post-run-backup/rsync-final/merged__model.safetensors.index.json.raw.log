@@ -1,0 +1,18 @@
+Warning: Permanently added '[global.prd.ga.run.brev.nvidia.com]:25494' (ED25519) to the list of known hosts.
+
+Number of files: 1 (reg: 1)
+Number of created files: 1 (reg: 1)
+Number of deleted files: 0
+Number of regular files transferred: 1
+Total file size: 25,583 bytes
+Total transferred file size: 25,583 bytes
+Literal data: 25,583 bytes
+Matched data: 0 bytes
+File list size: 72
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 43
+Total bytes received: 25,713
+
+sent 43 bytes  received 25,713 bytes  5,723.56 bytes/sec
+total size is 25,583  speedup is 0.99

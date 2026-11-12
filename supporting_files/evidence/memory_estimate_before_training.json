@@ -1,0 +1,46 @@
+{
+  "estimated_at": "2026-11-10T14:01:58.445+00:00",
+  "before_training": true,
+  "unique_parameters": 1720574976,
+  "lora_parameters": 1605632,
+  "lora_modules": 56,
+  "expected_quantized_modules": 196,
+  "quantized_logical_parameters": 1409286144,
+  "unquantized_parameters": 311288832,
+  "architecture": {
+    "layers": 28,
+    "hidden": 2048,
+    "intermediate": 6144,
+    "vocab": 151936,
+    "heads": 16,
+    "kv_heads": 8
+  },
+  "microbatch": 1,
+  "sequence_length": 1024,
+  "training_components_bytes": {
+    "frozen_fp16_weights": 3441149952,
+    "fp32_adapter_weights": 6422528,
+    "fp32_adapter_gradients": 6422528,
+    "adam_two_fp32_moments": 12845056,
+    "checkpoint_boundaries": 117440512,
+    "one_layer_activation_working_allowance": 150994944,
+    "logits_loss_backward_allowance": 1555824640,
+    "cuda_workspace_context_allocator_allowance": 1073741824
+  },
+  "training_peak_estimate_bytes": 6364841984,
+  "merge_fp32_weights_bytes": 6882299904,
+  "merge_peak_estimate_bytes": 9251033088,
+  "quantized_weight_storage_estimate_bytes": 1349584896,
+  "quantize_peak_estimate_bytes": 7109136384,
+  "host_ram_note": "Sharded loading/saving is required. Measure RSS and system RAM; the GPU estimate does not establish host fit.",
+  "formula_notes": [
+    "All byte counts use unique tied parameters; GiB = bytes / 2**30.",
+    "Frozen base has no optimizer state or gradients; adapter and Adam states use FP32.",
+    "Gradient accumulation changes effective batch size, not simultaneous activation batch.",
+    "Activation/logit/workspace figures are analytical allowances, not exact tensor accounting.",
+    "Merge: FP32 base + one largest tensor for loading/tie/save overlap + per-target merge work.",
+    "Quantization uses sequential conversion; conservative peak allows FP16 source + destination + work.",
+    "Inference adds KV cache: 2 * layers * batch * sequence * KV_heads * head_dim * dtype_bytes.",
+    "Allocator fragmentation, kernels, CUDA context, and checkpoint recomputation explain gaps."
+  ]
+}

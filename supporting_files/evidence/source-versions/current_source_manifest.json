@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-10T18:01:22.502775+00:00",
+  "sha256": {
+    "config.brev.json": "2f1922edeef86771b7e286edce26fa0e73e8beca41ae5529b28d842e5b3a1b6f",
+    "config.json": "a4c8321bc7757ae431a23212e798ce31a400f23d7b4b2463e4fbe529f43cd2aa",
+    "experiment.py": "e8aa92b77407179b0b7947e472047673dead4cb6b87753ad3819eed701f67164",
+    "licenses/Qwen3-Apache-2.0.txt": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "pytest.ini": "d99e4a7cb55d00fc08d82648891950d6327bcd1397e38a94e29d1ce28af07c5b",
+    "requirements.txt": "a392a6621502d7e34a9e5bf1a7260359c4b8440ba522ecd6877519de0faf3da3",
+    "scripts/__init__.py": "0b1d29c92e6b293d634495c7132fbc7b3a606284d7a4a2dd6cb8a42e90b14069",
+    "scripts/access_wizard.sh": "67d5a4bd5b1b1ef58742d8ddd7e3d627a151cd759e78a92babb030efcd0d3383",
+    "scripts/build_notebook.py": "89a0edec392fd3bbe8b34b5a914089fae0dc783a642a1e83799d1c3650357ea4",
+    "scripts/check_access.py": "e455cf53c9ffee5d05d8b86f11d4b4573bc9847cc0adb398d886f3712da990ac",
+    "scripts/check_tokenizers.py": "cc6fd9502f0a39a699fc263bf3225086461cdd27ba76fe6cbe31f3d39c406b66",
+    "soup_task/__init__.py": "603289ef45f7daa30367f4e6c67a8582dac74f0667382a835c1763117008c108",
+    "soup_task/core.py": "dddeee61ffdbd582d5ac8c4a0abf0fbe5778df4a1861c6436381f5ff73ea946c",
+    "soup_task/data.py": "834541efc964b2548ff9c70cf7baaec41a5f860571d61e6b466dad353c52f3b1",
+    "soup_task/reporting.py": "150fb60bcf99e074d5d2fe642d714e05c92406d79c7c5440005dcf694b1f0666",
+    "soup_task/runtime.py": "4b157bda461dc01a90d4fe53939ffbf09d833893946bac265c09fa5ff40e57b9",
+    "soup_task/stages.py": "28d211f7c2d52de75b3b0668c1a13e6659d579f780f2952a53e1ca924ad68c00",
+    "tests/test_core.py": "37735bb5d911bedffff4bec730422432592a48a61c0c4d385b7d6faf5b8e9dd9",
+    "tests/test_integrity.py": "3bba7ebfecb15cad6c620deffa58277b7f1f3aaf4aeace4deffe33c49774f2dc",
+    "tests/test_models.py": "9ae639e13d04ac8ffbbd1df5a4578a334d7c9822de443298d6d91b7ec24eb8f0",
+    "tests/test_reporting.py": "df6644e3b269abf30ff778bdb2cd5003e3ff1f3807c99eae5ecdc7f089e2a7a6",
+    "verify.py": "68956fb19f926dd8de88baa9085a2ab99558350648198113145ee708cdf572f8"
+  },
+  "model_data_runtime_stages_identical_to_measured": true,
+  "core_except_release_gate_identical_to_measured": true,
+  "verifier_and_gate_identical_to_cloud_reviewed_replay": true
+}

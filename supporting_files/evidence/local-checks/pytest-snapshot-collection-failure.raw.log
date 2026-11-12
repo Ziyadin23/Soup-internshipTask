@@ -1,0 +1,32 @@
+2026-11-10T13:36:00.641299+00:00 REAL DEVELOPMENT FAILURE: pytest discovered frozen run copies
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_core.py ______________________
+import file mismatch:
+imported module 'test_core' has this __file__ attribute:
+  /home/ziyadin/orca/projects/Soup-internshipTask/runs/local-audit-20261110T1330Z/code/tests/test_core.py
+which is not the same as the test file we want to collect:
+  /home/ziyadin/orca/projects/Soup-internshipTask/tests/test_core.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________________ ERROR collecting tests/test_models.py _____________________
+import file mismatch:
+imported module 'test_models' has this __file__ attribute:
+  /home/ziyadin/orca/projects/Soup-internshipTask/runs/local-audit-20261110T1330Z/code/tests/test_models.py
+which is not the same as the test file we want to collect:
+  /home/ziyadin/orca/projects/Soup-internshipTask/tests/test_models.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+___________________ ERROR collecting tests/test_reporting.py ___________________
+import file mismatch:
+imported module 'test_reporting' has this __file__ attribute:
+  /home/ziyadin/orca/projects/Soup-internshipTask/runs/local-audit-20261110T1330Z/code/tests/test_reporting.py
+which is not the same as the test file we want to collect:
+  /home/ziyadin/orca/projects/Soup-internshipTask/tests/test_reporting.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+=========================== short test summary info ============================
+ERROR tests/test_core.py
+ERROR tests/test_models.py
+ERROR tests/test_reporting.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+3 errors in 2.64s
+
+EXIT 2

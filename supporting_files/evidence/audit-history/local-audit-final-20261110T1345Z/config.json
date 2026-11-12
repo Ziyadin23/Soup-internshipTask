@@ -1,0 +1,43 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "dataset": "Salesforce/xlam-function-calling-60k",
+  "dataset_revision": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
+  "dataset_file": "xlam_function_calling_60k.json",
+  "dataset_sha256": "4ef5c6f0dc552f2231f93f5853a9ef431e9e806d7aa514d0f6b615606ce576c6",
+  "manual_exclusions": {
+    "49228": "Random-card intent conflicts with documented default value A; API equivalence is unverified.",
+    "59067": "Conditional raw-response handling is outside the single-call target represented by the reference.",
+    "23457": "Accepted record types are delegated to an unavailable README; supplied schema does not establish validity."
+  },
+  "seed": 42,
+  "train_examples": 1000,
+  "validation_examples": 64,
+  "test_examples": 128,
+  "max_length": 1024,
+  "max_tools": 4,
+  "max_new_tokens": 128,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.0002,
+  "epochs": 1,
+  "gradient_accumulation": 8,
+  "bootstrap_samples": 2000,
+  "policy": {
+    "intended_use": "automatic single-call selection from supplied schemas; English, literal argument extraction and documented defaults only",
+    "minimum_exact_accuracy": 0.99,
+    "maximum_quant_nll_increase": 0.1,
+    "maximum_quant_accuracy_drop": 0.01,
+    "maximum_general_drop": 0.05,
+    "maximum_critical_probe_failures": 0,
+    "merge_atol": 0.001,
+    "merge_rtol": 0.0001,
+    "minimum_effective_update_ratio": 1e-06,
+    "minimum_logit_rms_delta": 0.0001,
+    "noise_multiplier": 10
+  }
+}

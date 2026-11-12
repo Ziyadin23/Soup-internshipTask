@@ -1,0 +1,15 @@
+To: team@trysoup.dev
+Subject: Re: AI Engineer internship task
+
+Hello Soup team,
+
+Attached are my two-page report and supporting code/evidence archive for the AI Engineer task.
+
+I fine-tuned Qwen3-1.7B with LoRA, exported the merged and NF4 artifacts, and ran the verification and failure controls. My verdict for automatic execution is DON'T SHIP. The report explains the improved task format, abstention failures, mini-safety regression, measured memory, and the declared Brev T4 fallback after Colab failures.
+
+The archive includes raw timestamped logs and nvidia-smi output, original and corrected verification results, source histories, the reproduction notebook, reflection, and AI-use notes. AI assistance and independent review status are disclosed. Large weights and probe arrays are retained separately with their hashes and reproduction instructions.
+
+Best regards,
+Ziyadin
+
+Submission note: reply in the original email thread, retaining its subject. Attach report.pdf and supporting_files.zip from this final folder.

@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-10T14:25:35.317267+00:00",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "declared_tied": true,
+  "keys": [
+    "model.embed_tokens.weight",
+    "lm_head.weight"
+  ],
+  "shape": [
+    151936,
+    2048
+  ],
+  "elements_compared": 311164928,
+  "bitwise_identical": true,
+  "conclusion": "The pinned checkpoint serializes redundant identical tied weights."
+}

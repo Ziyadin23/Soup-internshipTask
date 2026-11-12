@@ -1,0 +1,16 @@
+2026-11-10T14:32:03.232+00:00 COMMAND ["/home/ubuntu/soup_submission/.venv/bin/python", "-u", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01/code/experiment.py", "_stage", "eval-merged", "--run-dir", "/home/ubuntu/soup_submission/runs/brev-20261110-main-01"]
+2026-11-10T14:32:07.906+00:00 {"timestamp": "2026-11-10T14:32:07.906+00:00", "event": "phase_started", "phase": "eval-merged"}
+2026-11-10T14:32:07.962+00:00 `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-10T14:32:08.019+00:00 
+2026-11-10T14:32:08.414+00:00 Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-11-10T14:32:08.730+00:00 Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:02,  2.53it/s]
+2026-11-10T14:32:09.045+00:00 Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:01,  2.87it/s]
+2026-11-10T14:32:09.357+00:00 Loading checkpoint shards:  43%|████▎     | 3/7 [00:01<00:01,  3.00it/s]
+2026-11-10T14:32:09.674+00:00 Loading checkpoint shards:  57%|█████▋    | 4/7 [00:01<00:00,  3.08it/s]
+2026-11-10T14:32:09.995+00:00 Loading checkpoint shards:  71%|███████▏  | 5/7 [00:01<00:00,  3.11it/s]
+2026-11-10T14:32:10.245+00:00 Loading checkpoint shards:  86%|████████▌ | 6/7 [00:01<00:00,  3.11it/s]
+2026-11-10T14:32:10.245+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:02<00:00,  3.35it/s]
+2026-11-10T14:32:10.245+00:00 Loading checkpoint shards: 100%|██████████| 7/7 [00:02<00:00,  3.15it/s]
+2026-11-10T14:32:10.707+00:00 The tokenizer you are loading from '/home/ubuntu/soup_submission/runs/brev-20261110-main-01/artifacts/merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+2026-11-10T14:51:21.760+00:00 {"timestamp": "2026-11-10T14:51:21.760+00:00", "event": "phase_finished", "started_at": "2026-11-10T14:32:07.906+00:00", "finished_at": "2026-11-10T14:51:21.759+00:00", "phase": "eval-merged", "success": true, "wall_seconds": 1153.6382667080002, "rss_sample_interval_seconds": 0.05, "sampled_rss_peak_bytes": 1887928320, "process_lifetime_rss_highwater_bytes": 1965199360, "gpu_allocated_peak_bytes": 4174800896, "gpu_reserved_peak_bytes": 5419040768, "note": "RSS highwater includes imports; nvidia-smi includes CUDA/context and other processes; 1-second GPU samples can miss spikes. Allocator peaks exclude non-PyTorch memory."}
+2026-11-10T14:51:23.776+00:00 EXIT 0

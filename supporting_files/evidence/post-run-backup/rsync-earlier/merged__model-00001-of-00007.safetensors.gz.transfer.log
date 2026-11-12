@@ -1,0 +1,21 @@
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(874) [generator=3.5.0-g483b5efc]
+rsync error: received SIGUSR1 (code 19) at main.c(1660) [receiver=3.5.0-g483b5efc]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(874) [generator=3.5.0-g483b5efc]
+rsync error: received SIGUSR1 (code 19) at main.c(1660) [receiver=3.5.0-g483b5efc]
+
+Number of files: 1 (reg: 1)
+Number of created files: 0
+Number of deleted files: 0
+Number of regular files transferred: 1
+Total file size: 643,199,511 bytes
+Total transferred file size: 643,199,511 bytes
+Literal data: 40,153,287 bytes
+Matched data: 603,046,224 bytes
+File list size: 88
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 171,992
+Total bytes received: 40,261,481
+
+sent 171,992 bytes  received 40,261,481 bytes  32,752.91 bytes/sec
+total size is 643,199,511  speedup is 15.91
